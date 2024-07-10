@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Include FontAwesome CSS (Add this to your HTML head) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpMI6jji/Em5CEItg8xdOWnxYf5X38W5UcQDgC4ZL/GS1Y+Uhe9qC5aF5F/hhQaJbnazbapb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Native Scripts-->
+    <script src="index.js"></script>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Book Last Minute Hotels and Stays </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <h1 class="logo"><a href="file:///Users/admin/github/bnbspot.github.io/index.html?booking-type=round-trip&to-destination=&departure-date=&return-date=&adults=1#" class="href">Website</a></h1>
+          </div>
+          <div class="navbar-links">
+              <!-- <a href="#" class="nav-link active-handler" data-toggle=""><i class="fas fa-home"></i>HOME</a> -->
+              <!-- <a href="../flights.html?booking-type=round-trip&to-destination=&departure-date=&return-date=&adults=1#" class="nav-link active-target" data-toggle=""><i class="fas fa-plane"></i> FLIGHTS</a> -->
+              <a href="file:///Users/admin/github/bnbspot.github.io/pages/hotels.html" class="nav-link active-window" data-toggle=""><i class="fas fa-hotel"></i> HOTELS</a>
+              <!-- <a href="#" class="nav-link active-window"><i class="fas fa-calendar"></i> SHOWS</a> -->
+              <a href="#" class="nav-link active-window"><i class="fas fa-map-marked-alt"></i> TOURS</a>
+              <a href="#" class="nav-link active-window"><i class="fas fa-book-open"></i>ATTRACTIONS</a>
+              <a  href="#" class="nav-link location-link" onclick="getLocation()"><i class="fa-solid fa-mobile-screen-button"></i>Mobile app</a>
+                <!-- Translate to Spanish Link -->
+                <a  href="#" class="nav-link translate-link" onclick="translateToSpanish()"><i class="fas fa-globe"></i>EN</a>
+          </div>
+          <div class="dropdown">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Sign in OR</button>
+            <form class="dropdown-menu p-4">
+              <div class="mb-3">
+                <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                  <label class="form-check-label" for="dropdownCheck2"> Remember me </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary user-signin">Sign in</button>
+               <a href="#" class="small">Forgot Password?</a>
+              <!-- <div class="text-center mb-3"> Become a Member</div>  -->
+              <!-- Google Sign-In -->
+              <a href="#" class="btn btn-danger btn-block mb-2" style="white-space: nowrap;">
+                  <i class="fab fa-google mr-2"></i> Sign up with Google
+                </a>
+              <!-- Apple Sign-In -->
+              <a href="#" class="btn btn-black btn-block" style="white-space: nowrap; border: 1px solid black;">
+                  <i class="fab fa-apple mr-2"></i> Sign up with Apple
+                </a>
+                <!-- Yahoo Sign-In -->
+                 <a href="#" class="btn btn-purple btn-block mb-2" style="white-space: nowrap; color: white; background-color: rgb(115, 43, 183);">
+                  <i class="fab fa-yahoo mr-2"></i> Sign up with Yahoo
+              </a> 
+              <!-- <small id="emailHelp" class="form-text text-muted">By providing your information, you agree to our website's <a href="#">terms of use</a> and <a href="#">privacy policy</a>.</small>  -->
+              </form>
+          </div>
+        </nav>
+      </header>
+           <!-- Pop-up Card -->
+           <!-- <div id="popup-card" class="popup-card">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopupCard()">&times;</span>
+                <h2>Claim Your Discount!</h2>
+                <p>Don't miss out on our exclusive discount for your next flight or stay. Click below to claim now!</p>
+                <button class="claim-btn">Claim Now</button>
+            </div> -->
+        </div>
+        <!-- End of Pop-up Card -->
+      </div>
+    <!--Carousel-->
+    <section class="carousel">
+      <div class="carousel-container">
+        <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="aspect-ratio-container">
+                <img src="file:///Users/admin/github/bnbspot.github.io/images/alleen-reizen.jpg" class="d-block w-100 aspect-ratio-image" alt="Miami">
+                <div class="slide-content">
+                  <h2>Discover the world and beyond</h2>
+                  <p> Book Last Minute Hotels and Stays</p>
+                  <button onclick="handleButtonClick()">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="aspect-ratio-container">
+                <img src="file:///Users/admin/github/bnbspot.github.io/images/5520409898_521dc27b4c_b.jpg" class="d-block w-100 aspect-ratio-image" alt="Flamingo">
+                <div class="slide-content">
+                  <h2> Experience Comfort</h2>
+                  <p> Find the Best Hotel Deals.</p>
+                  <button onclick="handleButtonClick()">View Offers</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="aspect-ratio-container">
+                <img src="images/cw-58023-914x520.jpeg" class="d-block w-100 aspect-ratio-image" alt="Image 2">
+                <div class="slide-content">
+                  <h2>Discover Fun</h2>
+                  <p>Explore offers & save.</p>
+                  <button onclick="handleButtonClick()">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Minimalist Navigation Buttons -->
+        <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!--Booking Container-->
+    <section class="booking">
+      <div class="booking-container">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            
+            <li class="nav-item">
+              <div class="nav-link form-hotels" onclick="showTab('hotels-tab')"> Hotels </div>
+            </li>
+            <!-- <li class="nav-item">
+              <div class="nav-link form-flights active" onclick="showTab('flights-tab')"> Flight + Hotel Packages</div>
+            </li> -->
+            <li class="nav-item">
+              <div class="nav-link form-packages" onclick="showTab('packages-tab')">Travel Packages</div>
+            </li>
+            <!-- <li class="nav-item">
+              <div class="nav-link form-cruises" onclick="showTab('cruises-tab')">sHOWS</div>
+            </li>  -->
+          </ul>
+        </div>
+        <div class="card-body">
+          <!-- <div id="flights-tab" class="tab-content active">
+            <form action="#" method="get">
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="booking-type" value="round-trip" checked> Round Trip </label>
+                <label>
+                  <input type="radio" name="booking-type" value="one-way"> One Way </label>
+              </div>
+              <div class="form-group">
+                <label for="from-destination">Leaving From</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="from-destination" placeholder="Enter your location">
+                </div>
+            </div>
+            
+              <div class="form-group">
+                <label for="to-destination">Going To</label>
+                <input type="text" class="form-control" id="to-destination" name="to-destination" placeholder="Enter arrival location">
+              </div>
+              <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" class="form-control" id="departure-date" name="departure-date">
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input type="date" class="form-control" id="return-date" name="return-date">
+              </div>
+              <div class="form-group">
+                <label for="adults">Travelers</label>
+                <input type="text" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                <table id="adultsTable" class="travelers-table">
+                  <tr>
+                    <td>Adults</td>
+                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                  </tr>
+                  <tr>
+                    <td>Children <br> (2 - 15)</td>
+                    <td>
+                      <span class="decrement-btn" onclick="decrement('children')">-</span>
+                      <span class="age-dropdown">
+                        <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
+                        <div class="age-dropdown-content" id="childrenAgeDropdown">
+                          <a href="#" onclick="selectAge('children', 2)">2</a>
+                          <a href="#" onclick="selectAge('children', 3)">3</a> -->
+                          <!-- Add more age options as needed -->
+                        <!-- </div>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="increment-btn" onclick="increment('children')">+</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Infants <br> (0 - 1)</td>
+                    <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                  </tr>
+                </table>
+              </div> -->
+              
+              <!-- <button type="submit" class="btn btn-warning btn-xs" onclick="updateInputText()">Search Flights</button>
+            </form>
+          </div> -->
+          <div id="hotels-tab" class="tab-content active">
+            <form action="#" method="get">
+              <div class="form-group">
+                <label for="hotel-destination">Going to</label>
+                <input type="text" class="form-control" id="hotel-destination" name="hotel-destination" placeholder="Enter hotel destination">
+                <i class="fas fa-map-marker-alt" onclick="cycleDestination()"></i>
+                <div class="dropdown setLocation" id="dropdown-stay-location">
+                  <div onclick="selectDestination('Chicago', 'stay-location')">Chicago</div>
+                  <div onclick="selectDestination('Orlando', 'stay-location')">Orlando</div>
+                  <div onclick="selectDestination('Miami', 'stay-location')">Miami</div>
+                  <div onclick="selectDestination('New York', 'stay-location')">New York</div>
+                </div>
+            </div>
+            
+              <div class="form-group">
+                <label for="check-in">Check-in Date</label>
+                <input type="date" class="form-control" id="check-in" name="check-in">
+              </div>
+              <div class="form-group">
+                <label for="check-out">Check-out Date</label>
+                <input type="date" class="form-control" id="check-out" name="check-out">
+              </div>
+              <div class="form-group">
+                <label for="adults">Travelers</label>
+                <input type="number" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                <table id="adultsTable" class="travelers-table">
+                  <tr>
+                    <td>Adults</td>
+                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                  </tr>
+                  <tr>
+                    <td>Children <br> (2 - 15)</td>
+                    <td>
+                      <span class="decrement-btn" onclick="decrement('children')">-</span>
+                      <span class="age-dropdown">
+                        <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
+                        <div class="age-dropdown-content" id="childrenAgeDropdown">
+                          <a href="#" onclick="selectAge('children', 2)">2</a>
+                          <a href="#" onclick="selectAge('children', 3)">3</a>
+                          <!-- Add more age options as needed -->
+                        </div>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="increment-btn" onclick="increment('children')">+</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Infants <br> (0 - 1)</td>
+                    <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="form-group">
+                <label for="rooms">Rooms</label>
+                <input type="number" class="form-control" id="rooms" name="rooms" min="1">
+              </div>
+              <!-- Add more hotel-related fields as needed -->
+              <button type="submit" class="btn btn-warning btn-xs">Search Hotels</button>
+            </form>
+          </div>
+          <!-- Packages Tab -->
+          <div id="packages-tab" class="tab-content">
+            <form action="#" method="get" class="package-form">
+              <!-- Package Options - Checkboxes -->
+              <div class="package-options">
+                <label>
+                  <input type="checkbox" name="package-option" value="flight" checked disabled> Flight </label>
+                <label>
+                  <input type="checkbox" name="package-option" value="hotel" checked disabled> Hotel </label>
+                <label>
+                  <input type="checkbox" name="package-option" value="car"> Car Rental </label>
+              </div>
+              <!-- Travel Class - Selectors -->
+              <div class="travel-class">
+                <select id="travel-class-select" name="travel-class-select">
+                  <option value="economy">Economy</option>
+                  <option value="economy-plus">Economy Plus</option>
+                  <option value="business-class">Business Class</option>
+                  <option value="first-class">First Class</option>
+                </select>
+              </div>
+              <!-- User Information -->
+              <div class="form-group">
+                <label for="from-location">Leaving From</label>
+                <input type="text" class="form-control" id="from-location" name="from-location" placeholder="Enter departure location">
+                <i class="fas fa-map-marker-alt" onclick="cycleDestination('from-location')"></i>
+                <div class="dropdown setLocation" id="dropdown-from-location">
+                    <div onclick="selectDestination('Chicago', 'from-location')">Chicago</div>
+                    <div onclick="selectDestination('Orlando', 'from-location')">Orlando</div>
+                    <div onclick="selectDestination('Miami', 'from-location')">Miami</div>
+                    <div onclick="selectDestination('New York', 'from-location')">New York</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="to-location">Going To</label>
+                <input type="text" class="form-control" id="to-location" name="to-location" placeholder="Enter destination location">
+                <i class="fas fa-map-marker-alt" onclick="cycleDestination('to-location')"></i>
+                <div class="dropdown setLocation" id="dropdown-to-location">
+                    <div onclick="selectDestination('Chicago', 'to-location')">Chicago</div>
+                    <div onclick="selectDestination('Orlando', 'to-location')">Orlando</div>
+                    <div onclick="selectDestination('Miami', 'to-location')">Miami</div>
+                    <div onclick="selectDestination('New York', 'to-location')">New York</div>
+                </div>
+            </div>
+              <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" class="form-control" id="departure-date" name="departure-date">
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input type="date" class="form-control" id="return-date" name="return-date">
+              </div>
+              <div class="form-group">
+                <label for="adults">Travelers</label>
+                <input type="text" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                <table id="adultsTable" class="travelers-table">
+                  <tr>
+                    <td>Adults</td>
+                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                  </tr>
+                  <tr>
+                    <td>Children <br> (2 - 15)</td>
+                    <td>
+                      <span class="decrement-btn" onclick="decrement('children')">-</span>
+                      <span class="age-dropdown">
+                        <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
+                        <div class="age-dropdown-content" id="childrenAgeDropdown">
+                          <a href="#" onclick="selectAge('children', 2)">2</a>
+                          <a href="#" onclick="selectAge('children', 3)">3</a>
+                          <!-- Add more age options as needed -->
+                        </div>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="increment-btn" onclick="increment('children')">+</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Infants <br> (0 - 1)</td>
+                    <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Search Button -->
+              <button type="submit" class="btn btn-warning btn-xs">Search Packages</button>
+            </form>
+          </div>
+          <!-- Cruises Tab -->
+          <div id="cruises-tab" class="tab-content">
+            <form action="#" method="get">
+              <!-- Add cruise-related form fields here -->
+              <!-- Cruise Details Section -->
+              <div class="form-group">
+                <label for="cruise-destination">Cruise Destination</label>
+                <input type="text" class="form-control" id="cruise-destination" name="cruise-destination" placeholder="Enter cruise destination" required></div>
+                <div class="form-group">
+                  <label for="departure-port">Departure Port</label>
+                <input type="text" class="form-control" id="departure-port" name="departure-port" placeholder="Enter departure port" required></div>
+                <div class="form-group"><label for="departure-date">Departure Date</label>
+                  <input type="date" class="form-control" id="departure-date" name="departure-date" required></div>
+                  <div class="form-group"><label for="cruise-duration">Duration (days)</label>
+                    <input type="number" class="form-control" id="cruise-duration" name="cruise-duration" min="1" required></div>
+                    <div class="form-group">
+                      <label for="adults">Travelers</label>
+                      <input type="text" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                      <table id="adultsTable" class="travelers-table">
+                        <tr>
+                          <td>Adults</td>
+                          <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                          <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                        </tr>
+                        <tr>
+                          <td>Children <br> (2 - 15)</td>
+                          <td>
+                            <span class="decrement-btn" onclick="decrement('children')">-</span>
+                            <span class="age-dropdown">
+                              <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
+                              <div class="age-dropdown-content" id="childrenAgeDropdown">
+                                <a href="#" onclick="selectAge('children', 2)">2</a>
+                                <a href="#" onclick="selectAge('children', 3)">3</a>
+                                <!-- Add more age options as needed -->
+                              </div>
+                            </span>
+                          </td>
+                          <td>
+                            <span class="increment-btn" onclick="increment('children')">+</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Infants <br> (0 - 1)</td>
+                          <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                          <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                        </tr>
+                      </table>
+                    </div>
+        </div>
+      </div>
+    </section>
+    <!-- Your other HTML content -->
+    <hr class="section-divider">
+    <section class="main">
+      <div class="container-fluid">
+        <h2>Browse by property type</h2>
+        <div class="row">
+          <!-- User Card 1 -->
+          <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+            <div class="card">
+              <img src="file:///Users/admin/github/bnbspot.github.io/images/51424597-abstract-blur-luxury-hotel-room-interior-background-filter-effect-processing.jpg" alt="Destination 1">
+              <div class="card-body">
+                <h4>Hotels</h4>
+                <!-- <p>Explore the beauty of City Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+              </div>
+            </div>
+          </div>
+          <!-- User Card 2 -->
+          <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+            <div class="card">
+              <img src="file:///Users/admin/github/bnbspot.github.io/images/kitchen-island-ideas-5211577-hero-9708dd3031434ea4b97da0c0082d0093.jpg" alt="San Juan">
+              <div class="card-body">
+                <h4>Apartments</h4>
+                <!-- <p>Relax on the stunning beaches of Beach Paradise. Duis aute irure dolor in reprehenderit.</p> -->
+              </div>
+            </div>
+          </div>
+          <!-- Add more user cards as needed -->
+          <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+            <div class="card">
+              <img src="file:///Users/admin/github/bnbspot.github.io/images/istockphoto-1035603426-612x612.jpg" alt="Destination 1">
+              <div class="card-body">
+                <h4>Resorts</h4>
+                <!-- <p>Relax on the stunning beaches of Beach Paradise. Duis aute irure dolor in reprehenderit.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+            <div class="card">
+              <img src="file:///Users/admin/github/bnbspot.github.io/images/villa.jpg" alt="Orlando">
+              <div class="card-body">
+                <h4>Villas </h4>
+                <!-- <p>Relax on the stunning beaches of Beach Paradise. Duis aute irure dolor in reprehenderit.</p> -->
+              </div>
+            </div>
+          </div>
+            <div class="container-fluid">
+            <h2>Discover popular travel destinations</h2>
+            <div class="row">
+              <!-- User Card 1 -->
+              <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+                <div class="card">
+                  <img src="file:///Users/admin/github/bnbspot.github.io/images/Kumar-2.jpg" alt="Destination 1">
+                  
+                  <div class="card-body">
+                    <h6>Chicago, United States of America</h6>
+                    <!-- <p>Explore the beauty of City Name. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- User Card 2 -->
+              <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+                <div class="card">
+                  <img src="file:///Users/admin/github/bnbspot.github.io/images/Pipeline-Hero-Image-scaled.jpg" alt="San Juan">
+                  
+                  <div class="card-body">
+                    <h6>Orlando, United States of America</h6>
+                    <!-- <p>Relax on the stunning beaches of Beach Paradise. Duis aute irure dolor in reprehenderit.</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- Add more user cards as needed -->
+              <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+                <div class="card">
+                  <img src="file:///Users/admin/github/bnbspot.github.io/images/yahts.jpg" alt="Destination 1">
+                  <div class="card-body">
+                    <h6>Miami, United States of America</h6>
+                    <!-- <p>Relax on the stunning beaches of Beach Paradise. Duis aute irure dolor in reprehenderit.</p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 card-container" onclick="handleCardClick(this)">
+                <div class="card">
+                  <img src="file:///Users/admin/github/bnbspot.github.io/images/statue-of-liberty-nyc-usa_1476328154.jpeg" alt="Orlando">
+                  <div class="card-body">
+                    <h6>New York, United States of America</h6>
+                    <!-- <p>Relax on the stunning beaches of Beach Paradise. Duis aute irure dolor in reprehenderit.</p> -->
+                  </div>
+                </div>
+              </div>
+                  <!-- Popular Destinations Section -->
+                           
+          <section class="scroll">
+                  <div class="container-fluid"style="background-color:#eeeeee;width:100%;height:300px">
+                    <h2>Plan the perfect trip</h2>
+                    <div class="row"> 
+                      <!-- User Card 1 -->
+                       <div class="col-md-5">
+                        <div class="card"> 
+                             <img src="file:///Users/admin/github/bnbspot.github.io/images/depositphotos_158439924-stock-video-parents-with-son-and-daughter.jpg" alt="Orlando"> 
+                             <div class="overlay">
+                              <h5>Vacation rentals</h5>
+                               <a href="#" class="btn btn-warning" role="button">View Offers</a> 
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-md-7 ">
+                      <div class="card">
+                        <img style="filter: brightness(.5);" src="file:///Users/admin/github/bnbspot.github.io/images/woman-in-front-of-ship.jpg" alt="Card Image 1">
+                        
+                        <div class="overlay">
+                          <h5>Save on a Cruise</h5>
+                          <p>Connect with us for more info</p>
+                          <a href="#" class="btn-lg btn-warning" role="button"><i class="fa-brands fa-rocketchat"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  </div>
+                  </section>
+                 
+          <section class="scroll">
+            <div class="container-fluid">
+              <h2>Discover travel savings</h2>
+              <div class="row">
+                      <div class="col-md-15">
+                        <div class="card">
+                          <img src="file:///Users/admin/github/bnbspot.github.io/images/atlantis-BH1120-2000-2d9e759004594975a25f0fba3bee91b6.jpg" alt="Card Image 2">
+                           <div class="overlay">
+                            <h5>All-Inclusive Resorts </h5> 
+                             <a href="#" class="btn btn-warning" role="button">View Deals</a> 
+                            <!-- <div class="card-body">
+                              <h4>Save up to 15% Off </h4> -->
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+      
+          </section>
+    <hr>
+    <section class="scroll">
+      <div class="container-fluid"style="width:100%;height:300px">
+        <h2>Stay connected for more 
+        <div class="row"> 
+          <!-- User Card 1 -->
+          <div class="col-md-4">
+            <div class="card"> 
+                 <img src="file:///Users/admin/github/bnbspot.github.io/images/1165-holi-en-inde.jpg" alt="Orlando"> 
+                 <div class="overlay">
+                  <h5>Budget stays for Events, Festivals & Tours</h5>
+                   <a href="#" class="btn btn-warning" role="button">View Deals</a> 
+          </div>
+        </div>
+        </div>
+          <div class="col-md-4">
+            <div class="card"> 
+                 <img src="file:///Users/admin/github/bnbspot.github.io/images/Mardi-Gras-Basics.png" alt="Orlando"> 
+                 <div class="overlay">
+                  <h5>Hotels in New Orleans & Mardi Gras offers</h5>
+                   <a href="#" class="btn btn-warning" role="button">View Deals</a> 
+          </div>
+        </div>
+        </div>
+        <!-- <div class="col-md-3">
+          <div class="card"> 
+               <img src="file:///Users/admin/github/bnbspot.github.io/images/Chateau-disney-scaled.jpeg" alt="Orlando"> 
+               <div class="overlay">
+                <h5>Disneyworld Vacation Packages</h5>
+                 <a href="#" class="btn btn-warning" role="button">View Deals</a> 
+        </div>
+      </div>
+      </div> -->
+        
+        <div class="col-md-3">
+          <div class="card">
+            <img src="file:///Users/admin/github/bnbspot.github.io/images/istockphoto-1165376563-170667a.jpg" alt="Card Image 2">
+            <div class="overlay">
+              <h5>Special Savings & Offers</h5>
+              <a href="#" class="btn btn-warning" role="button">View More </a> 
+            </div> 
+          </div>
+        </div> 
+        </div>
+        </div>
+      </div>
+        </section>
+          <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbox()">
+            <img style="width: 50px; height: 50px" src="file:///Users/admin/github/bnbspot.github.io/images/1f44b.png" alt="Hello">
+          </div>
+          <div class="chatsupport" id="chatsupport" style="display: none;">
+            <div class="chat-header">
+              <img style="width: 30px; height: 30px; margin-right:15px" src="file:///Users/admin/github/bnbspot.github.io/images/1f44b.png" alt="Hello">Hi there,
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input">
+              <input type="text" id="user-input" placeholder="Type your question...">
+              <button onclick="sendMessage()">Send</button>
+            </div>
+          </div>
+          <script>
+            let chatboxVisible = false;
+            let inactivityTimer;
+          
+            function toggleChatbox() {
+              const chatbox = document.getElementById('chatsupport');
+              chatboxVisible = !chatboxVisible;
+              if (chatboxVisible) {
+                chatbox.style.display = 'block';
+                startInactivityTimer();
+                showGreeting();
+              } else {
+                chatbox.style.display = 'none';
+                clearTimeout(inactivityTimer);
+              }
+            }
+          
+            function showGreeting() {
+              const chatMessages = document.getElementById('chat-messages');
+              const greeting = "How can I assist you today? Please choose a topic or type your question.";
+              const greetingDiv = createMessageDiv(greeting, 'ai-message');
+              chatMessages.appendChild(greetingDiv);
+            }
+          
+            function startInactivityTimer() {
+              inactivityTimer = setTimeout(() => {
+                document.getElementById('chatsupport').style.display = 'none';
+                chatboxVisible = false;
+              }, 180000); // 3 minutes
+            }
+          
+            function sendMessage() {
+              const userInput = document.getElementById('user-input').value;
+              const chatMessages = document.getElementById('chat-messages');
+              // Add user message to the chat
+              chatMessages.innerHTML += `<div class="user-message">${userInput}</div>`;
+              // Get AI response based on user input
+              const aiResponse = getAIResponse(userInput);
+              chatMessages.innerHTML += `<div class="ai-message">${aiResponse}</div>`;
+              // Clear user input
+              document.getElementById('user-input').value = '';
+              // Scroll to the bottom of the chat
+              chatMessages.scrollTop = chatMessages.scrollHeight;
+              // Reset the inactivity timer
+              clearTimeout(inactivityTimer);
+              startInactivityTimer();
+            }
+          
+            function getAIResponse(userInput) {
+              // Implement logic to generate AI response based on user input
+              return 'AI Response';
+            }
+          
+            function createMessageDiv(message, className) {
+              const messageDiv = document.createElement('div');
+              messageDiv.className = className;
+              messageDiv.textContent = message;
+              return messageDiv;
+            }
+          </script>
+          
+          
+    </section>
+    <section class="footer">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-heading">About Us</h3>
+            <ul class="footer-menu">
+              <li class="footer-link">
+                <a class="active" href="http://#">List your property</a>
+              </li>
+              <li class="footer-link">
+                <a class="active" href="http://#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Cities</h3>
+            <ul class="footer-menu">
+              <li class="footer-link">
+                <a class="active" href="http://#">Chicago</a>
+                </li>
+                <li class="footer-link">
+                  <a class="active" href="http://#">Orlando</a>
+                  </li>
+                <li class="footer-link">
+                <a class="active" href="http://#">Miami</a>
+                </li>
+                <li class="footer-link">
+                  <a class="active" href="http://#">New York</a>
+                  </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Legal</h3>
+            <ul class="footer-menu">
+              <li class="footer-link">
+                <a class="active" href="http://#">Terms of Use</a>
+              </li>
+              <li class="footer-link">
+                <a class="active" href="http://#">Privacy Policy</a>
+              </li>
+              <li class="footer-link">
+                <a class="active" href="http://#">Cookie Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Follow Us</h3>
+            <ul class="footer-menu">
+              <li class="footer-link">
+                <a class="active" href="http://#">Instagram</a>
+              </li>
+              <li class="footer-link">
+                <a class="active" href="http://#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="newsletter-container">
+          <h4>Join our members program</h4>
+          <p>Receive exclusive discounts, reward offers, and more!</p>
+          
+              <button class="btn btn-warning subscribe-form button" type="submit">Join</button>
+      </div>
+        <p>&copy; 2023 Wordpress</p>
+      </footer>
+    </section>
+    </div>
+    <script>
+      function showTravelersTable(inputId) {
+        const tableId = inputId + 'Table';
+        const table = document.getElementById(tableId);
+    
+        if (table.style.display === 'none') {
+          table.style.display = 'table';
+        } else {
+          table.style.display = 'none';
+        }
+      }
+    
+      function increment(inputId) {
+        const input = document.getElementById(inputId);
+        input.value = parseInt(input.value, 10) + 1;
+        updateInputText();
+      }
+    
+      function decrement(inputId) {
+        const input = document.getElementById(inputId);
+        if (parseInt(input.value, 10) > 0) {
+          input.value = parseInt(input.value, 10) - 1;
+          updateInputText();
+        }
+      }
+    
+      function selectAge(inputId, age) {
+        const input = document.getElementById(inputId);
+        input.value = parseInt(age, 10);
+        updateInputText();
+        toggleAgeDropdown(inputId);
+      }
+    
+      function toggleAgeDropdown(inputId) {
+        const dropdown = document.getElementById(inputId + 'AgeDropdown');
+        if (dropdown.style.display === 'none') {
+          dropdown.style.display = 'block';
+        } else {
+          dropdown.style.display = 'none';
+        }
+      }
+    
+      function updateInputText() {
+        const types = ['Adults', 'Children', 'Infants'];
+        let text = '';
+    
+        for (let i = 0; i < types.length; i++) {
+          const type = types[i];
+          const count = parseInt(document.getElementById(type.toLowerCase()).value, 10);
+    
+          if (count > 0) {
+            text += type + ': ' + count + ' ';
+          }
+        }
+    
+        document.getElementById('adults').value = text.trim();
+      }
+       // Get radio buttons and return date input
+  var radioButtons = document.getElementsByName("booking-type");
+  var returnDateInput = document.getElementById("return-date");
+  // Add event listener to radio buttons to show/hide return date input
+  radioButtons.forEach(function(radio) {
+    radio.addEventListener("change", function() {
+      returnDateInput.disabled = radio.value === "one-way";
+    });
+  });
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const maxCards = 5;
+      let currentCards = 0;
+  
+      const infiniteScrollContainer = document.getElementById("infinite-scroll-container");
+      const loadMoreBtn = document.getElementById("load-more-btn");
+  
+      function isScrollAtBottom() {
+          return window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+      }
+  
+      function loadMoreCards() {
+          // Simulate loading cards, replace this with your actual card loading logic
+          const newCard = document.createElement("div");
+          newCard.className = "card custom-card";
+          // Append your card content to newCard
+  
+          infiniteScrollContainer.appendChild(newCard);
+          currentCards++;
+  
+          // Hide the "Load More" button when the maximum cards are reached
+          if (currentCards >= maxCards) {
+              loadMoreBtn.classList.add("hidden");
+          }
+      }
+  
+      function revealAllCards() {
+          infiniteScrollContainer.classList.remove("hidden");
+          loadMoreBtn.classList.add("hidden");
+      }
+  
+      window.addEventListener("scroll", function () {
+          if (isScrollAtBottom() && currentCards < maxCards) {
+              loadMoreCards();
+          }
+          
+      });
+  
+      loadMoreBtn.addEventListener("click", revealAllCards);
+  
+      // Initially hide the "Load More" button if the cards are less than the maximum
+      if (currentCards >= maxCards) {
+          loadMoreBtn.classList.add("hidden");
+      }
+      
+  });
+  
+  
+  // Function to open the popup card
+  // window.addEventListener('scroll', function() {
+  //           var scrollDistance = window.scrollY;
+  //           var popup = document.getElementById('popup-card');
+            
+            // Adjust the visibility or position of the popup based on the scroll distance
+        //     if (scrollDistance > 200) { // Adjust this value based on your design
+        //         popup.style.display = 'block'; // Example: Show the popup
+        //     } else {
+        //         popup.style.display = 'none'; // Example: Hide the popup
+        //     }
+        // });
+        
+        // function closePopupCard() {
+        //     var popup = document.getElementById('popup-card');
+        //     popup.style.display = 'none';
+        // }
+</script>
+<script>
+  var destinations = ['Chicago', 'Orlando', 'Miami', 'New York'];
+  var currentIndex = 0;
+  
+
+  function cycleDestination() {
+      currentIndex = (currentIndex + 1) % destinations.length;
+      document.getElementById('hotel-destination').value = destinations[currentIndex];
+  }
+
+  function selectDestination(destination) {
+      document.getElementById('hotel-destination').value = destination;
+      document.getElementById('destination-dropdown').style.display = 'none';
+  }
+
+  // Hide dropdown when clicking outside
+  document.addEventListener('click', function(event) {
+      var dropdown = document.getElementById('destination-dropdown');
+      var icon = document.querySelector('.fa-location-arrow');
+      if (!dropdown.contains(event.target) && !icon.contains(event.target)) {
+          dropdown.style.display = 'none';
+      }
+  });
+</script>
+
+<script>
+  function toggleTravelersTable(type) {
+      var table = document.getElementById(type + 'Table');
+      table.style.display = table.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function increment(type) {
+      var input = document.getElementById(type);
+      input.value = parseInt(input.value) + 1;
+  }
+
+  function decrement(type) {
+      var input = document.getElementById(type);
+      if (parseInt(input.value) > 1) {
+          input.value = parseInt(input.value) - 1;
+      }
+  }
+  // var destinations = ['Chicago', 'Orlando', 'Miami', 'New York'];
+  //       var currentIndex = {'stay-location': 0, 'from-location': 0, 'to-location': 0 };
+
+  //       function cycleDestination(fieldId) {
+  //           currentIndex[fieldId] = (currentIndex[fieldId] + 1) % destinations.length;
+  //           var selectedDestination = destinations[currentIndex[fieldId]];
+  //           document.getElementById(fieldId).value = selectedDestination;
+  //           updateDropdowns();
+  //       }
+
+  //       function selectDestination(destination, fieldId) {
+  //           document.getElementById(fieldId).value = destination;
+  //           document.getElementById('dropdown-' + fieldId).style.display = 'none';
+  //           updateDropdowns();
+  //       }
+
+  //       function updateDropdowns() {
+  //           var fromLocation = document.getElementById('from-location').value;
+  //           var toLocation = document.getElementById('to-location').value;
+  //           var hotelDestination = document.getElementById('stay-location').value;
+
+  //           var dropdownFrom = document.getElementById('dropdown-from-location');
+  //           var dropdownTo = document.getElementById('dropdown-to-location');
+  //           var dropdownHotel = document.getElementById('dropdown-stay-location');
+
+  //           dropdownFrom.innerHTML = '';
+  //           dropdownTo.innerHTML = '';
+  //           dropdownHotel.innerHTML = '';
+
+  //           destinations.forEach(function(destination) {
+  //               if (destination !== toLocation && destination !== hotelDestination) {
+  //                   var divFrom = document.createElement('div');
+  //                   divFrom.innerText = destination;
+  //                   divFrom.onclick = function() {
+  //                       selectDestination(destination, 'from-location');
+  //                   };
+  //                   dropdownFrom.appendChild(divFrom);
+  //               }
+
+  //               if (destination !== fromLocation && destination !== hotelDestination) {
+  //                   var divTo = document.createElement('div');
+  //                   divTo.innerText = destination;
+  //                   divTo.onclick = function() {
+  //                       selectDestination(destination, 'to-location');
+  //                   };
+  //                   dropdownTo.appendChild(divTo);
+  //               }
+
+  //               if (destination !== fromLocation && destination !== toLocation) {
+  //                   var divHotel = document.createElement('div');
+  //                   divHotel.innerText = destination;
+  //                   divHotel.onclick = function() {
+  //                       selectDestination(destination, 'stay-location');
+  //                   };
+  //                   dropdownHotel.appendChild(divHotel);
+  //               }
+  //           });
+  //       }
+
+        document.addEventListener('click', function(event) {
+            var dropdownFrom = document.getElementById('dropdown-from-location');
+            var dropdownTo = document.getElementById('dropdown-to-location');
+            var dropdownHotel = document.getElementById('dropdown-stay-location');
+            var iconFrom = document.querySelector('#from-location ~ .fa-map-marker-alt');
+            var iconTo = document.querySelector('#to-location ~ .fa-map-marker-alt');
+            var iconHotel = document.querySelector('#stay-location ~ .fa-map-marker-alt');
+
+            if (!dropdownFrom.contains(event.target) && !iconFrom.contains(event.target)) {
+                dropdownFrom.style.display = 'none';
+            }
+            if (!dropdownTo.contains(event.target) && !iconTo.contains(event.target)) {
+                dropdownTo.style.display = 'none';
+            }
+            if (!dropdownHotel.contains(event.target) && !iconHotel.contains(event.target)) {
+                dropdownHotel.style.display = 'none';
+            }
+        });
+
+        // Initialize dropdowns
+        updateDropdowns();
+</script>
+
+
+
+</body>
+</html>

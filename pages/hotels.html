@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Last Minute Hotels and Stays </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Include FontAwesome CSS (Add this to your HTML head) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpMI6jji/Em5CEItg8xdOWnxYf5X38W5UcQDgC4ZL/GS1Y+Uhe9qC5aF5F/hhQaJbnazbapb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpK7HTZ8cm5O5YUklHdbiRZpx4eR/CtAHI6P6bZlDT+Y3H3fHUt7q6koFVUfc1hfQa99jTtX8Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Native Scripts-->
+    <script src=".../pages/index.js"></script>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+              <div class="navbar-brand">
+                <h1 class="logo"><a href="file:///Users/admin/github/bnbspot.github.io/index.html?booking-type=round-trip&to-destination=&departure-date=&return-date=&adults=1#" class="href">Website</a></h1>
+              </div>
+              <div class="navbar-links">
+                  <!-- <a href="#" class="nav-link active-handler" data-toggle=""><i class="fas fa-home"></i>HOME</a> -->
+                  <!-- <a href="../flights.html?booking-type=round-trip&to-destination=&departure-date=&return-date=&adults=1#" class="nav-link active-target" data-toggle=""><i class="fas fa-plane"></i> FLIGHTS</a> -->
+                  <a href="file:///Users/admin/github/bnbspot.github.io/pages/hotels.html?hotel-destination=&check-in=&check-out=&travelers=&rooms=#" class="nav-link active-window" data-toggle=""><i class="fas fa-hotel"></i> HOTELS</a>
+                  <!-- <a href="#" class="nav-link active-window"><i class="fas fa-calendar"></i> SHOWS</a> -->
+                  <a href="#" class="nav-link active-window"><i class="fas fa-map-marked-alt"></i> TOURS</a>
+                  <a href="#" class="nav-link active-window"><i class="fas fa-book-open"></i>ATTRACTIONS</a>
+                  <a  href="#" class="nav-link location-link" onclick="getLocation()"><i class="fa-solid fa-mobile-screen-button"></i>Mobile app</a>
+                    <!-- Translate to Spanish Link -->
+                    <a  href="#" class="nav-link translate-link" onclick="translateToSpanish()"><i class="fas fa-globe"></i>EN</a>
+              </div>
+              <div class="dropdown">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Sign in OR</button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2"> Remember me </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary user-signin">Sign in</button>
+                   <a href="#" class="small">Forgot Password?</a>
+                  <!-- <div class="text-center mb-3"> Become a Member</div>  -->
+                  <!-- Google Sign-In -->
+                  <a href="#" class="btn btn-danger btn-block mb-2" style="white-space: nowrap;">
+                      <i class="fab fa-google mr-2"></i> Sign up with Google
+                    </a>
+                  <!-- Apple Sign-In -->
+                  <a href="#" class="btn btn-black btn-block" style="white-space: nowrap; border: 1px solid black;">
+                      <i class="fab fa-apple mr-2"></i> Sign up with Apple
+                    </a>
+                    <!-- Yahoo Sign-In -->
+                     <a href="#" class="btn btn-purple btn-block mb-2" style="white-space: nowrap; color: white; background-color: rgb(115, 43, 183);">
+                      <i class="fab fa-yahoo mr-2"></i> Sign up with Yahoo
+                  </a> 
+                  <!-- <small id="emailHelp" class="form-text text-muted">By providing your information, you agree to our website's <a href="#">terms of use</a> and <a href="#">privacy policy</a>.</small>  -->
+                  </form>
+              </div>
+            </nav>
+          </header>
+        
+        </div>
+        <section class="booking">
+            <div class="booking-container">
+                <div class="card-body">
+                    <div id="hotels-tab" class="tab-content active">
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="hotel-destination">Going to</label>
+                            <input type="text" class="form-control" id="hotel-destination" name="hotel-destination" placeholder="Enter hotel destination">
+                            <i class="fas fa-map-marker-alt" onclick="cycleDestination()"></i>
+                            <div class="dropdown setLocation" id="dropdown-stay-location">
+                              <div onclick="selectDestination('Chicago', 'stay-location')">Chicago</div>
+                              <div onclick="selectDestination('Orlando', 'stay-location')">Orlando</div>
+                              <div onclick="selectDestination('Miami', 'stay-location')">Miami</div>
+                              <div onclick="selectDestination('New York', 'stay-location')">New York</div>
+                            </div>
+                        </div>
+                        
+                          <div class="form-group">
+                            <label for="check-in">Check-in Date</label>
+                            <input type="date" class="form-control" id="check-in" name="check-in">
+                          </div>
+                          <div class="form-group">
+                            <label for="check-out">Check-out Date</label>
+                            <input type="date" class="form-control" id="check-out" name="check-out">
+                          </div>
+                          <div class="form-group">
+                            <label for="adults">Travelers</label>
+                            <input type="number" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                            <table id="adultsTable" class="travelers-table">
+                              <tr>
+                                <td>Adults</td>
+                                <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                                <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                              </tr>
+                              <tr>
+                                <td>Children <br> (2 - 15)</td>
+                                <td>
+                                  <span class="decrement-btn" onclick="decrement('children')">-</span>
+                                  <span class="age-dropdown">
+                                    <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
+                                    <div class="age-dropdown-content" id="childrenAgeDropdown">
+                                      <a href="#" onclick="selectAge('children', 2)">2</a>
+                                      <a href="#" onclick="selectAge('children', 3)">3</a>
+                                      <!-- Add more age options as needed -->
+                                    </div>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="increment-btn" onclick="increment('children')">+</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Infants <br> (0 - 1)</td>
+                                <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                                <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                              </tr>
+                            </table>
+                          </div>
+                          <div class="form-group">
+                            <label for="rooms">Rooms</label>
+                            <input type="number" class="form-control" id="rooms" name="rooms" min="1">
+                          </div>
+                          <!-- Add more hotel-related fields as needed -->
+                          <button type="submit" class="btn btn-warning btn-xs">Search Hotels</button>
+                        </form>
+                      </div>
+                  </div>
+                  </div>
+                  </section>
+                  
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Primary Sidebar -->
+            <aside class="col-lg-3 primary-sidebar">
+                <!-- Unique Features to Navigate Hotels -->
+                <h5>Filter results by:</h5>
+                <hr style="width: 100%;color:rgb(9, 11, 37)">
+                <!-- Filter 1: Destination -->
+                <div class="form-group results">
+                    <label for="destination">Search proerty by name:</label>
+                    <input type="text" class="form-control" id="destination" name="destination" placeholder="Enter property name">
+                </div>
+                <hr style="width: 100%;color:rgb(9, 11, 37)">
+                <div class="form-group results">
+                    <label>Popular filters:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hotel">
+                        <label class="form-check-label" for="hotel">
+                            Free Breakfast
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                          Free Wifi
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                          Air Conditioning
+                        </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="hostel">
+                            <label class="form-check-label" for="hostel">
+                              Heating
+                            </label>
+                            </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                          TV/Cable
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                          Pet-friendly
+                        </label>
+                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                           Parking 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                          Wheel Chair Accessible
+                        </label>
+                    </div>
+                   
+                    </div>
+                    <hr style="width: 100%;color:rgb(9, 11, 37)">
+                <!-- Filter 2: Price Range -->
+                <!-- <div class="form-group results">
+                    <label for="priceRange">Price Range:</label>
+                    <input type="range" class="form-control" id="priceRange" name="priceRange">
+                </div> -->
+                <!-- <hr style="width: 100%;color:rgb(9, 11, 37)"> -->
+                <!-- Filter 3: Amenities -->
+                <div class="form-group results">
+                    <label>Property Type:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hotel">
+                        <label class="form-check-label" for="hotel">
+                           Hotel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hotel">
+                        <label class="form-check-label" for="hotel">
+                           Apartment
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hotel">
+                        <label class="form-check-label" for="hotel">
+                           House
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                            Villa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="house">
+                        <label class="form-check-label" for="house">
+                            Resort
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="apartment">
+                        <label class="form-check-label" for="condo"> Condo
+                        </label>
+                    </div>
+                   
+                </div>
+                <hr style="width: 100%;color:rgb(9, 11, 37)">
+                <!-- Filter 4: Ratings -->
+                <div class="form-group results">
+                    <label for="ratings">Property Rating:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="five-star">
+                        <label class="form-check-label" for="Rating">  5 star
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="four-star">
+                        <label class="form-check-label" for="Rating">  4+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="four-star">
+                        <label class="form-check-label" for="Rating">  4 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="three-star">
+                        <label class="form-check-label" for="Rating">  3+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="three-star">
+                        <label class="form-check-label" for="Rating">  3 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="apartment">
+                        <label class="form-check-label" for="Rating"> 2+
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="apartment">
+                        <label class="form-check-label" for="Rating"> 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hotel">
+                        <label class="form-check-label" for="Rating"> 1 star
+                        </label>
+                        <hr style="width: 100%;color:rgb(9, 11, 37)">
+                </div>
+                <!-- Filter 5: Amenities -->
+                <div class="form-group results">
+                    <label>Amenities:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="pool">
+                            <label class="form-check-label" for="pool">
+                              Room service
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                          Restaurant
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                           Swimming pool
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                            Hot tub
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                           Laundry facility
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                           Fitness center 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                           24 hour front desk 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                          Yoga room 
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                        Guest Kitchen   
+                        </label>
+                        </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                         Guest Phones 
+                        </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="hostel">
+                            <label class="form-check-label" for="hostel">
+                            Guest computers
+                            </label>
+                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="hostel">
+                            <label class="form-check-label" for="hostel">
+                             Personal Lockers
+                            </label>
+                            </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                           Library
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="pool">
+                        <label class="form-check-label" for="pool">
+                           Game room
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="hostel">
+                        <label class="form-check-label" for="hostel">
+                          Shuttle Service
+                        </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="hostel">
+                            <label class="form-check-label" for="hostel">
+                             EV charging
+                            </label>
+                            </div>
+                            <hr style="width: 100%;color:rgb(9, 11, 37)">
+                            <div class="form-group results">
+                                <label>Brands:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hotel">
+                                    <label class="form-check-label" for="hotel">
+                                      Hilton
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hotel">
+                                    <label class="form-check-label" for="hotel">
+                                       Choice Hotels
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hotel">
+                                    <label class="form-check-label" for="hotel">
+                                        IHG
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hostel">
+                                    <label class="form-check-label" for="hostel">
+                                        Wyndham 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="house">
+                                    <label class="form-check-label" for="house">
+                                       Marriott 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hotel">
+                                    <label class="form-check-label" for="hotel">
+                                       Best Western  
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="hotel">
+                                    <label class="form-check-label" for="hotel">
+                                       Radisson 
+                                    </label>
+                                </div>
+                                </div>
+                                </div>
+                    <!-- Add more amenities checkboxes as needed -->
+                <hr style="width: 100%;color:rgb(9, 11, 37)">
+                <!-- Apply Filters Button -->
+                <button style="margin:0 0 0 50px;" type="submit" class="btn btn-warning btn-filter">Apply Filters</button>
+            </aside>
+
+            <!-- Card Container -->
+            <main class="col-lg-7 custom-card-container">
+                <div class="sort-dropdown sm-container">
+                    <!-- Sort Dropdown -->
+                    <div class="sort-dropdown">
+                        <div class="dropdown">
+                            <button class="btn btn-transparent dropdown-toggle sort" type="button" id="sortDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sort by
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="sortDropdown">
+                                <a class="dropdown-item disabled" href="#">Sponsored</a>
+                                <a class="dropdown-item" href="#">Popularity </a>
+                                <a class="dropdown-item" href="#">Price (High to Low) </a>
+                                <a class="dropdown-item" href="#">Price (Low to High)</a>
+                                <a class="dropdown-item" href="#">Star Rating </a>
+                                <a class="dropdown-item" href="#">Guest Ratings </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Hotel Cards  -->
+                <div class="card custom-card">
+                    <!-- Show-in-Map Link (Top Right) - Using MapQuest (Replace 'LATITUDE' and 'LONGITUDE' with actual values) -->
+                    <!-- <a href="https://www.mapquest.com/maps?lat=LATITUDE&lon=LONGITUDE" target="_blank" class="show-in-map-link" style="position: absolute; top: 10px; right: 10px;"><i class="fas fa-map-marker-alt"></i></a>
+             -->
+                    <img src="file:///Users/admin/github/bnbspot.github.io/images/WhatsApp-Image-2023-09-13-at-14.12.14-525x328.jpeg" class="card-img-top custom-card-img" alt="Hotel Image">
+                    <div class="card-body custom-card-body">
+                        <h5 class="custom-card-title">Freehand</h5>
+                        <h6 class="custom-card-subtitle mb-2 text-muted">USA</h6>
+                        <p class="custom-card-text">A vibrant and charming lodge with a laid-back atmosphere that offers flexible rooming options along with a resort-style pool.</p>
+                        <p class="custom-card-text"></p>
+                        <p class="custom-card-text">Star Rating: <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+            
+                        <!-- User Reviews Link with Number of Reviews -->
+                        <p class="custom-card-text">
+                            <i class="fas fa-comment-alt"></i> guest ratings: 7.2
+                            <span class="review-count"> (23 reviews)</span>
+                        </p>
+                        <!-- Second Row for Amenities with Icons and Labels -->
+                        <div class="amenities">
+                            <span title="Wi-Fi"><i class="fas fa-wifi"></i> Wi-Fi</span>
+                            <span title="Swimming Pool"><i class="fas fa-swimming-pool"></i> Pool</span>
+                            <!-- Add more amenities as needed -->
+                        </div>
+            
+                        <!-- Add more details -->
+                        <a href="#" class="btn btn-warning custom-card-btn">See Availability</a>
+
+                        <button class="btn btn-outline-danger btn-favorite" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <!-- Styled Heart Icon/Button for Saving Favorite Listing -->
+                        <button class="btn btn-primary btn-share" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </button>
+                        <!-- Styled Heart Icon/Button for Saving Favorite Listing -->
+                        
+                    </div>
+                </div>
+                <div class="card custom-card">
+                      <!-- Show-in-Map Link (Top Right) - Using MapQuest (Replace 'LATITUDE' and 'LONGITUDE' with actual values) -->
+                    <!-- <a href="https://www.mapquest.com/maps?lat=LATITUDE&lon=LONGITUDE" target="_blank" class="show-in-map-link" style="position: absolute; top: 10px; right: 10px;"><i class="fas fa-map-marker-alt"></i></a> -->
+                    <img src="file:///Users/admin/github/bnbspot.github.io/images/Fairfield+Inn+and+Suites_New+Orleans,+LA_Campo+Architects+(4).JPG" class="card-img-top custom-card-img" alt="Hotel Image">
+                    <div class="card-body custom-card-body">
+                        <h5 class="custom-card-title">Hi Hostel</h5>
+                        <h6 class="custom-card-subtitle mb-2 text-muted">USA</h6>
+                        <p class="custom-card-text">An international abode with central locations offering private boarding and other accomodations.</p>
+                        <p class="custom-card-text"></p>
+                        <p class="custom-card-text">Star Rating: <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+            
+                        <!-- User Reviews Link with Number of Reviews -->
+                        <p class="custom-card-text">
+                            <i class="fas fa-comment-alt"></i> guest ratings: 7.4
+                            <span class="review-count"> (75 reviews)</span>
+                        </p>
+                        <!-- Second Row for Amenities with Icons and Labels -->
+                        <div class="amenities">
+                            <span title="Free breakfast"><i class="fa-solid fa-mug-saucer"></i>Free breakfast</span>
+                            <!-- Add more amenities as needed -->
+                        </div>
+            
+                        <!-- Add more details -->
+                        <a href="#" class="btn btn-warning custom-card-btn">See Availability</a>
+                        <a href="#" class="btn btn-outline-danger btn-favorite" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <!-- Styled Heart Icon/Button for Saving Favorite Listing -->
+                        <a href="#" class="btn btn-primary btn-share" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card custom-card">
+                   <!-- Show-in-Map Link (Top Right) - Using MapQuest (Replace 'LATITUDE' and 'LONGITUDE' with actual values) -->
+                   <!-- <a href="https://www.mapquest.com/maps?lat=LATITUDE&lon=LONGITUDE" target="_blank" class="show-in-map-link" style="position: absolute; top: 10px; right: 10px;"><i class="fas fa-map-marker-alt"></i></a> -->
+                    <img src="file:///Users/admin/github/bnbspot.github.io/images/1350977.jpg" class="card-img-top custom-card-img" alt="Hotel Image">
+                    <div class="card-body custom-card-body">
+                        <h5 class="custom-card-title">Hyatt</h5>
+                        <h6 class="custom-card-subtitle mb-2 text-muted">USA, Worldwide</h6>
+                        <p class="custom-card-text">One of the biggest names in hospitality when it comes to providing guests with world class services.</p>
+                        <p class="custom-card-text"></p>
+                        <p class="custom-card-text">Star Rating: <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+            
+                        <!-- User Reviews Link with Number of Reviews -->
+                        <p class="custom-card-text">
+                            <i class="fas fa-comment-alt"></i> guest ratings: 8.0
+                            <span class="review-count"> (1123 reviews)</span>
+                        </p>
+                        <!-- Second Row for Amenities with Icons and Labels -->
+                        <div class="amenities">
+
+                            <span title="Shuttle service"><i class="fa-solid fa-bus"></i></i>Shuttle service</span>
+                            <!-- Add more amenities as needed -->
+                        </div>
+            
+                        <!-- Add more details -->
+                        <a href="#" class="btn btn-warning custom-card-btn">See Availability</a>
+                        <a href="#" class="btn btn-outline-danger btn-favorite" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary btn-share" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+                </div>
+                    <div class="card custom-card">
+               <!-- Show-in-Map Link (Top Right) - Using MapQuest (Replace 'LATITUDE' and 'LONGITUDE' with actual values) -->
+               <!-- <a href="https://www.mapquest.com/maps?lat=LATITUDE&lon=LONGITUDE" target="_blank" class="show-in-map-link" style="position: absolute; top: 10px; right: 10px;"><i class="fas fa-map-marker-alt"></i></a> -->
+                        <img src="file:///Users/admin/github/bnbspot.github.io/images/31006274-sunset-view-in-las-vegas.jpg" class="card-img-top custom-card-img" alt="Hotel Image">
+                        <div class="card-body custom-card-body">
+                            <h5 class="custom-card-title">Marriott</h5>
+                            <h6 class="custom-card-subtitle mb-2 text-muted">USA</h6>
+                            <p class="custom-card-text">A standout in the entertainment capital of the world with luxurious suites and more.</p>
+                            <p class="custom-card-text"></p>
+                        <p class="custom-card-text">Star Rating: <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+            
+                        <!-- User Reviews Link with Number of Reviews -->
+                        <p class="custom-card-text">
+                            <i class="fas fa-comment-alt"></i> guest ratings: 7.5
+                            <span class="review-count"> (420 reviews)</span>
+                        </p>
+                        <!-- Second Row for Amenities with Icons and Labels -->
+                        <div class="amenities">
+
+                            <span title="Shuttle service"><i class="fa-solid fa-dumbbell"></i></i>Fitness center</span>
+                            <span title="Shuttle service"><i class="fa-solid fa-spa"></i></i>Spa</span>
+                            <!-- Add more amenities as needed -->
+                        </div>
+            
+                        <!-- Add more details -->
+                        <a href="#" class="btn btn-warning custom-card-btn">See Availability</a>
+                        <a href="#" class="btn btn-outline-danger btn-favorite" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary btn-share" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card custom-card">
+ <!-- Show-in-Map Link (Top Right) - Using MapQuest (Replace 'LATITUDE' and 'LONGITUDE' with actual values) -->
+ <!-- <a href="https://www.mapquest.com/maps?lat=LATITUDE&lon=LONGITUDE" target="_blank" class="show-in-map-link" ><i class="fas fa-map-marker-alt"></i></a> -->
+                    <img src="file:///Users/admin/github/bnbspot.github.io/images/dda3d967-84d3-4533-b7f7-f1c5fb514326-large16x9_Flamingo%202.jpg" class="card-img-top custom-card-img" alt="Hotel Image">
+                    <div class="card-body custom-card-body">
+                        <h5 class="custom-card-title">Wyndham Hotels and Resorts</h5>
+                        <h6 class="custom-card-subtitle mb-2 text-muted">USA, Worldwide</h6>
+                        <p class="custom-card-text">Description of the hotel or stay.</p>
+                        <p class="custom-card-text"></p>
+                        <p class="custom-card-text">Star Rating: <span class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+            
+                        <!-- User Reviews Link with Number of Reviews -->
+                        <p class="custom-card-text">
+                            <i class="fas fa-comment-alt"></i> guest ratings: 7.3
+                            <span class="review-count"> (101 reviews)</span>
+                        </p>
+                        <!-- Second Row for Amenities with Icons and Labels -->
+                        <div class="amenities">
+                            <span title="Shuttle service"><i class="fa-solid fa-spa"></i></i>Spa</span>
+                            <span title="Shuttle service"><i class="fa-solid fa-bell-concierge"></i>Room service</span>
+                            <!-- Add more amenities as needed -->
+                        </div>
+            
+                        <!-- Add more details -->
+                        <a href="#" class="btn btn-warning custom-card-btn">See Availability</a>
+                        <a href="#" class="btn btn-outline-danger btn-favorite" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <!-- Styled Heart Icon/Button for Saving Favorite Listing -->
+                        <a href="#" class="btn btn-primary btn-share" data-toggle="tooltip" data-placement="top" title="Save to Favorites">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                    </div>
+                </div>
+             
+
+               <!-- Add this instead of the pagination -->
+    <div id="infinite-scroll-btn" class="hidden" onclick="loadMoreCards()">
+        Load More<i style="margin-left: 12px;" class="fas fa-arrow-down"></i>
+    </div>
+    
+
+            </main>
+
+             <!-- Secondary Sidebar -->
+             <!-- <aside class="col-lg-3 secondary-sidebar"> -->
+                <!-- Advertising Space -->
+                <!-- <div class="ad-space">
+                    <img src="ad-image.jpg" alt="Advertisement" class="img-fluid">
+                </div> -->
+
+                <!-- Add more ad spaces as needed -->
+            </aside>
+            </div>
+            </div>
+            <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbox()">
+                <img style="width: 50px; height: 50px" src="file:///Users/admin/github/bnbspot.github.io/images/1f44b.png" alt="Hello">
+              </div>
+              <div class="chatsupport" id="chatsupport" style="display: none;">
+                <div class="chat-header">
+                  <img style="width: 30px; height: 30px; margin-right:15px" src="file:///Users/admin/github/bnbspot.github.io/images/1f44b.png" alt="Hello">Hi there,
+                </div>
+                <div id="chat-messages" class="chat-messages"></div>
+                <div class="chat-input">
+                  <input type="text" id="user-input" placeholder="Type your question...">
+                  <button onclick="sendMessage()">Send</button>
+                </div>
+              </div>
+              
+              
+        </section>
+            <section class="footer">
+                <footer>
+                  <div class="footer-container">
+                    <div class="footer-section">
+                      <h3 class="footer-heading">About Us</h3>
+                      <ul class="footer-menu">
+                        <li class="footer-link">
+                          <a class="active" href="http://#">List your property</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-section">
+                      <h3 class="footer-heading">Legal</h3>
+                      <ul class="footer-menu">
+                        <li class="footer-link">
+                          <a class="active" href="http://#">Terms of Use</a>
+                        </li>
+                        <li class="footer-link">
+                          <a class="active" href="http://#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-link">
+                          <a class="active" href="http://#">Cookie Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-section">
+                      <h3 class="footer-heading">Follow Us</h3>
+                      <ul class="footer-menu">
+                        <li class="footer-link">
+                          <a class="active" href="http://#">Instagram</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="newsletter-container">
+                    <h4>Join our members program</h4>
+                    <p>Receive exclusive discounts, reward offers, and more!</p>
+                    <form action="#" method="post" class="subscribe-form">
+                        <!-- <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required> -->
+                        <button class="btn btn-warning sub" type="submit">Join Now</button>
+                    </form>
+                </div>
+                  <p>&copy; 2023 Wordpress</p>
+                </footer>
+              </section>
+              </div>
+
+        </div>
+    </div>
+    <!-- JavaScript for inline validation -->
+<script>
+    document.getElementById('hotel-destination').addEventListener('input', function () {
+        if (this.validity.patternMismatch) {
+            this.setCustomValidity('Please enter a valid destination.');
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const maxCards = 5;
+    let currentCards = 0;
+
+    const infiniteScrollContainer = document.getElementById("infinite-scroll-container");
+    const infiniteScrollBtn = document.getElementById("infinite-scroll-btn");
+
+    function isScrollAtBottom() {
+        return window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+    }
+
+    function loadMoreCards() {
+        // Simulate loading cards, replace this with your actual card loading logic
+        const card = document.createElement("div");
+        card.className = "card custom-card";
+        card.innerHTML = `
+            <!-- Your card structure goes here -->
+            <!-- Update the content dynamically -->
+        `;
+        infiniteScrollContainer.appendChild(card);
+        currentCards++;
+
+        // Hide the infinite scroll button when the maximum cards are reached
+        if (currentCards >= maxCards) {
+            infiniteScrollBtn.classList.add("hidden");
+        }
+    }
+
+    window.addEventListener("scroll", function () {
+        if (isScrollAtBottom() && currentCards < maxCards) {
+            infiniteScrollBtn.classList.remove("hidden");
+        } else {
+            infiniteScrollBtn.classList.add("hidden");
+        }
+    });
+
+    // Initially hide the infinite scroll button if the cards are less than the maximum
+    if (currentCards >= maxCards) {
+        infiniteScrollBtn.classList.add("hidden");
+    }
+});
+</script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Additional Scripts for Maps (e.g., Leaflet) -->
+    <!-- Include the necessary scripts for your chosen map library -->
+
+    <script>
+        // Initialize and customize your map here using JavaScript
+        // Example using Leaflet: https://leafletjs.com/examples/quick-start/
+    </script>
+     <script>
+        var destinations = ['Chicago', 'Orlando', 'Miami', 'New York'];
+        var currentIndex = 0;
+
+        function cycleDestination() {
+            currentIndex = (currentIndex + 1) % destinations.length;
+            document.getElementById('hotel-destination').value = destinations[currentIndex];
+        }
+
+        function selectDestination(destination) {
+            document.getElementById('hotel-destination').value = destination;
+            document.getElementById('destination-dropdown').style.display = 'none';
+        }
+
+        // Hide dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            var dropdown = document.getElementById('destination-dropdown');
+            var icon = document.querySelector('.fa-location-arrow');
+            if (!dropdown.contains(event.target) && !icon.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>

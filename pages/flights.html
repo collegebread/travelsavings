@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Include FontAwesome CSS (Add this to your HTML head) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpMI6jji/Em5CEItg8xdOWnxYf5X38W5UcQDgC4ZL/GS1Y+Uhe9qC5aF5F/hhQaJbnazbapb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Native Scripts-->
+    <script src="index.js"></script>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+</head>
+<body>
+
+      <!-- Navigation Bar -->
+      <div class="wrapper">
+        <header>
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <h1 class="logo">Website.com</h1>
+            </div>
+            <div class="navbar-links">
+              <a href="#" class="nav-link active-handler" data-toggle=""><i class="fas fa-home"></i>HOME</a>
+                <a href="#" class="nav-link active-target" data-toggle=""><i class="fas fa-plane"></i> FLIGHTS</a>
+                <a href="#" class="nav-link active-window" data-toggle=""><i class="fas fa-hotel"></i> HOTELS</a>
+                <a href="#" class="nav-link active-window"><i class="fas fa-map-marked-alt"></i> TOURS</a>
+                <a href="#" class="nav-link active-window"><i class="fas fa-book-open"></i> TRAVEL GUIDE</a>
+                <!-- Translate to Spanish Link -->
+                <a style="text-decoration: underline;" href="#" class="nav-link translate-link" onclick="translateToSpanish()"><i class="fas fa-globe"></i>EN</a>
+            </div>
+            <div class="dropdown">
+              <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"> Sign in</button>
+              <form class="dropdown-menu p-4">
+                <!-- <div class="mb-3">
+                  <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2"> Remember me </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary user-signin">Sign in</button> -->
+                <!-- <small id="emailHelp" class="form-text text-muted">By providing your email, you agree to our website's <a href="#">terms of use</a> and <a href="#">privacy policy</a>.</small> -->
+                <!-- <a href="#" class="small">Forgot Password?</a>
+                <div class="text-center mb-3">OR</div> -->
+                <!-- Google Sign-In -->
+                <a href="#" class="btn btn-danger btn-block mb-2" style="white-space: nowrap;">
+                    <i class="fab fa-google mr-2"></i> Sign in with Google
+                  </a>
+                <!-- Apple Sign-In -->
+                <a href="#" class="btn btn-black btn-block" style="white-space: nowrap; border: 1px solid black;">
+                    <i class="fab fa-apple mr-2"></i> Sign in with Apple
+                  </a>
+                  <!-- Yahoo Sign-In -->
+                  <a href="#" class="btn btn-purple btn-block mb-2" style="white-space: nowrap; color: white; background-color: rgb(115, 43, 183);">
+                    <i class="fab fa-yahoo mr-2"></i> Sign in with Yahoo
+                </a>
+                </form>
+            </div>
+          </nav>
+        </header>
+        </div>
+       <!--Booking Container-->
+    <section class="booking">
+      <div class="booking-container">
+        <div class="card-body">
+          <div id="flights-tab" class="tab-content active">
+            <form action="#" method="get">
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="booking-type" value="round-trip" checked> Round Trip </label>
+                <label>
+                  <input type="radio" name="booking-type" value="one-way"> One Way </label>
+              </div>
+              <div class="form-group">
+                <label for="from-destination">Leaving From</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" id="from-destination" placeholder="Enter your location">
+                </div>
+            </div>
+            
+              <div class="form-group">
+                <label for="to-destination">Going To</label>
+                <input type="text" class="form-control" id="to-destination" name="to-destination" placeholder="Enter arrival location">
+              </div>
+              <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" class="form-control" id="departure-date" name="departure-date">
+              </div>
+              <div class="form-group">
+                <label for="return-date">Return Date</label>
+                <input type="date" class="form-control" id="return-date" name="return-date">
+              </div>
+              <div class="form-group">
+                <label for="adults">Travelers</label>
+                <input type="text" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                <table id="adultsTable" class="travelers-table">
+                  <tr>
+                    <td>Adults</td>
+                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                  </tr>
+                  <tr>
+                    <td>Children <br> (2 - 15)</td>
+                    <td>
+                      <span class="decrement-btn" onclick="decrement('children')">-</span>
+                      <span class="age-dropdown">
+                        <a href="#" onclick="selectAge('children', 2)">2</a>
+                        <a href="#" onclick="selectAge('children', 3)">3</a>
+                        <!-- Add more age options as needed -->
+                      </span>
+                    </td>
+                    <td>
+                      <span class="increment-btn" onclick="increment('children')">+</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Infants <br> (0 - 1)</td>
+                    <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                  </tr>
+                </table>
+              </div>
+              <button type="submit" class="btn btn-warning btn-xs">Search Flights</button>
+            </form>
+          </div>
+      </div>
+    </section>
+        
+      </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Primary Sidebar -->
+            <aside class="col-lg-3 primary-sidebar">
+                <!-- Unique Features to Navigate Flights -->
+                <h2>Filters</h2>
+                <form>
+                    <!-- Destination Filter -->
+                    <div class="form-group results">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="form-control" id="destination" name="destination">
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="form-group results">
+                        <label for="price">Price:</label>
+                        <input type="range" class="form-control-range" id="price" name="price">
+                    </div>
+
+                    <!-- Airline Filter -->
+                    <div class="form-group results">
+                        <label for="airline">Airline:</label>
+                        <select class="form-control" id="airline" name="airline">
+                            <option value="">Select Airline</option>
+                            <option value="airline1">Airline 1</option>
+                            <option value="airline2">Airline 2</option>
+                            <!-- Add more options -->
+                        </select>
+                    </div>
+
+                    <!-- Additional Filters -->
+                    <!-- ...-->
+
+                    <!-- Apply Filters Button-->
+                    <button type="submit" class="btn btn-primary">Apply Filters</button>
+                </form>
+                <!-- Add more unique features -->
+            </aside>
+
+            <!-- Card Container -->
+            <main class="col-lg-6 card-container">
+                <!-- Flight Cards -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Flight ABC123</h5>
+                        <p class="card-text">Price: $300</p>
+                        <p class="card-text">Airline: Airline 1</p>
+                        <!-- Add more details -->
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Flight ABC123</h5>
+                      <p class="card-text">Price: $300</p>
+                      <p class="card-text">Airline: Airline 1</p>
+                      <!-- Add more details -->
+                      <a href="#" class="btn btn-primary">Book Now</a>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Flight ABC123</h5>
+                    <p class="card-text">Price: $300</p>
+                    <p class="card-text">Airline: Airline 1</p>
+                    <!-- Add more details -->
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Flight ABC123</h5>
+                  <p class="card-text">Price: $300</p>
+                  <p class="card-text">Airline: Airline 1</p>
+                  <!-- Add more details -->
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Flight ABC123</h5>
+                <p class="card-text">Price: $300</p>
+                <p class="card-text">Airline: Airline 1</p>
+                <!-- Add more details -->
+                <a href="#" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+
+                <!-- Repeat for other flight results -->
+
+                  <!-- Add this instead of the pagination -->
+    <div id="infinite-scroll-btn" class="hidden" onclick="loadMoreCards()">
+      Load More<i style="margin-left: 12px;" class="fas fa-arrow-down"></i>
+  </div>
+            </main>
+
+            <!-- Secondary Sidebar -->
+            <aside class="col-lg-3 secondary-sidebar">
+                <!-- Advertising Space -->
+                <div class="ad-space">
+                    <img src="ad-image.jpg" alt="Advertisement" class="img-fluid">
+                </div>
+
+                <!-- Add more ad spaces as needed -->
+            </aside>
+
+        </div>
+    </div>
+    <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbox()">
+      <img style="width: 50px; height: 50px" src="file:///Users/admin/github/bnbspot.github.io/images/1f44b.png" alt="Hello">
+    </div>
+    <div class="chatsupport" id="chatsupport" style="display: none;">
+      <div class="chat-header">
+        <img style="width: 30px; height: 30px; margin-right:15px" src="file:///Users/admin/github/bnbspot.github.io/images/1f44b.png" alt="Hello">Hi there,
+      </div>
+      <div id="chat-messages" class="chat-messages"></div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <script>
+      let chatboxVisible = false;
+      let inactivityTimer;
+    
+      function toggleChatbox() {
+        const chatbox = document.getElementById('chatsupport');
+        chatboxVisible = !chatboxVisible;
+        if (chatboxVisible) {
+          chatbox.style.display = 'block';
+          startInactivityTimer();
+          showGreeting();
+        } else {
+          chatbox.style.display = 'none';
+          clearTimeout(inactivityTimer);
+        }
+      }
+    
+      function showGreeting() {
+        const chatMessages = document.getElementById('chat-messages');
+        const greeting = "How can I assist you today? Please choose a topic or type your question.";
+        const greetingDiv = createMessageDiv(greeting, 'ai-message');
+        chatMessages.appendChild(greetingDiv);
+      }
+    
+      function startInactivityTimer() {
+        inactivityTimer = setTimeout(() => {
+          document.getElementById('chatsupport').style.display = 'none';
+          chatboxVisible = false;
+        }, 180000); // 3 minutes
+      }
+    
+      function sendMessage() {
+        const userInput = document.getElementById('user-input').value;
+        const chatMessages = document.getElementById('chat-messages');
+        // Add user message to the chat
+        chatMessages.innerHTML += `<div class="user-message">${userInput}</div>`;
+        // Get AI response based on user input
+        const aiResponse = getAIResponse(userInput);
+        chatMessages.innerHTML += `<div class="ai-message">${aiResponse}</div>`;
+        // Clear user input
+        document.getElementById('user-input').value = '';
+        // Scroll to the bottom of the chat
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        // Reset the inactivity timer
+        clearTimeout(inactivityTimer);
+        startInactivityTimer();
+      }
+    
+      function getAIResponse(userInput) {
+        // Implement logic to generate AI response based on user input
+        return 'AI Response';
+      }
+    
+      function createMessageDiv(message, className) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = className;
+        messageDiv.textContent = message;
+        return messageDiv;
+      }
+    </script>
+    
+    
+</section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-heading">About Us</h3>
+          <ul class="footer-menu">
+            <li class="footer-link">
+              <a class="active" href="http://#">List your property</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Legal</h3>
+          <ul class="footer-menu">
+            <li class="footer-link">
+              <a class="active" href="http://#">Terms of Use</a>
+            </li>
+            <li class="footer-link">
+              <a class="active" href="http://#">Privacy Policy</a>
+            </li>
+            <li class="footer-link">
+              <a class="active" href="http://#">Cookie Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Follow Us</h3>
+          <ul class="footer-menu">
+            <li class="footer-link">
+              <a class="active" href="http://#">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Newsletter Container -->
+      <div class="newsletter-container">
+        <h4>Join our members program</h4>
+        <p>Receive exclusive discounts, reward offers, and more!</p>
+        <form action="#" method="post" class="subscribe-form">
+            <!-- <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required> -->
+            <button class="btn btn-warning sub" type="submit">Join Now</button>
+        </form>
+    </div>
+      <p>&copy; 2023 Wordpress</p>
+    </footer>
+    
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Additional Scripts if needed -->
+
+</body>
+</html>

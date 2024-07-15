@@ -105,7 +105,18 @@ header {
   margin-left:-145px;
  
 }
+.password-container {
+    position: relative;
+    width: 100%;
+}
 
+.password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 .btn.btn-warning.dropdown-toggle{
   width: 100%;
   margin: 0 auto;

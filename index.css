@@ -84,7 +84,7 @@ header {
   margin-left: 24px;
 }
 
-.app-link::after {
+.import-navitems .app-link::after {
   content: "";
   position: absolute;
   left: 0;

@@ -74,13 +74,16 @@ header {
 }
 .import-navitems{
   position: relative;
+  display: flex;
+  flex-direction: row;
+  
 }
-.nav-link.location-link {
+.app-link {
   text-decoration: none;
   margin-left: 24px;
 }
 
-.nav-link.location-link::after {
+.app-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -89,7 +92,7 @@ header {
   border-bottom: 2px dotted;
 }
 
-.nav-link.translate-link{
+.translate-page{
   margin-left: 24px;
   text-decoration: underline;
   

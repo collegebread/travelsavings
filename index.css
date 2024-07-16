@@ -75,6 +75,7 @@ header {
 .nav-link.location-link {
   position: relative;
   text-decoration: none;
+  margin-left: 24px;
 }
 
 .nav-link.location-link::after {
@@ -87,7 +88,7 @@ header {
 }
 
 .nav-link.translate-link{
-  margin: 0 0 0 8px;
+  margin-left: 24px;
   text-decoration: underline;
   
   

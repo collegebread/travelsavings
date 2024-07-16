@@ -72,19 +72,14 @@ header {
   color:#ffbb00;
   
 }
-.import-navitems{
+
+.nav-link.location-link {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  left: 24px;
-  
-}
-.app-link {
   text-decoration: none;
   margin-left: 24px;
 }
 
-.import-navitems .app-link::after {
+.nav-link.location-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -93,7 +88,7 @@ header {
   border-bottom: 2px dotted;
 }
 
-.translate-page{
+.nav-link.translate-link{
   margin-left: 24px;
   text-decoration: underline;
   

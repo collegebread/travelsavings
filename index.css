@@ -87,6 +87,7 @@ header {
 }
 
 .nav-link.translate-link{
+  margin: 0 0 0 8px;
   text-decoration: underline;
   
   

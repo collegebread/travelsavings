@@ -76,6 +76,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
+  left: 24px;
   
 }
 .app-link {

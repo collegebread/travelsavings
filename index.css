@@ -72,8 +72,10 @@ header {
   color:#ffbb00;
   
 }
-.nav-link.location-link {
+.import-navitems{
   position: relative;
+}
+.nav-link.location-link {
   text-decoration: none;
   margin-left: 24px;
 }

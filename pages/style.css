@@ -70,6 +70,7 @@ header {
 .nav-link.location-link {
   position: relative;
   text-decoration: none;
+  margin-left: 24px;
 }
 
 .nav-link.location-link::after {

@@ -58,7 +58,7 @@ header {
  
 }
 .nav-link{
-  margin: 0 8px 0 4px; /* Pushes the links to the right */
+  margin: 0 8px 0 12px; /* Pushes the links to the right */
   text-decoration: none;
   text-indent: -18px;
   white-space: nowrap; /* Prevents wrapping to the next line */

@@ -110,7 +110,7 @@ header {
 
 .btn.btn-warning.dropdown-toggle{
   width: 100%;
-  margin: 0 -24px 0 0;
+  margin-right: 48px;
   
 }
 .btn.btn-primary.user-signin{

@@ -73,13 +73,13 @@ header {
   
 }
 
-.nav-link.app-call {
+.nav-link.call-app {
   position: relative;
   text-decoration: none;
   margin-left: 24px;
 }
 
-.nav-link.app-call::after {
+.nav-link.call-app::after {
   content: ""; 
   position: absolute;
   left: 0;
@@ -102,6 +102,7 @@ header {
 }
 .dropdown{
   position: relative;
+  right: 48px;
 }
 .dropdown-menu.p-4{
   width: 250px; 

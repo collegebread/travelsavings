@@ -62,8 +62,8 @@ header {
 }
 
 .nav-items .nav-link:hover {
-  color: rgb(255, 141, 226);
-  background-color: dimgray;
+  color: dimgray;
+ 
 }
 
 .fa-home,
@@ -212,13 +212,13 @@ header {
     max-width: 100%;
 }
 
-/* Underline animation effect for booking-container nav-links */
-.booking-container .nav-tabs {
+/* Underline animation effect for booking-container tabs */
+.booking-container .tabs {
     list-style: none;
     margin-right: 20px;
     padding: 0;
     display: flex;
-    margin-bottom: 10px; /* Add margin between nav-tabs and form */
+    margin-bottom: 10px; /* Add margin between tabs and form */
     
 }
 
@@ -228,7 +228,7 @@ header {
     
 }
 
-.booking-container .tab-link, .content-container .tab-link:hover {
+.booking-container .tab-item, .content-container .tab-item:hover {
     cursor: pointer;
     padding: 10px;
     text-align: center;
@@ -241,7 +241,7 @@ header {
     color: #000000;
 }
 
-.booking-container .tab-link::before {
+.booking-container .card .tab-item::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -255,8 +255,8 @@ header {
     box-sizing: border-box;
 }
 
-.booking-container .tab-link:hover::before,
-.booking-container .tab-link.active::before {
+.booking-container .tab-item:hover::before,
+.booking-container .tab-item.active::before {
     background-color: #ffcc00;
     transform: scaleX(1);
 }

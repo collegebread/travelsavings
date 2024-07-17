@@ -36,7 +36,7 @@ header {
   
 }
 
-.nav-brand {
+.navbar.nav-brand {
   flex: 1;
 }
 
@@ -48,7 +48,7 @@ header {
     text-decoration: none;
 }
 
-.nav-items {
+.navbar.nav-items {
   flex: 2;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ header {
  
  
 }
-.nav-link{
+.nav-items.nav-link{
   margin: 0 8px 0 12px; /* Pushes the links to the right */
   text-decoration: none;
   text-indent: -18px;
@@ -80,7 +80,7 @@ header {
 }
 
 .nav-link.app-call::after {
-  content: "";
+  content: ""; 
   position: absolute;
   left: 0;
   right: 15px;

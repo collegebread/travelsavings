@@ -222,13 +222,13 @@ header {
     
 }
 
-.booking-container .nav-item {
+.booking-container .tab-item {
     flex: 1;
     margin-right:5px; /* Adjust spacing between nav-items */
     
 }
 
-.booking-container .nav-link, .content-container .nav-link:hover {
+.booking-container .tab-link, .content-container .tab-link:hover {
     cursor: pointer;
     padding: 10px;
     text-align: center;
@@ -241,7 +241,7 @@ header {
     color: #000000;
 }
 
-.booking-container .nav-link::before {
+.booking-container .tab-link::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -255,8 +255,8 @@ header {
     box-sizing: border-box;
 }
 
-.booking-container .nav-link:hover::before,
-.booking-container .nav-link.active::before {
+.booking-container .tab-link:hover::before,
+.booking-container .tab-link.active::before {
     background-color: #ffcc00;
     transform: scaleX(1);
 }

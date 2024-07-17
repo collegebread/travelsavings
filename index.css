@@ -63,6 +63,7 @@ header {
 
 .nav-items .nav-link:hover {
   color: rgb(255, 141, 226);
+  background-color: dimgray;
 }
 
 .fa-home,

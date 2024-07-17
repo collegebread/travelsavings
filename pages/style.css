@@ -28,9 +28,9 @@ header {
     background-color: #030523;
     color: #000000;
     padding: 10px;
-    text-align: center;
+    text-align: center; 
 }
-* Navbar styles */
+
 .navbar {
   background-color: #030523;
   display: flex;

@@ -25,7 +25,7 @@ header {
     padding: 10px;
     text-align: center;
 }
-/* Navbar styles */
+* Navbar styles */
 .navbar {
   background-color: #030523;
   display: flex;
@@ -33,7 +33,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  
 }
 
 .navbar .nav-brand {
@@ -41,11 +40,11 @@ header {
 }
 
 .logo a,
-.logo a:hover{
-    color: rgb(255, 141, 226);
-    margin: 0;
-    font-family: Permanent Marker, cursive;
-    text-decoration: none;
+.logo a:hover {
+  color: rgb(255, 141, 226);
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
 }
 
 .navbar .nav-items {
@@ -53,30 +52,32 @@ header {
   display: flex;
   align-items: center;
   color: #fff;
- 
- 
- 
 }
-.nav-items .nav-link{
-  margin: 0 8px 0 12px; /* Pushes the links to the right */
+
+.nav-items .nav-link {
+  margin: 0 8px; /* Reducing the margin to bring links closer */
   text-decoration: none;
   text-indent: -18px;
   white-space: nowrap; /* Prevents wrapping to the next line */
-  
 }
-.nav-items .nav-link:hover{
-  color: rgb(255, 141, 226);
 
+.nav-items .nav-link:hover {
+  color: rgb(255, 141, 226);
 }
-.fa-home,.fa-plane,.fa-hotel,.fa-map-marked-alt,.fa-book-open{
-  color:#ffbb00;
-  
+
+.fa-home,
+.fa-plane,
+.fa-hotel,
+.fa-map-marked-alt,
+.fa-book-open {
+  color: #ffbb00;
 }
 
 .nav-link.call-app {
   position: relative;
   text-decoration: none;
-  margin-left: 44px;
+  margin-left: auto; /* Aligns to the right side */
+  margin-right: 16px; /* Adjust this value as needed */
 }
 
 .nav-link.call-app::after {
@@ -88,36 +89,35 @@ header {
   border-bottom: 2px dotted;
 }
 
-.nav-link.translate-call{
-  margin-left: 44px;
+.nav-link.translate-call {
+  margin-left: 0;
+  margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;
-  
-  
-
 }
-
 
 .nav-link::before {
   display: none; /* Hide the underline on navbar links */
 }
-.dropdown{
+
+.dropdown {
   position: relative;
-  right: 48px;
-}
-.dropdown-menu.p-4{
-  width: 250px; 
-  margin-left:-145px;
- 
+  margin-left: auto; /* Ensures the dropdown is aligned to the right */
 }
 
-.btn.btn-warning.dropdown-toggle{
-  width: 100%;
-  margin-right: 48px;
-  
+.dropdown-menu.p-4 {
+  width: 250px;
+  margin-left: -145px;
 }
-.btn.btn-primary.user-signin{
+
+.btn.btn-warning.dropdown-toggle {
+  width: 100%;
+  margin-right: 0;
+}
+
+.btn.btn-primary.user-signin {
   width: 100%;
 }
+
      /* Carousel Container Styles */
 .carousel-container {
     position: relative;

@@ -36,7 +36,7 @@ header {
   
 }
 
-.navbar-brand {
+.nav-brand {
   flex: 1;
 }
 
@@ -48,7 +48,7 @@ header {
     text-decoration: none;
 }
 
-.navbar-links {
+.nav-items {
   flex: 2;
   display: flex;
   align-items: center;
@@ -73,13 +73,13 @@ header {
   
 }
 
-.nav-link.location-link {
+.nav-link.app-call {
   position: relative;
   text-decoration: none;
   margin-left: 24px;
 }
 
-.nav-link.location-link::after {
+.nav-link.app-call::after {
   content: "";
   position: absolute;
   left: 0;
@@ -88,7 +88,7 @@ header {
   border-bottom: 2px dotted;
 }
 
-.nav-link.translate-link{
+.nav-link.translate-call{
   margin-left: 24px;
   text-decoration: underline;
   
@@ -97,7 +97,7 @@ header {
 }
 
 
-.navbar-link::before {
+.nav-link::before {
   display: none; /* Hide the underline on navbar links */
 }
 .dropdown{

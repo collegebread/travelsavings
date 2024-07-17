@@ -36,7 +36,7 @@ header {
   
 }
 
-.navbar.nav-brand {
+.navbar .nav-brand {
   flex: 1;
 }
 
@@ -48,7 +48,7 @@ header {
     text-decoration: none;
 }
 
-.navbar.nav-items {
+.navbar .nav-items {
   flex: 2;
   display: flex;
   align-items: center;
@@ -57,14 +57,14 @@ header {
  
  
 }
-.nav-items.nav-link{
+.nav-items .nav-link{
   margin: 0 8px 0 12px; /* Pushes the links to the right */
   text-decoration: none;
   text-indent: -18px;
   white-space: nowrap; /* Prevents wrapping to the next line */
   
 }
-.nav-link:hover{
+.nav-items .nav-link:hover{
   color: rgb(255, 141, 226);
 
 }

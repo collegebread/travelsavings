@@ -76,7 +76,7 @@ header {
 .nav-link.call-app {
   position: relative;
   text-decoration: none;
-  margin-left: 24px;
+  margin-left: 44px;
 }
 
 .nav-link.call-app::after {
@@ -89,7 +89,7 @@ header {
 }
 
 .nav-link.translate-call{
-  margin-left: 24px;
+  margin-left: 44px;
   text-decoration: underline;
   
   

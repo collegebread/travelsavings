@@ -76,7 +76,7 @@ header {
 .nav-link.call-app {
   position: relative;
   text-decoration: none;
-  margin-left: 64px;
+  margin-left: 44px;
 }
 
 .nav-link.call-app::after {
@@ -89,7 +89,7 @@ header {
 }
 
 .nav-link.translate-call{
-  margin-left: 64px;
+  margin-left: 44px;
   text-decoration: underline;
   
   
@@ -102,7 +102,7 @@ header {
 }
 .dropdown{
   position: relative;
-  right: 64px;
+  right: 48px;
 }
 .dropdown-menu.p-4{
   width: 250px; 

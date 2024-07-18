@@ -53,6 +53,7 @@ header {
 
  .git-repo.wordpress--themes{
   flex: 2;
+  flex-direction: row;
   
  }
 

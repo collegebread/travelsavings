@@ -19,7 +19,7 @@ a * {
    
 }
 .wrapper{
-    font-family: 'Poppins', sans-serif;
+  
     font-size: 24px;
     
 }
@@ -56,6 +56,7 @@ header {
   flex: 2;
   display: flex;
   align-items: center;
+  text-decoration: none;
   color: #fff;
 }
 
@@ -67,7 +68,7 @@ header {
 }
 
 .nav-items .nav-link:hover {
-  color: rgb(255, 141, 226);
+  color:white; 
 }
 
 .fa-home,

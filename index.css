@@ -55,7 +55,7 @@ header {
 }
 
 .nav-items .nav-link {
-  margin: 0 .8em 0 .8em; /* Reducing the margin to bring links closer */
+  margin: 0 12px 0 24px; /* Reducing the margin to bring links closer */
   text-decoration: none;
   text-indent: -20em;
   white-space: nowrap; /* Prevents wrapping to the next line */

@@ -25,29 +25,30 @@ header {
     padding: 10px;
     text-align: center;
 }
-*/* Navbar styles */
 .navbar {
   position: relative;
   background-color: #030523;
-  
-}
-
-.nav-items {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
 
-.nav-brand {
+.nav-items {
+  display: flex;
   flex: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo a, .logo a:hover{
-  margin: 0 0 0 12px;
-  text-decoration: none;
+.nav-brand {
+  margin-right: auto;
+}
+
+.logo a,
+.logo a:hover {
   font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
   color: rgb(255, 141, 226);
 }
 
@@ -86,7 +87,6 @@ header {
 
 .dropdown {
   display: flex;
-  
   justify-content: flex-end; /* Align dropdown to the right */
 }
 
@@ -102,7 +102,6 @@ header {
 .btn.btn-primary.user-signin {
   width: 100%;
 }
-
 
      /* Carousel Container Styles */
 .carousel-container {

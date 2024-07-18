@@ -47,6 +47,7 @@ header {
 
 .logo a,
 .logo a:hover {
+  text-indent: 12px;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
   color: rgb(255, 141, 226);
@@ -75,10 +76,21 @@ header {
   justify-content: flex-end; /* Align elements to the right */
 }
 
-.git-plugin {
+.plugin {
   margin: 0 8px; /* Add slight indentation between elements */
   text-decoration: none;
   color: #ffffff;
+}
+.plugin.id-app::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  right: 15px;
+  bottom: 10px; /* Adjust this value to position the line as needed */
+  border-bottom: 2px dotted;
+}
+.plugin.id-translator{
+  text-decoration: underline;
 }
 
 .git-plugin:hover {

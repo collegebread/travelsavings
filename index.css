@@ -61,11 +61,6 @@ header {
   text-indent: -18px;
   white-space: nowrap; /* Prevents wrapping to the next line */
 }
-.nav-items .nav-link.active-window,
-.nav-items .nav-link.disabled {
-  /* Move these links more to the left */
-  margin-left: -12px; /* Adjust this value as needed */
-}
 
 .nav-items .nav-link:hover {
   color: dimgray;
@@ -107,9 +102,7 @@ header {
 }
 
 .dropdown {
-  position: relative;
   margin-left: auto; /* Ensures the dropdown is aligned to the right */
-  white-space: nowrap;
 }
 
 .dropdown-menu.p-4 {

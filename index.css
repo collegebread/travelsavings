@@ -103,7 +103,7 @@ header {
 
 .dropdown {
   position: relative;
-  width: 100%;
+  
   margin-right: 24%px; /* Ensures the dropdown is aligned to the right */
 
 }

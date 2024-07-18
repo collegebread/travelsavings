@@ -75,14 +75,14 @@ header {
   color: #ffbb00;
 }
 
-.nav-import.call-app {
+.nav-link.call-app {
   position: relative;
   text-decoration: none;
   margin-left: auto; /* Aligns to the right side */
   margin-right: 16px; /* Adjust this value as needed */
 }
 
-.nav-import.call-app::after {
+.nav-link.call-app::after {
   content: ""; 
   position: absolute;
   left: 0;
@@ -91,7 +91,7 @@ header {
   border-bottom: 2px dotted;
 }
 
-.nav-import.call-translator {
+.nav-link.translate-call {
   margin-left: 0;
   margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;

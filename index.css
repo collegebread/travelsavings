@@ -45,7 +45,7 @@ header {
 
 .logo a,
 .logo a:hover {
-  margin: auto; 
+  margin-right: auto; 
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
   color: rgb(255, 141, 226);
@@ -53,7 +53,7 @@ header {
 
  .git-repo.wordpress--themes{
   flex: 2;
-  position: relative;
+  
  }
 
  .git-page {

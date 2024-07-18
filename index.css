@@ -103,9 +103,8 @@ header {
 
 .dropdown {
   position: relative;
-  
-  margin-right: 24%px; /* Ensures the dropdown is aligned to the right */
-
+  margin-left: auto; /* Ensures the dropdown is aligned to the right */
+  white-space: nowrap;
 }
 
 .dropdown-menu.p-4 {

@@ -45,21 +45,23 @@ header {
 
 .logo a,
 .logo a:hover {
-  color: rgb(255, 141, 226);
-  margin: 0;
+  margin: auto; 
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
+  color: rgb(255, 141, 226);
 }
 
- .git-theme.wordpress--themes{
+ .git-repo.wordpress--themes{
   flex: 2;
+  position: relative;
  }
 
  .git-page {
-  margin: 0 8px; /* Reducing the margin to bring links closer */
+  margin: 0 8px 0  8px; /* Reducing the margin to bring links closer */
   text-decoration: none;
-  text-indent: -18px;
+  text-indent: 4px;
   white-space: nowrap; /* Prevents wrapping to the next line */
+  color: #ffffff;
 }
 
 .git-page:hover {

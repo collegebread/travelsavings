@@ -29,27 +29,25 @@ header {
 .navbar {
   position: relative;
   background-color: #030523;
+  
+}
+
+.nav-items {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
 
-.nav-items {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .nav-brand {
-  margin-right: auto;
+  flex: 1;
 }
 
-.logo a,
-.logo a:hover {
-  font-family: 'Permanent Marker', cursive;
+.logo {
+  margin: 0 0 0 24px;
   text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
   color: rgb(255, 141, 226);
 }
 

@@ -54,7 +54,6 @@ header {
 .git-repo.wordpress--themes {
   display: flex;
   flex: 2;
-  left: 24px;
   justify-content: center; /* Center the elements inside the git-repo wordpress--themes class */
 }
 
@@ -72,7 +71,6 @@ header {
 .git-repo.plugins {
   display: flex;
   flex: 3;
-  right: 18px; 
   justify-content: flex-end; /* Align elements to the right */
 }
 
@@ -88,7 +86,7 @@ header {
 
 .dropdown {
   display: flex;
-  right: 12px;
+  
   justify-content: flex-end; /* Align dropdown to the right */
 }
 

@@ -72,6 +72,7 @@ header {
 .git-repo.plugins {
   display: flex;
   flex: 3;
+  right: 24px;
   justify-content: flex-end; /* Align elements to the right */
 }
 
@@ -87,6 +88,7 @@ header {
 
 .dropdown {
   display: flex;
+  right: 1.5rem;
   justify-content: flex-end; /* Align dropdown to the right */
 }
 

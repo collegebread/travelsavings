@@ -27,7 +27,11 @@ header {
 }
 * Navbar styles */
 .navbar {
+  position: relative;
   background-color: #030523;
+
+}
+.nav-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,7 +39,7 @@ header {
   padding: 10px;
 }
 
-.navbar .nav-brand {
+.nav-brand {
   flex: 1;
 }
 
@@ -47,42 +51,41 @@ header {
   text-decoration: none;
 }
 
-.navbar .nav-items {
+ .git-theme.wordpress--themes{
   flex: 2;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-}
+ }
 
-.nav-items .nav-link {
+ .git-page {
   margin: 0 8px; /* Reducing the margin to bring links closer */
   text-decoration: none;
   text-indent: -18px;
   white-space: nowrap; /* Prevents wrapping to the next line */
 }
 
-.nav-items .nav-link:hover {
+.git-page:hover {
   color: dimgray;
  
 }
 
-.fa-home,
+/* .fa-home,
 .fa-plane,
 .fa-hotel,
 .fa-map-marked-alt,
 .fa-book-open {
   color: #ffbb00;
+} */
+
+.git-repo.plugins{
+  flex :3 ;
 }
 
-.nav-link.call-app {
-  position: relative;
+.git-plugin.id-app {
   text-decoration: none;
   margin-left: auto; /* Aligns to the right side */
   margin-right: 16px; /* Adjust this value as needed */
 }
 
-.nav-link.call-app::after {
+.git-plugin.id-app::after {
   content: ""; 
   position: absolute;
   left: 0;
@@ -91,7 +94,7 @@ header {
   border-bottom: 2px dotted;
 }
 
-.nav-link.translate-call {
+.git-plugin.id-translator {
   margin-left: 0;
   margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;
@@ -102,7 +105,7 @@ header {
 }
 
 .dropdown {
-  margin-left: auto; /* Ensures the dropdown is aligned to the right */
+  flex: 4;
 }
 
 .dropdown-menu.p-4 {

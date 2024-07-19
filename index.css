@@ -100,7 +100,7 @@ header {
   pointer-events: none; /* Disable the link */
 }
 
-.nav.dropdown {
+.dropdown {
   display: flex;
   justify-content: flex-end; /* Align dropdown to the right */
   margin-right: 24px; /* Shift elements more to the right */

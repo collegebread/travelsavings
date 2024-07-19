@@ -47,7 +47,7 @@ header {
 
 .import-logo a,
 .import-logo a:hover {
-  text-indent: 12px;
+  margin-left: 24px;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
   color: rgb(255, 141, 226);

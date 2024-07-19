@@ -45,8 +45,8 @@ header {
   margin-right: auto;
 }
 
-.logo a,
-.logo a:hover {
+.import-logo a,
+.import-logo a:hover {
   text-indent: 12px;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
@@ -70,7 +70,7 @@ header {
   color: dimgray;
 }
 
-.git-repo.plugins {
+.git-repo.plugins--web {
   display: flex;
   flex: 3;
   justify-content: flex-end; /* Align elements to the right */
@@ -81,7 +81,7 @@ header {
   text-decoration: none;
   color: #ffffff;
 }
-.plugin.id-app::after {
+.source.host-ip::after {
   content: ""; 
   position: absolute;
   left: 0;
@@ -89,7 +89,7 @@ header {
   bottom: 10px; /* Adjust this value to position the line as needed */
   border-bottom: 2px dotted;
 }
-.plugin.id-translator{
+.source.host-ip{
   text-decoration: underline;
 }
 

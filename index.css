@@ -45,8 +45,8 @@ header {
   margin-right: auto;
 }
 
-.import-logo a,
-.import-logo a:hover {
+.custom-logo a,
+.custom-logo a:hover {
   margin-left: 24px;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
@@ -92,7 +92,7 @@ header {
   text-decoration: underline;
   color: white;
 }
-.dropdown {
+.nav.dropdown {
   display: flex;
   justify-content: flex-end; /* Align dropdown to the right */
 }

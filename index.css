@@ -76,7 +76,7 @@ header {
   justify-content: flex-end; /* Align elements to the right */
 }
 
-.plugin {
+.source {
   margin: 0 8px; /* Add slight indentation between elements */
   text-decoration: none;
   color: #ffffff;

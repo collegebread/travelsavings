@@ -73,13 +73,13 @@ header {
   color: #ffffff;
 }
 
-.source.host-ip.mobile--app {
+.source.mobile--app {
   position: relative;
   text-decoration: none;
   margin-left: auto; /* Aligns to the right side */
   margin-right: 16px; /* Adjust this value as needed */
 }
-.source.host-ip.mobile--app::after {
+.source.mobile--app::after {
   content: ""; 
   position: absolute;
   left: 0;
@@ -87,7 +87,7 @@ header {
   bottom: 10px; /* Adjust this value to position the line as needed */
   border-bottom: 2px dotted;
 }
-.source.host-ip.translator{
+.source.host-translator{
   margin-left: 0;
   margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;

@@ -55,62 +55,67 @@ header {
   color: rgb(255, 141, 226);
 }
 
-.wp.themes {
-  display: flex;
-  width: auto;
+.navbar .nav-items {
   flex: 2;
-  margin-left: 128px; /* Shift elements more to the left */
-  justify-content: center; /* Center the elements inside the wp themes class */
-  text-indent: 24px;
-}
-
-.host-page, .host-page:hover,.nth-page, .nth-page:hover {
-  margin: 0 12px; /* Add slight indentation between elements */
-  text-decoration: none;
-  white-space: nowrap; /* Prevents wrapping to the next line */
-  color: #ffffff;
-}
-
-.net.plugins {
   display: flex;
-  width: auto;
-  flex: 3;
-  margin-right: 32px; /* Shift elements more to the right */
-  justify-content: flex-end; /* Align elements to the right */
-  color: #ffffff;
+  align-items: center;
   text-decoration: none;
+  color: #fff;
 }
 
-.mobile-app,.mobile-app:hover{
+.nav-items .nav-link {
+  margin: 0 8px; /* Reducing the margin to bring links closer */
   text-decoration: none;
-  margin: 0 16px; /* Add slight indentation between elements */
-  color: white;
+  text-indent: -18px;
+  white-space: nowrap; /* Prevents wrapping to the next line */
 }
 
-.mobile-app::after {
-  content: "";
+.nav-items .nav-link:hover {
+  color:white; 
+}
+
+.fa-home,
+.fa-plane,
+.fa-hotel,
+.fa-map-marked-alt,
+.fa-book-open {
+  color: #ffbb00;
+}
+
+.nav-link.call-app {
+  position: relative;
+  text-decoration: none;
+  margin-left: auto; /* Aligns to the right side */
+  margin-right: 16px; /* Adjust this value as needed */
+}
+
+.nav-link.call-app::after {
+  content: ""; 
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: -2px; /* Adjust this value to position the line as needed */
-  border-bottom: 2px dotted #ffffff;
+  right: 15px;
+  bottom: 10px; /* Adjust this value to position the line as needed */
+  border-bottom: 2px dotted;
 }
 
-.translator {
+.nav-link.translate-call {
+  margin-left: 0;
+  margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;
-  color: #ffffff;
-  pointer-events: none; /* Disable the link */
+}
+
+.nav-link::before {
+  display: none; /* Hide the underline on navbar links */
 }
 
 .dropdown {
-  display: flex;
-  width: auto;
-  justify-content: flex-end; /* Align dropdown to the right */
-  margin-right: 24px; /* Shift elements more to the right */
+  position: relative;
+  margin-left: auto; /* Ensures the dropdown is aligned to the right */
 }
 
 .dropdown-menu.p-4 {
   width: 250px;
+  margin-left: -145px;
 }
 
 .btn.btn-warning.dropdown-toggle {

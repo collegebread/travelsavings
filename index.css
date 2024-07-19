@@ -19,114 +19,104 @@ a {
     font-size: 24px;
 }
 
+
 header {
-    background-color: #030523;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
-}
-/* Navbar styles */
-.navbar {
-  position: relative;
   background-color: #030523;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: #000000;
   padding: 10px;
-  overflow: hidden; /* Ensure no scrollbar appears */
+  text-align: center; 
 }
 
-.nav-items {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+background-color: #030523;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
 }
 
-.nav-brand {
-  margin: auto;
+.navbar .nav-brand {
+flex: 1;
 }
 
-.custom-logo a,
-.custom-logo a:hover {
-  margin-left: 48px;
-  font-family: 'Permanent Marker', cursive;
-  text-decoration: none;
-  color: rgb(255, 141, 226);
+.logo a,
+.logo a:hover {
+color: rgb(255, 141, 226);
+margin: 0;
+font-family: 'Permanent Marker', cursive;
+text-decoration: none;
 }
 
 .navbar .nav-items {
-  flex: 2;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
+flex: 2;
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #fff;
 }
 
-.nav-items .nav-link {
-  margin: 0 8px; /* Reducing the margin to bring links closer */
-  text-decoration: none;
-  text-indent: -18px;
-  white-space: nowrap; /* Prevents wrapping to the next line */
+.nav-items .nav-link, .nav-link:hover {
+margin: 0 8px; /* Reducing the margin to bring links closer */
+text-decoration: none;
+text-indent: -18px;
+white-space: nowrap; /* Prevents wrapping to the next line */
+color:white; 
 }
 
-.nav-items .nav-link:hover {
-  color:white; 
-}
 
 .fa-home,
 .fa-plane,
 .fa-hotel,
 .fa-map-marked-alt,
 .fa-book-open {
-  color: #ffbb00;
+color: #ffbb00;
 }
 
 .nav-link.call-app {
-  position: relative;
-  text-decoration: none;
-  margin-left: auto; /* Aligns to the right side */
-  margin-right: 16px; /* Adjust this value as needed */
+position: relative;
+text-decoration: none;
+margin-left: auto; /* Aligns to the right side */
+margin-right: 16px; /* Adjust this value as needed */
 }
 
 .nav-link.call-app::after {
-  content: ""; 
-  position: absolute;
-  left: 0;
-  right: 15px;
-  bottom: 10px; /* Adjust this value to position the line as needed */
-  border-bottom: 2px dotted;
+content: ""; 
+position: absolute;
+left: 0;
+right: 15px;
+bottom: 10px; /* Adjust this value to position the line as needed */
+border-bottom: 2px dotted;
 }
 
 .nav-link.translate-call {
-  margin-left: 0;
-  margin-right: 16px; /* Adjust this value as needed */
-  text-decoration: underline;
+margin-left: 0;
+margin-right: 16px; /* Adjust this value as needed */
+text-decoration: underline;
 }
 
 .nav-link::before {
-  display: none; /* Hide the underline on navbar links */
+display: none; /* Hide the underline on navbar links */
 }
 
 .dropdown {
-  position: relative;
-  margin-left: auto; /* Ensures the dropdown is aligned to the right */
+position: relative;
+margin-left: auto; /* Ensures the dropdown is aligned to the right */
 }
 
 .dropdown-menu.p-4 {
-  width: 250px;
-  margin-left: -145px;
+width: 250px;
+margin-left: -145px;
 }
 
 .btn.btn-warning.dropdown-toggle {
-  width: 100%;
-  margin-right: 0;
+width: 100%;
+margin-right: 0;
 }
 
 .btn.btn-primary.user-signin {
-  width: 100%;
+width: 100%;
 }
-
      /* Carousel Container Styles */
 .carousel-container {
     position: relative;

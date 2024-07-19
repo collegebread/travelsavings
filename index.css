@@ -40,16 +40,14 @@ header {
 
 .nav-items {
   display: flex;
-  flex-direction: row;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
-  color: #fff;
+  color:#fff;
 }
 
  .nav-brand {
-  flex: 1;
-margin: auto;
+  margin: auto;
 }
 
 .logo a,
@@ -61,7 +59,8 @@ text-decoration: none;
 }
 
 .pages {
-flex: 2;
+ display: flex;
+ flex: 2;
 } 
 
 .nav-items .nav-link, .nav-link:hover {
@@ -81,7 +80,8 @@ color:white;
 color: #ffbb00;
 }
 .plugins{
-  flex :3 ;
+  display: flex;
+  flex: 3;
 }
 
 .nav-link.mobile-app {

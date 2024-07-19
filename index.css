@@ -76,7 +76,6 @@ header {
 .source.mobile--app {
   text-decoration: none;
   margin-left: auto; /* Aligns to the right side */
-  margin-right: 16px; /* Adjust this value as needed */
 }
 .source.mobile--app::after {
   content: ""; 

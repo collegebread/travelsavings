@@ -80,6 +80,9 @@ color:white;
 .fa-book-open {
 color: #ffbb00;
 }
+.plugins{
+  flex :3 ;
+}
 
 .nav-link.call-app {
 position: relative;

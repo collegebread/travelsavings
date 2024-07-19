@@ -74,14 +74,12 @@ header {
   display: flex;
   flex: 3;
   justify-content: flex-end; /* Align elements to the right */
+  color: #ffffff;
 }
-.git-plugin:hover {
-  color: dimgray;
-}
+
 .source.host-ip.mobile--app {
   margin: 0 8px; /* Add slight indentation between elements */
   text-decoration: none;
-  color: #ffffff;
 }
 .source.host-ip.mobile--app::after {
   content: ""; 

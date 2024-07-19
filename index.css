@@ -78,6 +78,8 @@ header {
 }
 
 .source.host-ip.mobile--app {
+  position: relative;
+  text-decoration: none;
   margin: 0 8px; /* Add slight indentation between elements */
   text-decoration: none;
 }

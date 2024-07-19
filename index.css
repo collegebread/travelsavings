@@ -88,9 +88,9 @@ header {
   border-bottom: 2px dotted;
 }
 .source.host-translator{
-  margin-left: 0;
   margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;
+  color: white;
 }
 .dropdown {
   display: flex;

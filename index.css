@@ -99,6 +99,7 @@ header {
 
 .dropdown-menu.p-4 {
   width: 250px;
+  margin-right: 145px;
 }
 
 .btn.btn-warning.dropdown-toggle {

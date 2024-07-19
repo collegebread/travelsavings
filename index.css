@@ -80,8 +80,8 @@ header {
 .source.host-ip.mobile--app {
   position: relative;
   text-decoration: none;
-  margin: 0 8px; /* Add slight indentation between elements */
-  text-decoration: none;
+  margin-left: auto; /* Aligns to the right side */
+  margin-right: 16px; /* Adjust this value as needed */
 }
 .source.host-ip.mobile--app::after {
   content: ""; 

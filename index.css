@@ -70,6 +70,7 @@ header {
 .git-repo.plugins--web {
   display: flex;
   flex: 3;
+  right: 48px;
   justify-content: flex-end; /* Align elements to the right */
   color: #ffffff;
 }

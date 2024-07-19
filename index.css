@@ -25,6 +25,7 @@ header {
     padding: 10px;
     text-align: center;
 }
+/* Navbar styles */
 .navbar {
   position: relative;
   background-color: #030523;
@@ -32,6 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  overflow: hidden; /* Ensure no scrollbar appears */
 }
 
 .nav-items {
@@ -56,8 +58,8 @@ header {
 .wp.themes {
   display: flex;
   flex: 2;
-  left: 64px;
-  justify-content: center; /* Center the elements inside the git-repo wordpress--themes class */
+  margin-left: -32px; /* Shift elements more to the left */
+  justify-content: center; /* Center the elements inside the wp themes class */
 }
 
 .host-page, .host-page:hover {
@@ -70,36 +72,40 @@ header {
 .net.plugins {
   display: flex;
   flex: 3;
-  right: 48px;
+  margin-right: 32px; /* Shift elements more to the right */
   justify-content: flex-end; /* Align elements to the right */
   color: #ffffff;
 }
 
 .mobile-app {
   text-decoration: none;
-  margin-left: auto; /* Aligns to the right side */
+  margin: 0 16px; /* Add slight indentation between elements */
+  position: relative;
 }
+
 .mobile-app::after {
-  content: ""; 
+  content: "";
   position: absolute;
   left: 0;
-  right: 15px;
-  bottom: 10px; /* Adjust this value to position the line as needed */
-  border-bottom: 2px dotted;
+  right: 0;
+  bottom: -2px; /* Adjust this value to position the line as needed */
+  border-bottom: 2px dotted #ffffff;
 }
-.translator{
-  margin-right: 16px; /* Adjust this value as needed */
+
+.translator {
   text-decoration: underline;
-  color: white;
+  color: #ffffff;
+  pointer-events: none; /* Disable the link */
 }
+
 .nav.dropdown {
   display: flex;
   justify-content: flex-end; /* Align dropdown to the right */
+  margin-right: 16px; /* Shift elements more to the right */
 }
 
 .dropdown-menu.p-4 {
   width: 250px;
-  margin-left:-145px;
 }
 
 .btn.btn-warning.dropdown-toggle {

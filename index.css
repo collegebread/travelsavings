@@ -42,8 +42,8 @@ padding: 10px;
   align-items: center;
 }
 
-.navbar .nav-brand {
-flex: 1;
+ .nav-brand {
+margin: auto;
 }
 
 .logo a,
@@ -54,7 +54,7 @@ font-family: 'Permanent Marker', cursive;
 text-decoration: none;
 }
 
-.navbar .nav-items {
+.pages .nav-items {
 flex: 2;
 display: flex;
 align-items: center;

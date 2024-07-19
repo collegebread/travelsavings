@@ -75,11 +75,11 @@ header {
   color: #ffffff;
 }
 
-.mobile--app {
+.mobile-app {
   text-decoration: none;
   margin-left: auto; /* Aligns to the right side */
 }
-.mobile--app::after {
+.mobile-app::after {
   content: ""; 
   position: absolute;
   left: 0;
@@ -87,7 +87,7 @@ header {
   bottom: 10px; /* Adjust this value to position the line as needed */
   border-bottom: 2px dotted;
 }
-.host-translator{
+.translator{
   margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;
   color: white;

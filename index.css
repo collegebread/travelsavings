@@ -99,7 +99,7 @@ header {
   pointer-events: none; /* Disable the link */
 }
 
-.nav.dropdown {
+.dropdown.nav-dropdown {
   position: relative;
   margin-right:32px; /* Ensures the dropdown is aligned to the right */
 }

@@ -53,7 +53,7 @@ header {
   color: rgb(255, 141, 226);
 }
 
-.repo.wordpress--themes {
+.wp.themes {
   display: flex;
   flex: 2;
   left: 64px;
@@ -67,7 +67,7 @@ header {
   color: #ffffff;
 }
 
-.repo.plugins--web {
+.net.plugins {
   display: flex;
   flex: 3;
   right: 48px;

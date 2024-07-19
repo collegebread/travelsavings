@@ -60,16 +60,14 @@ header {
   color: #fff;
 }
 
-.nav-items .nav-link {
+.nav-items .nav-link, .nav-link:hover {
   margin: 0 8px; /* Reducing the margin to bring links closer */
   text-decoration: none;
   text-indent: -18px;
   white-space: nowrap; /* Prevents wrapping to the next line */
-}
-
-.nav-items .nav-link:hover {
   color:white; 
 }
+
 
 .fa-home,
 .fa-plane,

@@ -84,14 +84,14 @@ color: #ffbb00;
   flex :3 ;
 }
 
-.nav-link.call-app {
+.nav-link.mobile-app {
 position: relative;
 text-decoration: none;
 margin-left: auto; /* Aligns to the right side */
 margin-right: 16px; /* Adjust this value as needed */
 }
 
-.nav-link.call-app::after {
+.nav-link.mobile-app::after {
 content: ""; 
 position: absolute;
 left: 0;
@@ -100,7 +100,7 @@ bottom: 10px; /* Adjust this value to position the line as needed */
 border-bottom: 2px dotted;
 }
 
-.nav-link.translate-call {
+.nav-link.translator {
 margin-left: 0;
 margin-right: 16px; /* Adjust this value as needed */
 text-decoration: underline;

@@ -62,7 +62,7 @@ header {
   justify-content: center; /* Center the elements inside the wp themes class */
 }
 
-.host-page, .host-page:hover {
+.host-page, .host-page:hover,.nth-page, .nth-page:hover {
   margin: 0 12px; /* Add slight indentation between elements */
   text-decoration: none;
   white-space: nowrap; /* Prevents wrapping to the next line */

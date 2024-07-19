@@ -56,7 +56,7 @@ header {
 .git-repo.wordpress--themes {
   display: flex;
   flex: 2;
-  left: 24px;
+  left: 48px;
   justify-content: center; /* Center the elements inside the git-repo wordpress--themes class */
 }
 

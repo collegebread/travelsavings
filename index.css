@@ -75,7 +75,9 @@ header {
   flex: 3;
   justify-content: flex-end; /* Align elements to the right */
 }
-
+.git-plugin:hover {
+  color: dimgray;
+}
 .source.host-ip.mobile--app {
   margin: 0 8px; /* Add slight indentation between elements */
   text-decoration: none;
@@ -94,15 +96,6 @@ header {
   margin-right: 16px; /* Adjust this value as needed */
   text-decoration: underline;
 }
-.nav-link::before {
-  display: none; /* Hide the underline on navbar links */
-}
-
-
-.git-plugin:hover {
-  color: dimgray;
-}
-
 .dropdown {
   display: flex;
   justify-content: flex-end; /* Align dropdown to the right */

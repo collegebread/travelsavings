@@ -100,9 +100,8 @@ header {
 }
 
 .nav.dropdown {
-  display: flex;
-  justify-content: flex-end; /* Align dropdown to the right */
-  margin-right: 16px; /* Shift elements more to the right */
+  position: relative;
+  margin-right:32px; /* Ensures the dropdown is aligned to the right */
 }
 
 .dropdown-menu.p-4 {

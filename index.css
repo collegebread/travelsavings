@@ -1064,6 +1064,13 @@ footer {
         /* .nav-brand h1 a {
           margin-left: 0;
         } */
+        .logo a,
+        .logo a:hover {
+        color: rgb(255, 141, 226);
+        margin-left:90px;
+        font-family: 'Permanent Marker', cursive;
+        text-decoration: none;
+        } 
     
   .btn.btn-warning.dropdown-toggle{
       width: max-content;

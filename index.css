@@ -53,7 +53,7 @@ header {
 .logo a,
 .logo a:hover {
 color: rgb(255, 141, 226);
-margin-left:64px;
+margin-left:90px;
 font-family: 'Permanent Marker', cursive;
 text-decoration: none;
 }
@@ -61,7 +61,7 @@ text-decoration: none;
 .pages {
   display: flex;
   flex: 2;
-   margin-left:90px;/* Shift elements more to the left */
+   margin-left:128px;/* Shift elements more to the left */
   justify-content: center; /* Center the elements inside the wp themes class */
 } 
 

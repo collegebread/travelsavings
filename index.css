@@ -1050,13 +1050,17 @@ footer {
 .claim-btn:hover {
   background-color: #0056b3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .navbar-nav {
     text-align: center;
   }
 
-  .nav-item {
-    margin: 10px 0;
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-brand, .pages, .net.plugins, .dropdown {
+    margin-bottom: 10px;
   }
 
   .dropdown {
@@ -1226,6 +1230,19 @@ footer {
 
 /* Specific fixes for screens up to 676px */
 @media (max-width: 676px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-brand, .pages, .net.plugins, .dropdown {
+    margin-bottom: 10px;
+  }
+
+  .pages, .net.plugins, .dropdown {
+    width: 100%;
+    justify-content: center;
+  }
   .slide-content button {
     margin-left: 35.5%;
   }
@@ -1250,6 +1267,19 @@ footer {
 
 /* Specific fixes for screens up to 575px */
 @media (max-width: 575px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-brand, .pages, .net.plugins, .dropdown {
+    margin-bottom: 10px;
+  }
+
+  .pages, .net.plugins, .dropdown {
+    width: 100%;
+    justify-content: center;
+  }
   .slide-content button {
     margin-left: 20%;
   }
@@ -1263,6 +1293,19 @@ footer {
 
 /* Specific fixes for screens up to 476px */
 @media (max-width: 476px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-brand, .pages, .net.plugins, .dropdown {
+    margin-bottom: 10px;
+  }
+
+  .pages, .net.plugins, .dropdown {
+    width: 100%;
+    justify-content: center;
+  }
   .slide-content button {
     margin-left: 20%;
   }
@@ -1276,6 +1319,19 @@ footer {
 
 /* Specific fixes for screens up to 400px */
 @media (max-width: 400px) {
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-brand, .pages, .net.plugins, .dropdown {
+    margin-bottom: 10px;
+  }
+
+  .pages, .net.plugins, .dropdown {
+    width: 100%;
+    justify-content: center;
+  }
   .slide-content button {
     margin-left: 20%;
   }

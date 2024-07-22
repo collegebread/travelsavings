@@ -25,47 +25,56 @@ a * {
 }
 
 header {
-    background-color: #030523;
-    color: #000000;
-    padding: 10px;
-    text-align: center; 
+  background-color: #030523;
+  color: #000000;
+  padding: 10px;
+  text-align: center; 
 }
 
+/* Navbar styles */
 .navbar {
+  position: relative;
   background-color: #030523;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+ 
 }
 
-.navbar .nav-brand {
+.nav-items {
+  display: flex;
   flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  color:#fff;
+}
+
+ .nav-brand {
+  margin: auto;
 }
 
 .logo a,
 .logo a:hover {
-  color: rgb(255, 141, 226);
-  margin: 0;
-  font-family: 'Permanent Marker', cursive;
-  text-decoration: none;
+color: rgb(255, 141, 226);
+margin-left:90px;
+font-family: 'Permanent Marker', cursive;
+text-decoration: none;
 }
 
-.navbar .nav-items {
-  flex: 2;
+.pages {
   display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-}
+  flex: 2;
+   margin-left :180px;/* Shift elements more to the left */
+  justify-content: center; /* Center the elements inside the wp themes class */
+} 
 
 .nav-items .nav-link, .nav-link:hover {
-  margin: 0 8px; /* Reducing the margin to bring links closer */
-  text-decoration: none;
-  text-indent: -18px;
-  white-space: nowrap; /* Prevents wrapping to the next line */
-  color:white; 
+margin: 0 8px; /* Reducing the margin to bring links closer */
+text-decoration: none;
+text-indent: -18px;
+white-space: nowrap; /* Prevents wrapping to the next line */
+color:white; 
 }
 
 
@@ -74,52 +83,64 @@ header {
 .fa-hotel,
 .fa-map-marked-alt,
 .fa-book-open {
-  color: #ffbb00;
+color: #ffbb00;
+}
+.net.plugins{
+  display: flex;
+  flex: 3;
 }
 
-.nav-link.call-app {
-  position: relative;
-  text-decoration: none;
-  margin-left: auto; /* Aligns to the right side */
-  margin-right: 16px; /* Adjust this value as needed */
+.nav-link.mobile-app {
+position: relative;
+text-decoration: none;
+margin-left: auto; /* Aligns to the right side */
+margin-right: 16px; /* Adjust this value as needed */
 }
 
-.nav-link.call-app::after {
-  content: ""; 
-  position: absolute;
-  left: 0;
-  right: 15px;
-  bottom: 10px; /* Adjust this value to position the line as needed */
-  border-bottom: 2px dotted;
+.nav-link.mobile-app::after {
+content: ""; 
+position: absolute;
+left: 0;
+right: 15px;
+bottom: 10px; /* Adjust this value to position the line as needed */
+border-bottom: 2px dotted;
 }
 
-.nav-link.translate-call {
-  margin-left: 0;
-  margin-right: 16px; /* Adjust this value as needed */
-  text-decoration: underline;
+.nav-link.translator {
+margin-left: 0;
+margin-right: 16px; /* Adjust this value as needed */
+text-decoration: underline;
 }
 
 .nav-link::before {
-  display: none; /* Hide the underline on navbar links */
+display: none; /* Hide the underline on navbar links */
 }
 
 .dropdown {
-  position: relative;
-  margin-left: auto; /* Ensures the dropdown is aligned to the right */
+position: relative;
+margin-left: auto; /* Ensures the dropdown is aligned to the right */
 }
 
 .dropdown-menu.p-4 {
-  width: 250px;
-  margin-left: -145px;
+width: 250px;
+margin-left: -145px;
 }
 
 .btn.btn-warning.dropdown-toggle {
-  width: 100%;
-  margin-right: 0;
+width: 100%;
+margin-right: 0;
 }
 
 .btn.btn-primary.user-signin {
-  width: 100%;
+width: 100%;
+}
+     /* Carousel Container Styles */
+.carousel-container {
+    position: relative;
+    height:max-content;
+    background-color: #000;
+
+    
 }
      /* Carousel Container Styles */
 .carousel-container {

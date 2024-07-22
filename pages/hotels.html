@@ -32,20 +32,22 @@
     <div class="wrapper">
         <header>
             <nav class="navbar">
+              <div class="nav-items">
                 <div class="nav-brand">
                   <h1 class="logo"><a href="https://collegebread.github.io/travelsavings" class="href">Website</a></h1>
                 </div>
-                <div class="nav-items">
+                <div class="pages">
                     <!-- <a href="#" class="nav-link active-handler" data-toggle=""><i class="fas fa-home"></i>HOME</a> -->
                     <!-- <a href="pages/flights.html" class="nav-link active-target" data-toggle=""><i class="fas fa-plane"></i> FLIGHTS</a> -->
-                    <a href="hotels.html" class="nav-link active-window" data-toggle="">Stays</a>
+                    <a href="pages/hotels.html" class="nav-link active-window" data-toggle="">Stays</a>
                     <!-- <a href="#" class="nav-link active-window"><i class="fas fa-calendar"></i> SHOWS</a> -->
                     <a href="#" class="nav-link disabled">Experiences</a>
+                    </div>
+                    <div class="net plugins">
                     <!-- <a href="#" class="nav-link active-window">Support</a> -->
-                     
-                    <a  href="#" class="nav-link call-app disabled" onclick="getLocation()"><i class="fa-solid fa-mobile-screen-button"></i>Mobile app</a>
+                    <a  href="#" class="nav-link mobile-app disabled" onclick="getLocation()"><i class="fa-solid fa-mobile-screen-button"></i>Mobile app</a>
                       <!-- Translate to Spanish Link -->
-                      <a  href="#" class="nav-link translate-call" onclick="translateToSpanish()"><i class="fas fa-globe"></i>EN</a>
+                      <a  href="#" class="nav-link translator" onclick="translateToSpanish()"><i class="fas fa-globe"></i>EN</a>
                 </div>
                 <div class="dropdown">
                   <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Sign in OR</button>
@@ -82,6 +84,7 @@
                     </a> 
                     <!-- <small id="emailHelp" class="form-text text-muted">By providing your information, you agree to our website's <a href="#">terms of use</a> and <a href="#">privacy policy</a>.</small>  -->
                     </form>
+                </div>
                 </div>
               </nav>
           </header>

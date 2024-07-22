@@ -1,3 +1,12 @@
+//Carousel buttons
+
+function handleButtonClick() {
+  window.location.href = 'pages/hotels.html';
+}
+
+
+
+
 document.getElementById('togglePassword').addEventListener('click', function () {
     const passwordField = document.getElementById('exampleDropdownFormPassword2');
     const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';

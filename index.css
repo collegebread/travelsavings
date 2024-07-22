@@ -1061,9 +1061,9 @@ footer {
           justify-content: space-between;
         }
       
-        .nav-brand h1 a {
+        /* .nav-brand h1 a {
           margin-left: 0;
-        }
+        } */
     
   .btn.btn-warning.dropdown-toggle{
       width: max-content;

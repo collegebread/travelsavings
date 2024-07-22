@@ -1,7 +1,6 @@
 //Carousel buttons
-
 function handleButtonClick() {
-  window.location.href = 'pages/hotels.html';
+  window.open('pages/hotels.html', '_blank');
 }
 
 

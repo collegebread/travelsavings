@@ -1,5 +1,5 @@
 //Nav menu Eventlisteners
-document.getElementById('nav-link active-window').addEventListener('click', function(event) {
+document.getElementById('nav-link').addEventListener('click', function(event) {
   event.preventDefault(); // Prevent the default link behavior
   window.location.href = 'pages/hotels.html'; // Redirect to the desired page
 });

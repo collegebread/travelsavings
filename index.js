@@ -1,7 +1,11 @@
 //Nav menu Eventlisteners
-document.getElementById('nav-link').addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the default link behavior
-  window.location.href = 'pages/hotels.html'; // Redirect to the desired page
+document.addEventListener('DOMContentLoaded', function() {
+  const staysLink = document.querySelector('.nav-link.active-window');
+  
+  staysLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    window.location.href = 'pages/hotels.html'; // Redirect to the desired page
+  });
 });
 
 //Carousel buttons

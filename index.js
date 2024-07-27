@@ -1,3 +1,9 @@
+//Nav links
+document.getElementById('stays-link').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default link behavior
+  window.location.href = 'pages/hotels.html'; // Redirect to the desired page
+});
+
 //Carousel buttons
 function handleButtonClick() {
   window.open('pages/hotels.html', '_blank');

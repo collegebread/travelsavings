@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = 'pages/hotels.html'; // Redirect to the desired page
   });
 });
-//sign-in dashboard redirect
+//redirect to dashboard
 document.addEventListener('DOMContentLoaded', function() {
   const signInButton = document.querySelector('.btn-primary.user-signin');
   
   signInButton.addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
-    window.location.href = 'dashboard.html'; // Redirect to the desired page
+    window.location.href = 'pages/dashboard.html'; // Redirect to the desired page
   });
 });
 

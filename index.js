@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (verifyCredentials(email, password)) {
-      window.location.href = 'dashboard.html'; // Redirect to the desired page
+      window.location.href = 'pages/dashboard.html'; // Redirect to the desired page
     } else {
       alert('Invalid email or password. Please try again.');
     }

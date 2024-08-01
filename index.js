@@ -8,30 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 //redirect to dashboard
-// document.addEventListener('DOMContentLoaded', function() {
-//   const signInButton = document.querySelector('.btn-primary.user-signin');
-//   const emailInput = document.getElementById('exampleDropdownFormEmail2');
-//   const passwordInput = document.getElementById('exampleDropdownFormPassword2');
+document.addEventListener('DOMContentLoaded', function() {
+  const signInButton = document.querySelector('.btn-primary.user-signin');
+  
+  signInButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    window.location.href = 'pages/dashboard.html'; // Redirect to the desired page
+  });
+});
 
-//   signInButton.addEventListener('click', function(event) {
-//     event.preventDefault(); // Prevent the default form submission behavior
-
-//     const email = emailInput.value;
-//     const password = passwordInput.value;
-
-//     // Mock verification function - replace with your actual verification logic
-//     function verifyCredentials(email, password) {
-      // Example verification logic
-//       return email === 'user@example.com' && password === 'password123';
-//     }
-
-//     if (verifyCredentials(email, password)) {
-//       window.location.href = 'pages/dashboard.html'; // Redirect to the desired page
-//     } else {
-//       alert('Invalid email or password. Please try again.');
-//     }
-//   });
-// });
 //Carousel buttons
 function handleButtonClick() {
   window.open('pages/hotels.html', '_blank');

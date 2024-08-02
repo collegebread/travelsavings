@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 //redirect to dashboard
-document.addEventListener('DOMContentLoaded', function() {
-  const signInButton = document.querySelector('.btn-primary.user-signin');
+// document.addEventListener('DOMContentLoaded', function() {
+//   const signInButton = document.querySelector('.btn-primary.user-signin');
   
-  signInButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    window.location.href = 'pages/dashboard.html'; // Redirect to the desired page
-  });
-});
+//   signInButton.addEventListener('click', function(event) {
+//     event.preventDefault(); // Prevent the default form submission behavior
+//     window.location.href = 'pages/dashboard.html'; // Redirect to the desired page
+//   });
+// });
 
 //Carousel buttons
 function handleButtonClick() {

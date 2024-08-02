@@ -253,36 +253,29 @@ width: 100%;
 }
 
 .booking-container .card .tab-item::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: transparent;
-  bottom: 0;
-  left: 0;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  transform: scaleX(0);
-  transform-origin: 0% 50%;
-  box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    box-sizing: border-box;
 }
 
 .booking-container .tab-item:hover::before,
-.booking-container .tab-item.active .tab-link::before {
-  background-color: #ffcc00;
-  transform: scaleX(1);
+.booking-container .tab-item.active::before {
+    background-color: #ffcc00;
+    transform: scaleX(1);
 }
-
-/* Styling for active tab link */
-.booking-container .tab-item.active .tab-link {
-  background-color: #f8f9fa; /* Highlight background */
-  color: #000; /* Highlight text color */
-}
-
 /* Clearfix to handle inline-block spacing issues */
 .booking-container .form-group::after {
-  content: '';
-  display: table;
-  clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 /* Add a solid navy border around each form inside the booking container */
 .booking-container form {

@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function handleButtonClick() {
   window.open('pages/hotels.html', '_blank');
 }
+//responsive booking tabs
+function showTab(tabId) {
+  // Remove active class from all tab links
+  const tabs = document.querySelectorAll('.tab-link');
+  tabs.forEach(tab => {
+    tab.parentNode.classList.remove('active');
+  });
+
+  // Add active class to the clicked tab link
+  document.getElementById(tabId).parentNode.classList.add('active');
+}
 
 
 

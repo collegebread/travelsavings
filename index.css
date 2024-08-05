@@ -1726,6 +1726,43 @@ filter: brightness(70%);
   border-radius: 12px;
   background-color: rgb(219, 227, 238);
 }
+.container-fluid {
+  padding: 5px;
+}
+
+.card-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-3 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-md-5, .col-md-7, .col-md-15 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 }
 /* Specific fixes for screens up to 400px */
 @media (max-width: 476px) {
@@ -1870,6 +1907,43 @@ filter: brightness(70%);
  border-radius: 12px;
  background-color: rgb(219, 227, 238);
 }
+.container-fluid {
+  padding: 5px;
+}
+
+.card-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-3 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-md-5, .col-md-7, .col-md-15 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
    /* Add this style for the infinite scroll button */
 #infinite-scroll-btn {
 display: flex;

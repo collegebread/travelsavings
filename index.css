@@ -1204,6 +1204,13 @@ footer {
   flex: 0 0 100%;
   max-width: 100%;
 }
+ /* Responsive image styling */
+ img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
+ 
 }
 
 /* Styling for screen sizes up to 576px */

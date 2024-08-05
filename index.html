@@ -621,83 +621,8 @@
         </div>
         </div>
       </div>
+      </div>
         </section>
-          <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbox()">
-            <img style="width: 50px; height: 50px" src="images/1f44b.png" alt="Hello">
-          </div>
-          <div class="chatsupport" id="chatsupport" style="display: none;">
-            <div class="chat-header">
-              <img style="width: 30px; height: 30px; margin-right:15px" src="images/1f44b.png" alt="Hello">Hi there,
-            </div>
-            <div id="chat-messages" class="chat-messages"></div>
-            <div class="chat-input">
-              <input type="text" id="user-input" placeholder="Type your question...">
-              <button onclick="sendMessage()">Send</button>
-            </div>
-          </div>
-          <script>
-            let chatboxVisible = false;
-            let inactivityTimer;
-          
-            function toggleChatbox() {
-              const chatbox = document.getElementById('chatsupport');
-              chatboxVisible = !chatboxVisible;
-              if (chatboxVisible) {
-                chatbox.style.display = 'block';
-                startInactivityTimer();
-                showGreeting();
-              } else {
-                chatbox.style.display = 'none';
-                clearTimeout(inactivityTimer);
-              }
-            }
-          
-            function showGreeting() {
-              const chatMessages = document.getElementById('chat-messages');
-              const greeting = "How can I assist you today? Please choose a topic or type your question.";
-              const greetingDiv = createMessageDiv(greeting, 'ai-message');
-              chatMessages.appendChild(greetingDiv);
-            }
-          
-            function startInactivityTimer() {
-              inactivityTimer = setTimeout(() => {
-                document.getElementById('chatsupport').style.display = 'none';
-                chatboxVisible = false;
-              }, 180000); // 3 minutes
-            }
-          
-            function sendMessage() {
-              const userInput = document.getElementById('user-input').value;
-              const chatMessages = document.getElementById('chat-messages');
-              // Add user message to the chat
-              chatMessages.innerHTML += `<div class="user-message">${userInput}</div>`;
-              // Get AI response based on user input
-              const aiResponse = getAIResponse(userInput);
-              chatMessages.innerHTML += `<div class="ai-message">${aiResponse}</div>`;
-              // Clear user input
-              document.getElementById('user-input').value = '';
-              // Scroll to the bottom of the chat
-              chatMessages.scrollTop = chatMessages.scrollHeight;
-              // Reset the inactivity timer
-              clearTimeout(inactivityTimer);
-              startInactivityTimer();
-            }
-          
-            function getAIResponse(userInput) {
-              // Implement logic to generate AI response based on user input
-              return 'AI Response';
-            }
-          
-            function createMessageDiv(message, className) {
-              const messageDiv = document.createElement('div');
-              messageDiv.className = className;
-              messageDiv.textContent = message;
-              return messageDiv;
-            }
-          </script>
-          </div>
-          
-    </section>
     <section class="footer">
       <footer>
         <div class="footer-container">
@@ -764,6 +689,83 @@
         <p>&copy; 2023 Wordpress</p>
       </footer>
     </section>
+    <section>
+      <div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbox()">
+        <img style="width: 50px; height: 50px" src="images/1f44b.png" alt="Hello">
+      </div>
+      <div class="chatsupport" id="chatsupport" style="display: none;">
+        <div class="chat-header">
+          <img style="width: 30px; height: 30px; margin-right:15px" src="images/1f44b.png" alt="Hello">Hi there,
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input">
+          <input type="text" id="user-input" placeholder="Type your question...">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      <script>
+        let chatboxVisible = false;
+        let inactivityTimer;
+      
+        function toggleChatbox() {
+          const chatbox = document.getElementById('chatsupport');
+          chatboxVisible = !chatboxVisible;
+          if (chatboxVisible) {
+            chatbox.style.display = 'block';
+            startInactivityTimer();
+            showGreeting();
+          } else {
+            chatbox.style.display = 'none';
+            clearTimeout(inactivityTimer);
+          }
+        }
+      
+        function showGreeting() {
+          const chatMessages = document.getElementById('chat-messages');
+          const greeting = "How can I assist you today? Please choose a topic or type your question.";
+          const greetingDiv = createMessageDiv(greeting, 'ai-message');
+          chatMessages.appendChild(greetingDiv);
+        }
+      
+        function startInactivityTimer() {
+          inactivityTimer = setTimeout(() => {
+            document.getElementById('chatsupport').style.display = 'none';
+            chatboxVisible = false;
+          }, 180000); // 3 minutes
+        }
+      
+        function sendMessage() {
+          const userInput = document.getElementById('user-input').value;
+          const chatMessages = document.getElementById('chat-messages');
+          // Add user message to the chat
+          chatMessages.innerHTML += `<div class="user-message">${userInput}</div>`;
+          // Get AI response based on user input
+          const aiResponse = getAIResponse(userInput);
+          chatMessages.innerHTML += `<div class="ai-message">${aiResponse}</div>`;
+          // Clear user input
+          document.getElementById('user-input').value = '';
+          // Scroll to the bottom of the chat
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+          // Reset the inactivity timer
+          clearTimeout(inactivityTimer);
+          startInactivityTimer();
+        }
+      
+        function getAIResponse(userInput) {
+          // Implement logic to generate AI response based on user input
+          return 'AI Response';
+        }
+      
+        function createMessageDiv(message, className) {
+          const messageDiv = document.createElement('div');
+          messageDiv.className = className;
+          messageDiv.textContent = message;
+          return messageDiv;
+        }
+      </script>
+  
+      
+
     </div>
     <script>
       function showTravelersTable(inputId) {

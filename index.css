@@ -2,327 +2,320 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
- /* General Styles */
-   width: 100%;
-   max-width: max-content;
+  /* General Styles */
+  width: 100%;
+  max-width: max-content;
   background-color: #f8f9fa;
   margin: 0;
   padding: 0; /* Adjust the padding as needed */
- font-family: 'Poppins', sans-serif;
- /* filter: grayscale(1); */
-      
-  }
-a {
-    text-decoration: none;
-}
-.wrapper{
-    font-size: 24px;
-}
-
-
-header {
+  font-family: 'Poppins', sans-serif;
+  /* filter: grayscale(1); */
+ }
+ 
+ a {
+  text-decoration: none;
+ }
+ 
+ .wrapper{
+  font-size: 24px;
+ }
+ 
+ header {
   background-color: #030523;
   color: #000000;
   padding: 10px;
   text-align: center; 
-}
-
-/* Navbar styles */
-.navbar {
+ }
+ 
+ /* Navbar styles */
+ .navbar {
   position: relative;
   background-color: #030523;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+ }
  
-}
-
-.nav-items {
+ .nav-items {
   display: flex;
   flex: 1;
   justify-content: space-between;
   align-items: center;
   color:#fff;
-}
-
+ }
+ 
  .nav-brand {
   margin: auto;
-}
-
-.logo a,
-.logo a:hover {
-color: rgb(255, 141, 226);
-margin-left:90px;
-font-family: 'Permanent Marker', cursive;
-text-decoration: none;
-}
-
-.pages {
+ }
+ 
+ .logo a,
+ .logo a:hover {
+  color: rgb(255, 141, 226);
+  margin-left: 90px;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
+ }
+ 
+ .pages {
   display: flex;
   flex: 2;
-   margin-left :180px;/* Shift elements more to the left */
+  margin-left: 180px;/* Shift elements more to the left */
   justify-content: center; /* Center the elements inside the wp themes class */
-} 
-
-.nav-items .nav-link, .nav-link:hover {
-margin: 0 8px; /* Reducing the margin to bring links closer */
-text-decoration: none;
-text-indent: -18px;
-white-space: nowrap; /* Prevents wrapping to the next line */
-color:white; 
-}
-
-
-.fa-home,
-.fa-plane,
-.fa-hotel,
-.fa-map-marked-alt,
-.fa-book-open {
-color: #ffbb00;
-}
-.net.plugins{
+ } 
+ 
+ .nav-items .nav-link, .nav-link:hover {
+  margin: 0 8px; /* Reducing the margin to bring links closer */
+  text-decoration: none;
+  text-indent: -18px;
+  white-space: nowrap; /* Prevents wrapping to the next line */
+  color:white; 
+ }
+ 
+ .fa-home,
+ .fa-plane,
+ .fa-hotel,
+ .fa-map-marked-alt,
+ .fa-book-open {
+  color: #ffbb00;
+ }
+ 
+ .net.plugins{
   display: flex;
   flex: 3;
-}
-
-.nav-link.mobile-app {
-position: relative;
-text-decoration: none;
-margin-left: auto; /* Aligns to the right side */
-margin-right: 16px; /* Adjust this value as needed */
-}
-
-.nav-link.mobile-app::after {
-content: ""; 
-position: absolute;
-left: 0;
-right: 15px;
-bottom: 10px; /* Adjust this value to position the line as needed */
-border-bottom: 2px dotted;
-}
-
-.nav-link.translator {
-margin-left: 0;
-margin-right: 16px; /* Adjust this value as needed */
-text-decoration: underline;
-}
-
-.nav-link::before {
-display: none; /* Hide the underline on navbar links */
-}
-
-.dropdown {
-position: relative;
-margin-left: auto; /* Ensures the dropdown is aligned to the right */
-}
-
-.dropdown-menu.p-4 {
-width: 250px;
-margin-left: -145px;
-}
-
-.btn.btn-warning.dropdown-toggle {
-width: 100%;
-margin-right: 0;
-}
-
-.btn.btn-primary.user-signin {
-width: 100%;
-}
-     /* Carousel Container Styles */
-.carousel-container {
-    position: relative;
-    height:max-content;
-    background-color: #000;
-
-    
-}
-
-
-.carousel-inner {
-    width: 100%;
-    height: 100%;
-}
-     /* Minimalist Navigation Buttons */
-     .carousel-control-prev,
-     .carousel-control-next {
-         width: 3%;
-         color: #fff;
-         background: none;
-         border: none;
-         font-size: 2rem;
-     }
-
-     .carousel-control-prev-icon,
-     .carousel-control-next-icon {
-         background-color: #000; /* Change the background color */
-         color: #fff; /* Change the arrow color */
-         border-radius: 50%;
-     }
-
-    
-         /* Text and Button Styles */
-         .slide-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-        }
-
-        .slide-content h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .slide-content p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-
-        .slide-content button {
-          justify-content: center;
-            width: 200px;
-            background-color: #ffcc00;
-            color: #000;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            white-space: nowrap; /* Prevents wrapping to the next line */
-            
-        }
-
-        .slide-content button:hover {
-            background-color: #ffdb4d;
-        }
-       
-
-
-.aspect-ratio-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 40.25%; /* 16:9 Aspect Ratio (h/w * 100%) */
-}
-
-.aspect-ratio-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
-}
-   /* Booking-container styles */
-   .booking-container {
-    width: 100%;
-    max-width: 100%;
-}
-
-/* Underline animation effect for booking-container tabs */
-.booking-container .tabs {
-    list-style: none;
-    margin-right: 20px;
-    padding: 0;
-    display: flex;
-    margin-bottom: 10px; /* Add margin between tabs and form */
-    
-}
-
-.booking-container .tab-item {
-    flex: 1;
-    margin-right:5px; /* Adjust spacing between nav-items */
-    
-}
-
-.booking-container .tab-item, .content-container .tab-item:hover {
-    cursor: pointer;
-    padding: 10px;
-    text-align: center;
-    background-color: #ddd;
-    border-radius: 5px;
-    margin-bottom: -1px;
-    position: relative;
-    width: 100%;
-    display: inline-block;
-    color: #000000;
-}
-
-.booking-container .card .tab-item::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: transparent;
-    bottom: 0;
-    left: 0;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
-    box-sizing: border-box;
-}
-
-.booking-container .tab-item:hover::before,
-.booking-container .tab-item.active::before {
-    background-color: #ffcc00;
-    transform: scaleX(1);
-}
-/* Clearfix to handle inline-block spacing issues */
-.booking-container .form-group::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-/* Add a solid navy border around each form inside the booking container */
-.booking-container form {
-    border: 1px solid navy;
-    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
-    padding: 15px; /* Optional: Add padding for spacing inside the form */
-    margin-bottom: 20px; /* Optional: Add margin between forms */
-    box-sizing: border-box;
-}
-
-/* Add a solid navy border to input fields */
-.booking-container input,
-.booking-container select,
-.booking-container textarea {
-    border: 1px solid navy;
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-
-/* Adjust styling for checkboxes */
-.booking-container input[type="checkbox"] {
-    margin-left: 15px; /* Add some spacing to checkboxes */
-}
-
-
-.form-group {
+ }
+ 
+ .nav-link.mobile-app {
+  position: relative;
+  text-decoration: none;
+  margin-left: auto; /* Aligns to the right side */
+  margin-right: 16px; /* Adjust this value as needed */
+ }
+ 
+ .nav-link.mobile-app::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  right: 15px;
+  bottom: 10px; /* Adjust this value to position the line as needed */
+  border-bottom: 2px dotted;
+ }
+ 
+ .nav-link.translator {
+  margin-left: 0;
+  margin-right: 16px; /* Adjust this value as needed */
+  text-decoration: underline;
+ }
+ 
+ .nav-link::before {
+  display: none; /* Hide the underline on navbar links */
+ }
+ 
+ .dropdown {
+  position: relative;
+  margin-left: auto; /* Ensures the dropdown is aligned to the right */
+ }
+ 
+ .dropdown-menu.p-4 {
+  width: 250px;
+  margin-left: -145px;
+ }
+ 
+ .btn.btn-warning.dropdown-toggle {
+  width: 100%;
+  margin-right: 0;
+ }
+ 
+ .btn.btn-primary.user-signin {
+  width: 100%;
+ }
+ 
+ /* Carousel Container Styles */
+ .carousel-container {
+  position: relative;
+  height: max-content;
+  background-color: #000;
+ }
+ 
+ .carousel-inner {
+  width: 100%;
+  height: 100%;
+ }
+ 
+ /* Minimalist Navigation Buttons */
+ .carousel-control-prev,
+ .carousel-control-next {
+  width: 3%;
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 2rem;
+ }
+ 
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+  background-color: #000; /* Change the background color */
+  color: #fff; /* Change the arrow color */
+  border-radius: 50%;
+ }
+ 
+ /* Text and Button Styles */
+ .slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+ }
+ 
+ .slide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+ }
+ 
+ .slide-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+ }
+ 
+ .slide-content button {
+  justify-content: center;
+  width: 200px;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents wrapping to the next line */
+ }
+ 
+ .slide-content button:hover {
+  background-color: #ffdb4d;
+ }
+ 
+ .aspect-ratio-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40.25%; /* 16:9 Aspect Ratio (h/w * 100%) */
+ }
+ 
+ .aspect-ratio-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+ }
+ 
+ /* Booking-container styles */
+ .booking-container {
+  width: 100%;
+  max-width: 100%;
+ }
+ 
+ /* Underline animation effect for booking-container tabs */
+ .booking-container .tabs {
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  margin-bottom: 10px; /* Add margin between tabs and form */
+ }
+ 
+ .booking-container .tab-item {
+  flex: 1;
+  margin-right: 5px; /* Adjust spacing between nav-items */
+ }
+ 
+ .booking-container .tab-item, .content-container .tab-item:hover {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: -1px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  color: #000000;
+ }
+ 
+ .booking-container .card .tab-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  box-sizing: border-box;
+ }
+ 
+ .booking-container .tab-item:hover::before,
+ .booking-container .tab-item.active::before {
+  background-color: #ffcc00;
+  transform: scaleX(1);
+ }
+ 
+ /* Clearfix to handle inline-block spacing issues */
+ .booking-container .form-group::after {
+  content: '';
+  display: table;
+  clear: both;
+ }
+ 
+ /* Add a solid navy border around each form inside the booking container */
+ .booking-container form {
+  border: 1px solid navy;
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+  padding: 15px; /* Optional: Add padding for spacing inside the form */
+  margin-bottom: 20px; /* Optional: Add margin between forms */
+  box-sizing: border-box;
+ }
+ 
+ /* Add a solid navy border to input fields */
+ .booking-container input,
+ .booking-container select,
+ .booking-container textarea {
+  border: 1px solid navy;
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  padding: 8px;
+  box-sizing: border-box;
+ }
+ 
+ /* Adjust styling for checkboxes */
+ .booking-container input[type="checkbox"] {
+  margin-left: 15px; /* Add some spacing to checkboxes */
+ }
+ 
+ .form-group {
   position: relative;
   width: 300px;
-}
-
-.form-group input[type="text"] {
+ }
+ 
+ .form-group input[type="text"] {
   width: 100%;
   padding-left: 30px;
   box-sizing: border-box;
-}
-
-.form-group .fas.fa-map-marker-alt {
+ }
+ 
+ .form-group .fas.fa-map-marker-alt {
   position: absolute;
   left: 12px;
   top: 50px;
   transform: translateY(-50%);
   cursor: pointer;
-}
-
-.dropdown.setLocation {
+ }
+ 
+ .dropdown.setLocation {
   display: none;
   position: absolute;
   top: 100%;
@@ -331,87 +324,79 @@ width: 100%;
   border: 1px solid #ccc;
   background-color: #fff;
   z-index: 1000;
-}
-
-.dropdown.setLocation div {
+ }
+ 
+ .dropdown.setLocation div {
   padding: 8px;
   cursor: pointer;
-}
-
-.dropdown.setLocation div:hover {
+ }
+ 
+ .dropdown.setLocation div:hover {
   background-color: #f1f1f1;
-}
-
-.tab-content {
-    display: none;
-    
-}
-
-.tab-content.active {
-    display: block;
-    
-}
-
-input, button {
-    margin-bottom: 10px;
-    padding: 8px;
-    width: calc(50% - 10px);
-    box-sizing: border-box;
-    
-}
-
-.form-group {
-    display: inline-block;
-    width: calc(15% - 20px);
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    
-}
-
-
-/* Clearfix to handle inline-block spacing issues */
-.form-group::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.form-control {
-    width: calc(50% - 20px);
-    box-sizing: border-box;
-    
-    
-}
-.form-control-scale {
+ }
+ 
+ .tab-content {
+  display: none;
+ }
+ 
+ .tab-content.active {
+  display: block;
+ }
+ 
+ input, button {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: calc(50% - 10px);
+  box-sizing: border-box;
+ }
+ 
+ .form-group {
+  display: inline-block;
+  width: calc(15% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+ }
+ 
+ /* Clearfix to handle inline-block spacing issues */
+ .form-group::after {
+  content: '';
+  display: table;
+  clear: both;
+ }
+ 
+ .form-control {
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+ }
+ 
+ .form-control-scale {
   width: 100%;
   box-sizing: border-box;
   padding: 8px;
-}
-.form-control:hover,input:hover,textarea:hover,input[type="date"]{
+ }
+ 
+ .form-control:hover, input:hover, textarea:hover, input[type="date"] {
   cursor: pointer;
-}
-
-
-.travelers-table {
+ }
+ 
+ .travelers-table {
   display: none;
   width: 100%;
   margin-top: 10px;
   border-collapse: collapse;
-  
-}
-
-
-.travelers-table th,
-.travelers-table td {
+ }
+ 
+ .travelers-table th,
+ .travelers-table td {
   border: 12px solid white;
   padding: 8px;
   margin-top: 10px;
   text-align: center;
   background-color: #f5f5f5;
-}
-
-.increment-btn,
-.decrement-btn {
+ }
+ 
+ .increment-btn,
+ .decrement-btn {
   cursor: pointer;
   display: inline-block;
   margin: 0 5px;
@@ -421,776 +406,339 @@ input, button {
   border-style: solid;
   border-width: 1px;
   border-radius: 70px;
-
-  
-}
-.decrement-btn{
+ }
+ 
+ .decrement-btn {
   border-color: silver;
   border-style: solid;
   border-width: 1px;
   border-radius: 70px;
-
-}
-
-
-.age-dropdown {
+ }
+ 
+ .age-dropdown {
   display: none;
   position: absolute;
   background-color: #fff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
-}
-
-.age-dropdown a {
+ }
+ 
+ .age-dropdown a {
   display: block;
-  padding: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
   text-decoration: none;
-  color: #000;
+ }
+ 
+ .age-dropdown a:hover {
+  background-color: #ddd;
+ }
+ 
+ .select-travelers:hover .travelers-table,
+ .age-dropdown-btn:hover .age-dropdown {
+  display: table;
+ }
+ 
+ table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+ }
+ 
+ th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
   text-align: center;
-}
-
-.age-dropdown a:hover {
+ }
+ 
+ th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+ }
+ 
+ tr:nth-child(even) {
+  background-color: #f9f9f9;
+ }
+ 
+ tr:hover {
   background-color: #f1f1f1;
-}
-
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    
-}
-
-.form-group:nth-child(4n + 1) {
-    margin-right: 0;
-    
-}
-.radio-group {
-margin-bottom: 10px;
-white-space: nowrap; /* Prevents text from wrapping */
-}
-
-.radio-group label {
-margin-left: 20px; /* Increased margin for better spacing */
-}
-.btn.btn-warning.btn-xs{
-    width: 190px;
-
-}
-.fas.fa-map-marker-alt{
-    background-color: white;
-}
-
-@keyframes underlineAnimation {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-.mobile-menu-toggle {
-    display: none;
-    font-size: 20px;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-.search-section {
-    position: relative;
-    text-align: center;
-    color: #f5f5f5;
-}
-/* Package Options Styles */
-.package-options {
-    display: flex;
-    margin-bottom: 20px;
-    white-space: nowrap; /* Prevents wrapping to the next line */
+ }
  
-}
-
-.package-options .checkbox {
-   
-    align-items: center;
-    margin-left: 35px;
-   
-}
-
-.package-options input {
-    margin-left: 20px;
-}
-
-/* Travel Class Selectors Styles */
-.travel-class {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -50px;
-    margin-right: 10px;
-}
-#travel-class-select {
-  width: 120px;
-  height: 40px;
-  border-radius: 12px;
-  background-color: rgb(219, 227, 238);
-}
-
-.travel-class label {
-    margin-right: 10px; /* Adjust spacing between radio buttons */
-}
-
-
-/* Main Card Container */
-
-.container-fluid h2{
-   margin-left: 20px;
-   margin-top: 20px;
-   padding: 10px;
-   font-size: 2em;
-   
-
-  }
-  .col-md-3 .card{
-    border:transparent;
-  }
-
- .card img {
-     max-width: 100%;
-     height: auto;
-     object-fit: cover;
-     filter: brightness(.7);
-        
-    }
-  
-  .card .card-title{
-    font-size: 12px;
-    font-weight: lighter;
-    text-align: center;
-  }
-  .card .card-text{
-    font-size: 12px;
-    font-weight: bold;
-  }
-  .places-description{
-    font-size: 12px;
-  }
-  .scroll {
-    padding: 20px;
-  }
-  .col-md-3{
-    cursor: pointer;
-   
-  }
-  
-
-
-  .card img {
-    width: 100%;
-    height: 200px; /* Set your preferred height */
-    border-radius: 12px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-  }
-  .col-md-3 .card h4{
-   justify-content: center;
-
-  }
-
-  .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-  }
-  .scroll-overlay-text{
-   
-    font-size:11px;
-    
-  }
-   /* Additional styles for the zoom effect */
-   .card-container:hover .card img {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-  
-  .help-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto;
-   
-  }
-  h2 {
-    font-size: 36px;
-    color: #030523;
-    margin-bottom: 20px;
-    
-  }
-  .support-container {
-    position: relative;
-    justify-content: space-between;
-    width: 100%;
-    
-  }
-  .support-tabs{
-    position: relative;
-    width: 20%;
-    left: 65%;
-  }
-  .support-link{
-    text-decoration: none;
-    margin: 0 0 12px 12px;
-    font-size: 16px;
-    color: #0066cc;
-    white-space: nowrap;
-
-
-  }
-  .search-container {
-    position: relative;
-    margin-bottom: 20px;
-  }
-
-  .search-header {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  .search-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding-left: 35px; /* Space for icon */
-    padding-right: 35px; /* Space for icon */
-  }
-
-  .fa-list,
-  .search-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #333;
-  }
-
-  .fa-list {
-    left: 10px;
-    top: 60px;
-  }
-
-  .search-icon {
-    right: 10px;
-    top: 60px;
-    cursor: pointer;
-  }
-
-  .search-results {
-    color: #333;
-  }
-  .help-center{
-    background-color: whitesmoke;
-  }
-  
-  
-  .faq-container,
-  .newsletter-container {
-    flex: 1;
-    margin: 0 20px;
-    /* background-color: #fff; */
-    /* border: 1px solid #030523; */
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #ffffff;
-  }
-  
-
-  .faq-container h4,
-  .newsletter-container h4 {
-    font-size: 24px;
-    color: #030523;
-    margin-bottom: 15px;
-  }
-  .newsletter-container h4,.newsletter-container p {
-    margin-bottom: 10px;
-    text-align: center;
-    color: #000;
-  }
-  
- 
-  .subscribe-form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-
-  .subscribe-form label,
-  .subscribe-form input,
-  .subscribe-form button {
-    margin-bottom: 10px;
-  }
-  
-
-  .subscribe-form input {
-    width: calc(100% - 70px);
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  
-  .btn.btn-warning.subscribe-form.button {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .faq-item p{
-    font-size: 14px;
-  }
-   /* styles initially hidden */
-  .feedback-form{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: none; 
-    padding: 20px;
-  
-   
-    border-radius: 24px;
-
-  }
-
-      /* Survey Container styles */
-    .survey-container {
-      flex: 1;
-      width: 100%;
-      height: auto;
-      padding: 10px;
-      top: 8%;
-      color: black;
-      
-      
-    
-     
-    
-    }
-    .card.survey-form{
-      width:500px;
-      height: 440px;
-      margin: 0 0px 90px 300px;
-      border-radius: 12px;
-      background-color: rgb(236, 236, 236);
-       
-      
-    }
-
-    .survey-header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .survey-question {
-      margin-bottom: 20px;
-    }
-
-    .survey-input {
-      width: 50%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #cecece;
-      border-radius: 4px;
-    }
-    .emoticon-radio {
-  display: flex;
-}
-
-.emoticon-radio input[type="radio"] {
-  display: none;
-}
-
-.emoticon-radio label {
-  display: inline-block;
-  font-size: 24px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.emoticon-radio input[type="radio"] + label {
-  color: gray;
-}
-
-.emoticon-radio input[type="radio"]:checked + label {
-  color: #3498db;
-}
-
-    .survey-submit {
-      width: 100px;
-      padding: 10px;
-      margin-top: -40px;
-      background-color:rgb(255, 208, 0);
-      color: #2b2b2b;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .survey-submit:hover{
-      background-color:rgb(255, 208, 0);
-    }
-    .contact-form{
-      position: relative;
-      width: 50%;
-      left: 25%;
-      background-color: #eaeaea;
-    }
-    .contact-form .card{
-      height: 440px;
-      border-radius: 4px;
-    }
-
-  .chatbot-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  
-  .chatsupport {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    max-width: 350px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 1000;
-  }
-
-  .chat-header {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .chat-messages {
-    max-height: 200px;
-    overflow-y: auto;
-    padding: 10px;
-  }
-
-  .user-message, .ai-message {
-    margin-bottom: 10px;
-  }
-
-  .user-message {
-    text-align: right;
-    color: #333;
-  }
-
-  .ai-message {
-    text-align: left;
-    color: #0066cc;
-  }
-
-  .chat-input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-  }
-
-  .chat-input input {
-    flex: 1;
-    padding: 8px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-
-  .chat-input button {
-    padding: 8px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .chatbot-visible {
-    transform: translateY(0);
-  }
-  
-
-footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-section {
-    margin-bottom: 20px;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-}
-
-.footerlink .active {
-    margin-bottom: 8px;
-    color: white;
-    
-}
-
-.footer-link .active, a:hover {
-    text-decoration: none;
-    color: white;
-}
-   /* Newsletter Container styles */
-   .newsletter-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  .newsletter-container h4 {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .subscribe-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .subscribe-form label {
-    flex: 1 1 100%;
-  }
-
-  .subscribe-form input {
-    flex: 1 1 100%;
-  }
-
-  .subscribe-form button {
-    flex: 1 1 100%;
-    width: 100%;
-  
-   
-    
-}
-/* Popup Card Styles */
-.popup-card {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.popup-content {
-  text-align: center;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #aaaaaa;
-  font-size: 20px;
-}
-
-.close-btn:hover {
-  color: #333333;
-}
-
-.claim-btn {
+ button {
   background-color: #007bff;
-  color: #ffffff;
+  color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.claim-btn:hover {
+  font-size: 16px;
+ }
+ 
+ button:hover {
   background-color: #0056b3;
-}
-@media only screen and (max-width: 2560px) and (max-height: 1600px) {
+ }
+ 
+ /* Help-center styles */
+ .help-center {
+  background-color: #ffffff;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+ }
+ 
+ /* Support container styles */
+ .support-container {
+  display: flex;
+  width: 100%;
+ }
+ 
+ .support-tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+ }
+ 
+ .support-tabs .tab-item {
+  width: 120px;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+ }
+ 
+ .support-tabs .tab-item.active,
+ .support-tabs .tab-item:hover {
+  background-color: #007bff;
+  color: #ffffff;
+ }
+ 
+ .tab-content {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+ }
+ 
+ .tab-content.active {
+  display: block;
+ }
+ 
+ /* Contact form styles */
+ .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  position: relative;
+  left: 25px; /* Optional: Adjust the form to the left */
+ }
+ 
+ /* Add a solid navy border to contact form input fields */
+ .contact-form input,
+ .contact-form select,
+ .contact-form textarea {
+  border: 1px solid navy;
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  padding: 8px;
+  box-sizing: border-box;
+ }
+ 
+ .card.survey-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+ }
+ 
+ .chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+ }
+ 
+ footer {
+  background-color: #030523;
+  color: white;
+  padding: 10px;
+  text-align: center;
+ }
+ 
+ /* Footer container styles */
+ .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+ 
+ /* Responsive styles for the Kindle Fire HDX */
+ @media only screen and (max-width: 2560px) and (max-height: 1600px) {
   body {
-      font-size: 1rem;
-      padding: 0 10px;
+  font-size: 1rem;
+  padding: 0 10px;
   }
-
+ 
   header {
-      padding: 20px;
-      text-align: left;
+  padding: 20px;
+  text-align: left;
   }
-
+ 
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   }
-
+ 
   .nav-items {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
   }
-
+ 
   .logo a {
-      margin-left: 0;
-      font-size: 1.5rem;
+  margin-left: 0;
+  font-size: 1.5rem;
   }
-
+ 
   .pages {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0;
   }
-
+ 
   .nav-link {
-      margin: 8px 0;
+  margin: 8px 0;
   }
-
+ 
   .dropdown-menu.p-4 {
-      width: 100%;
-      margin-left: 0;
+  width: 100%;
+  margin-left: 0;
   }
-
+ 
   .btn.btn-warning.dropdown-toggle, .btn.btn-primary.user-signin {
-      width: 100%;
-      margin: 5px 0;
+  width: 100%;
+  margin: 5px 0;
   }
-
+ 
   .carousel-container {
-      height: auto;
+  height: auto;
   }
-
+ 
   .carousel-control-prev, .carousel-control-next {
-      width: 5%;
-      font-size: 1.5rem;
+  width: 5%;
+  font-size: 1.5rem;
   }
-
+ 
   .slide-content h2 {
-      font-size: 1.5rem;
+  font-size: 1.5rem;
   }
-
+ 
   .slide-content p {
-      font-size: 1rem;
+  font-size: 1rem;
   }
-
+ 
   .slide-content button {
-      width: 100%;
-      font-size: 1rem;
+  width: 100%;
+  font-size: 1rem;
   }
-
+ 
   .aspect-ratio-container {
-      padding-top: 56.25%;
+  padding-top: 56.25%;
   }
-
+ 
   .aspect-ratio-image {
-      width: 100%;
+  width: 100%;
   }
-
+ 
   .booking-container {
-      width: 100%;
-      max-width: 100%;
+  width: 100%;
+  max-width: 100%;
   }
-
+ 
   .booking-container .tabs {
-      flex-direction: column;
-      align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   }
-
+ 
   .booking-container .tab-item {
-      width: 100%;
+  width: 100%;
   }
-
+ 
   .form-group {
-      width: 100%;
-      box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
   }
-
+ 
   .form-control {
-      width: 100%;
+  width: 100%;
   }
-
+ 
   .form-control-scale {
-      width: 100%;
+  width: 100%;
   }
-
+ 
   .travelers-table {
-      width: 100%;
+  width: 100%;
   }
-
+ 
   .help-center {
-      margin: 20px auto;
+  margin: 20px auto;
   }
-
+ 
   .support-container, .support-tabs {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
   }
-
+ 
   .contact-form {
-      width: 100%;
-      left: 0;
+  width: 100%;
+  left: 0;
   }
-
+ 
   .card.survey-form {
-      margin: 0 auto;
+  margin: 0 auto;
   }
-
+ 
   .chatbot-icon {
-      bottom: 10px;
-      right: 10px;
+  bottom: 10px;
+  right: 10px;
   }
-
+ 
   footer {
-      padding: 20px;
+  padding: 20px;
   }
-
+ 
   .footer-container {
-      flex-direction: column;
-      align-items: center;
+  flex-direction: column;
+  align-items: center;
   }
-}
+ 
+  /* Responsive image styling */
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
+ }
 @media screen and (max-width: 768px) {
   
         .nav-items > *:not(.nav-brand):not(.dropdown) {

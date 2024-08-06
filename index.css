@@ -1160,7 +1160,9 @@ footer {
 .tab-content {
   padding: 10px;
 }
-
+.scroll{
+  flex-direction: column;
+}
 .card-img {
   order: 1; /* Move the image below the card body */
 }

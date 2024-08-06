@@ -1161,6 +1161,7 @@ footer {
   padding: 10px;
 }
 .scroll{
+  display: flex;
   flex-direction: column;
 }
 .card-img {

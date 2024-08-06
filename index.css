@@ -1464,6 +1464,10 @@ height: 100%;
     margin: 10px 0 0 20px;
   
   }
+  .scroll {
+    padding: 15px;
+    margin-bottom: 30px; /* Extra space between scroll sections and footer on smaller screens */
+}
   /* Add this style for the infinite scroll button */
 #infinite-scroll-btn {
 display: flex;
@@ -1806,6 +1810,11 @@ filter: brightness(70%);
   border-radius: 12px;
   background-color: rgb(219, 227, 238);
 }
+.scroll {
+  padding: 10px;
+  margin-bottom: 40px; /* Ensure more space on very small screens */
+}
+
 }
 /* Specific fixes for screens up to 400px */
 @media (max-width: 476px) {

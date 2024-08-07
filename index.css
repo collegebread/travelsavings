@@ -1161,6 +1161,7 @@ footer {
   padding: 10px;
 }
 .scroll{
+  position: static;
   display: flex;
   flex-direction: column;
 }

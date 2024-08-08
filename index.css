@@ -1207,6 +1207,7 @@ footer {
 .col-md-5, .col-md-7, .col-md-15 {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-top: 20px;
 }
 
  

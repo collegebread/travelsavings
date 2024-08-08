@@ -1177,11 +1177,11 @@ footer {
 
 .card-container {
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .card {
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .card img {
@@ -1208,13 +1208,7 @@ footer {
   max-width: 100%;
   margin-top: 50px;
 }
-.overlay {
-  top: auto;
-  left: auto;
-  transform: none;
-  text-align: left;
-  padding: 10px;
-}
+
 
  
 }

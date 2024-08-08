@@ -1171,6 +1171,7 @@ footer {
   order: 2; /* Move the card body above the image */
 }
 .container-fluid {
+    height: auto;
   padding: 15px;
 }
 

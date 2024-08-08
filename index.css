@@ -1161,9 +1161,7 @@ footer {
   padding: 10px;
 }
 .scroll{
-  position: static;
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
 }
 .card-img {
   order: 1; /* Move the image below the card body */
@@ -1208,6 +1206,13 @@ footer {
   flex: 0 0 100%;
   max-width: 100%;
   margin-top: 50px;
+}
+.overlay {
+  top: auto;
+  left: auto;
+  transform: none;
+  text-align: left;
+  padding: 10px;
 }
 
  

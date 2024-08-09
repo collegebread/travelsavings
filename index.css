@@ -1204,7 +1204,8 @@ footer {
 }
 
 .col-md-7{
-  margin-bottom: 50px;
+  width:auto;
+  margin: 0;
 }
 .col-md-15 {
   max-width: 100%;

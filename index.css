@@ -1171,8 +1171,7 @@ footer {
   order: 2; /* Move the card body above the image */
 }
 .container-fluid {
-    height: auto;
-  padding: 15px;
+  height: auto;
 }
 
 .card-container {
@@ -1207,8 +1206,9 @@ footer {
 .col-md-5, .col-md-7, .col-md-15 {
   flex: 0 0 100%;
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
 }
+
 
 
  

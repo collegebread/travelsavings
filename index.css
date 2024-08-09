@@ -1203,10 +1203,10 @@ footer {
   max-width: 100%;
 }
 
-.col-md-5, .col-md-7, .col-md-15 {
+.col-md-7, .col-md-15 {
   flex: 0 0 100%;
   max-width: 100%;
-  margin-top: 20px;
+  margin-top: 90px;
 }
 
 
@@ -1248,7 +1248,7 @@ footer {
   max-width: 100%;
 }
 
-.col-md-5, .col-md-7, .col-md-15 {
+.col-md-7, .col-md-15 {
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -1850,6 +1850,7 @@ filter: brightness(70%);
 .col-md-5, .col-md-7, .col-md-15 {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-top: 90px;
 }
 
 .overlay {

@@ -1076,6 +1076,12 @@ footer {
   .btn.btn-warning.dropdown-toggle{
       width: max-content;
   }
+    /* dropdown signin menu*/
+    .dropdown-menu.p-4{
+      width: 250px; 
+      margin-right: 64px;
+     
+   }  
 
 
   .mobile-menu-toggle {
@@ -1322,6 +1328,34 @@ background-color: rgb(219, 227, 238);
   width: 100%;
 }
 }
+/* Custom Mobile-First Styles */
+@media (max-width: 768px) {
+
+.primary-sidebar, .secondary-sidebar {
+   display: none;
+}
+
+.card-container {
+   width: 100%;
+}
+.btn.btn-warning.custom-card-btn {
+ background-color: #ffc107; /* Button color */
+ color: #212529; /* Button text color */
+ margin-top: 10px;
+}
+.btn.btn-outline-danger.btn-favorite{
+ width: 180px;
+ margin: 10px 0 0 20px;
+
+}
+.scroll {
+ padding: 15px;
+ margin-bottom: 30px; /* Extra space between scroll sections and footer on smaller screens */
+}
+
+
+}
+
 /* Styling for screen sizes up to 576px */
 @media (max-width: 576px) {
 .container-fluid {

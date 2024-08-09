@@ -1179,38 +1179,6 @@ footer {
   margin-top: 20px;
 }
 
-.card {
-  margin-top: 60px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-
-}
-
-.card-body {
-  padding: 10px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-md-3 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.col-md-7{
-  width:auto;
-  margin: 0;
-}
-.col-md-15 {
-  max-width: 100%;
-  margin-top: 100px;
-}
 
 
 

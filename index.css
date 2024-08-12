@@ -1050,7 +1050,105 @@ footer {
 .claim-btn:hover {
   background-color: #0056b3;
 }
+/* Media Queries for Kindle Fire HDX (800x1280) */
+@media (max-width: 800px) {
 
+  .navbar {
+      flex-direction: column;
+      padding: 5px;
+  }
+
+  .logo a {
+      font-size: 20px;
+      margin-left: 0;
+  }
+
+  .pages {
+      margin-left: 0;
+      justify-content: center;
+  }
+
+  .nav-items {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-link {
+      margin: 5px 0;
+      text-indent: 0;
+      white-space: normal; /* Allow wrapping */
+  }
+
+  .carousel-container {
+      height: auto;
+  }
+
+  .slide-content h2 {
+      font-size: 1.5rem;
+  }
+
+  .slide-content p {
+      font-size: 0.9rem;
+  }
+
+  .slide-content button {
+      width: 150px;
+      font-size: 0.9rem;
+  }
+
+  .booking-container .tabs {
+      flex-direction: column;
+      margin-right: 0;
+  }
+
+  .booking-container .tab-item {
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+
+  .form-group {
+      width: 100%;
+  }
+
+  .form-control {
+      width: 100%;
+  }
+
+  .travelers-table {
+      width: 100%;
+  }
+
+  .card img {
+      height: auto;
+  }
+
+  .card-container:hover .card img {
+      transform: none;
+  }
+
+  .help-center {
+      margin: 20px auto;
+  }
+
+  .support-container {
+      flex-direction: column;
+  }
+
+  .support-tabs {
+      width: 100%;
+      left: 0;
+  }
+
+  .faq-container,
+  .newsletter-container {
+      margin: 10px 0;
+  }
+
+  .contact-form {
+      width: 100%;
+      left: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   
         .nav-items > *:not(.nav-brand):not(.dropdown) {

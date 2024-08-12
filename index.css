@@ -1270,6 +1270,11 @@ and (orientation: portrait) {
   padding: 20px;
   box-sizing: border-box;
 }
+.fas.fa-map-marker-alt{
+
+  margin-top: 44px;
+
+}
 
 .form-container {
   

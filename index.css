@@ -1149,6 +1149,48 @@ footer {
       left: 0;
   }
 }
+/* Target Fire HDX in Portrait Mode */
+@media only screen 
+and (min-device-width: 800px) 
+and (max-device-width: 1280px) 
+and (orientation: portrait) {
+
+  /* Ensure the navbar elements are inline */
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment if necessary */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+  }
+
+  .navbar .nav-item {
+    display: inline-block;
+    margin-right: 15px; /* Adjust spacing as needed */
+  }
+
+  /* If the navbar height is causing issues */
+  .navbar {
+    height: auto; /* Adjust height automatically */
+  }
+
+  /* Ensure the overall layout mimics the horizontal view */
+  .content-wrapper {
+    display: flex;
+    flex-direction: row; /* Ensure content flows horizontally */
+    justify-content: space-between; /* Adjust as necessary */
+  }
+
+  .sidebar {
+    width: 25%; /* Adjust as needed to match horizontal layout */
+  }
+
+  .main-content {
+    width: 75%; /* Adjust as needed to match horizontal layout */
+  }
+
+  /* Additional styles as needed to replicate horizontal layout */
+}
+
+
 @media screen and (max-width: 768px) {
   
         .nav-items > *:not(.nav-brand):not(.dropdown) {

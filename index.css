@@ -1073,48 +1073,20 @@ and (orientation: portrait) {
     max-width: calc(100% / 5); /* Adjust to the number of items in the navbar */
   }
 
- /* Adjust div containers to prevent wrapping */
- .content-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* Prevent wrapping */
-}
+  /* If the navbar height is causing issues */
+  .navbar {
+    height: auto; /* Adjust height automatically */
+  }
 
-.content-wrapper .container {
-  flex-grow: 1; /* Allow containers to grow as needed */
-  flex-basis: 0; /* Set a base size */
-  max-width: calc(100% / 3); /* Adjust based on the number of containers */
-  box-sizing: border-box; /* Include padding and border in width/height */
-  padding: 10px; /* Adjust padding if needed */
-}
+  /* Ensure the overall layout mimics the horizontal view */
+  .content-wrapper {
+    display: flex;
+    flex-direction: row; /* Ensure content flows horizontally */
+    justify-content: space-between; /* Adjust as necessary */
+  }
 
-/* Sidebar and Main Content Adjustments */
-.sidebar {
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 25%; /* Adjust as needed */
-}
-
-.main-content {
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 75%; /* Adjust as needed */
-}
-
-/* Ensure no wrapping in the footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-.footer .footer-item {
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: calc(100% / 4); /* Adjust based on the number of footer items */
-}
-
+  .sidebar {
+    width: 25%; /* Adjust as needed to matc
 
   .main-content {
     width: 75%; /* Adjust as needed to match horizontal layout */

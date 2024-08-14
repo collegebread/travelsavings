@@ -1051,36 +1051,43 @@ footer {
   background-color: #0056b3;
 }
 /* Example Breakpoint for Fire HDX in Portrait */
-@media only screen and (max-width: 800px) and (min-width: 600px) and (orientation: portrait) {
-  /* Ensure nav elements are displayed inline */
+/* Target Fire HDX in Portrait Mode */
+@media only screen 
+and (min-device-width: 800px) 
+and (max-device-width: 1280px) 
+and (orientation: portrait) {
+
+  /* Ensure the navbar elements are inline */
   .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    white-space: nowrap;
-    /* Additional styles to match horizontal layout */
+    justify-content: space-between; /* Adjust alignment if necessary */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
   }
 
-  .nav-item {
+  .navbar .nav-item {
     display: inline-block;
-    white-space: nowrap;
-    margin: 0 10px; /* Adjust spacing as needed */
+    margin-right: 15px; /* Adjust spacing as needed */
   }
 
-  /* Any additional elements that need to maintain the horizontal layout */
-  .main-content, .sidebar {
+  /* If the navbar height is causing issues */
+  .navbar {
+    height: auto; /* Adjust height automatically */
+  }
+
+  /* Ensure the overall layout mimics the horizontal view */
+  .content-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Ensure content flows horizontally */
+    justify-content: space-between; /* Adjust as necessary */
   }
 
-  /* Make sure other elements behave like in the horizontal layout */
-  .container {
-    display: flex;
-    flex-direction: row;
+  .sidebar {
+    width: 25%; /* Adjust as needed to match horizontal layout */
   }
 
-  /* Adjust other sections to match the horizontal view */
+  .main-content {
+    width: 75%; /* Adjust as needed to match horizontal layout */
+  }
 }
 
 @media screen and (max-width: 768px) {

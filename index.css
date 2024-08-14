@@ -1059,6 +1059,7 @@ and (orientation: portrait) {
 
   /* Ensure the navbar elements are inline */
   .navbar {
+    width: max-content;
     display: flex;
     justify-content: space-between; /* Adjust alignment if necessary */
     flex-wrap: nowrap; /* Prevent wrapping to a new line */

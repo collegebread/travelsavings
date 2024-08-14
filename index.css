@@ -1050,6 +1050,39 @@ footer {
 .claim-btn:hover {
   background-color: #0056b3;
 }
+/* Example Breakpoint for Fire HDX in Portrait */
+@media only screen and (max-width: 800px) and (min-width: 600px) and (orientation: portrait) {
+  /* Ensure nav elements are displayed inline */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    /* Additional styles to match horizontal layout */
+  }
+
+  .nav-item {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 10px; /* Adjust spacing as needed */
+  }
+
+  /* Any additional elements that need to maintain the horizontal layout */
+  .main-content, .sidebar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Make sure other elements behave like in the horizontal layout */
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Adjust other sections to match the horizontal view */
+}
+
 @media screen and (max-width: 768px) {
   
   .nav-items > *:not(.nav-brand):not(.dropdown) {

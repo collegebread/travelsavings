@@ -1050,466 +1050,162 @@ footer {
 .claim-btn:hover {
   background-color: #0056b3;
 }
-/* Media Queries for Kindle Fire HDX (800x1280) */
-@media (max-width: 800px) {
-
-  .navbar {
-      flex-direction: column;
-      padding: 5px;
-  }
-
-  .logo a {
-      font-size: 20px;
-      margin-left: 0;
-  }
-
-  .pages {
-      margin-left: 0;
-      justify-content: center;
-  }
-
-  .nav-items {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .nav-link {
-      margin: 5px 0;
-      text-indent: 0;
-      white-space: normal; /* Allow wrapping */
-  }
-
-  .carousel-container {
-      height: auto;
-  }
-
-  .slide-content h2 {
-      font-size: 1.5rem;
-  }
-
-  .slide-content p {
-      font-size: 0.9rem;
-  }
-
-  .slide-content button {
-      width: 150px;
-      font-size: 0.9rem;
-  }
-
-  .booking-container .tabs {
-      flex-direction: column;
-      margin-right: 0;
-  }
-
-  .booking-container .tab-item {
-      margin-right: 0;
-      margin-bottom: 5px;
-  }
-
-  .form-group {
-      width: 100%;
-  }
-
-  .form-control {
-      width: 100%;
-  }
-
-  .travelers-table {
-      width: 100%;
-  }
-
-  .card img {
-      height: auto;
-  }
-
-  .card-container:hover .card img {
-      transform: none;
-  }
-
-  .help-center {
-      margin: 20px auto;
-  }
-
-  .support-container {
-      flex-direction: column;
-  }
-
-  .support-tabs {
-      width: 100%;
-      left: 0;
-  }
-
-  .faq-container,
-  .newsletter-container {
-      margin: 10px 0;
-  }
-
-  .contact-form {
-      width: 100%;
-      left: 0;
-  }
-}
-/* Target Fire HDX in Portrait Mode */
-@media only screen 
-and (min-device-width: 800px) 
-and (max-device-width: 1280px) 
-and (orientation: portrait) {
-
-  /* Ensure the navbar elements are inline */
-  .navbar {
-    display: flex;
-    justify-content: space-between; /* Adjust alignment if necessary */
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-  }
-
-  .navbar .nav-item {
-    display: inline-block;
-    margin-right: 15px; /* Adjust spacing as needed */
-  }
-
-  /* If the navbar height is causing issues */
-  .navbar {
-    height: auto; /* Adjust height automatically */
-  }
-
-  /* Ensure the overall layout mimics the horizontal view */
-  .content-wrapper {
-    display: flex;
-    flex-direction: row; /* Ensure content flows horizontally */
-    justify-content: space-between; /* Adjust as necessary */
-  }
-
-  .sidebar {
-    width: 25%; /* Adjust as needed to match horizontal layout */
-  }
-
-  .main-content {
-    width: 75%; /* Adjust as needed to match horizontal layout */
-  }
-
-  /* Additional styles as needed to replicate horizontal layout */
-}
-
-
 @media screen and (max-width: 768px) {
   
-        .nav-items > *:not(.nav-brand):not(.dropdown) {
-          display: none;
-        }
-      
-        .nav-brand, .dropdown {
-          flex: 1;
-          justify-content: space-between;
-        }
-      
-        /* .nav-brand h1 a {
-          margin-left: 0;
-        } */
-        .logo a,
-        .logo a:hover {
-        color: rgb(255, 141, 226);
-        margin-left:90px;
-        font-family: 'Permanent Marker', cursive;
-        text-decoration: none;
-        }
-    
-  .btn.btn-warning.dropdown-toggle{
-      width: max-content;
+  .nav-items > *:not(.nav-brand):not(.dropdown) {
+    display: none;
   }
-    /* dropdown signin menu*/
-    .dropdown-menu.p-4{
-      width: 250px; 
-      margin-right: 64px;
-     
-   }  
+
+  .nav-brand, .dropdown {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  /* .nav-brand h1 a {
+    margin-left: 0;
+  } */
+  .logo a,
+  .logo a:hover {
+  color: rgb(255, 141, 226);
+  margin-left:90px;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
+  } 
+
+.btn.btn-warning.dropdown-toggle{
+width: max-content;
+}
 
 
-  .mobile-menu-toggle {
-      display: block;
-  }
-  .slide-content {
-      width: 90%; /* Adjust the width for smaller screens */
-  }
-  .aspect-ratio-container {
-      padding-top: 75%; /* Adjusted aspect ratio for smaller screens */
-  }
- 
+.mobile-menu-toggle {
+display: block;
+}
+.slide-content {
+width: 90%; /* Adjust the width for smaller screens */
+}
+.aspect-ratio-container {
+padding-top: 75%; /* Adjusted aspect ratio for smaller screens */
+}
 
-  /* Underline animation effect for booking-container nav-links */
-  .booking-container .nav-tabs {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin-right: 10%;
-  margin-bottom: 10px; /* Add margin between nav-tabs and form */
-  
+
+/* Underline animation effect for booking-container nav-links */
+.booking-container .nav-tabs {
+list-style: none;
+padding: 0;
+display: flex;
+margin-right: 10%;
+margin-bottom: 10px; /* Add margin between nav-tabs and form */
+
 }
 
 .booking-container .nav-item {
-  flex: 1;
-  margin-right:0px; /* Adjust spacing between nav-items */
-  
+flex: 1;
+margin-right:0px; /* Adjust spacing between nav-items */
+
 }
 
-  
-  .booking-container input,
-  .booking-container select,
-  .booking-container textarea {
-      width: 100%; /* Make input fields full-width on small screens */
-      
-  }
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+width: 100%; /* Make input fields full-width on small screens */
+
+}
 
 
 /* Adjust styling for checkboxes */
 .booking-container input[type="checkbox"] {
-  margin-left: 5px; /* Add some spacing to checkboxes */
-  
+margin-left: 5px; /* Add some spacing to checkboxes */
+
 }
 .booking-container {
-  max-width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.fas.fa-map-marker-alt{
-
-  margin-top: 44px;
-
+max-width: 100%;
+padding: 20px;
+box-sizing: border-box;
 }
 
 .form-container {
-  
-  margin-top: 10px;
-  max-height: calc(100% - 70px); /* Adjusted max-height */
-  overflow-y: auto; 
+
+margin-top: 10px;
+max-height: calc(100% - 70px); /* Adjusted max-height */
+overflow-y: auto; 
 }
 .form-group label {
-  display: block;
-  margin-left: 5px;
-  font-weight: bold;
-  
+display: block;
+margin-left: 5px;
+font-weight: bold;
+
 }
 
 .form-group {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 .form-group label {
-  margin-bottom: 8px; /* Add space below form group labels */
+margin-bottom: 8px; /* Add space below form group labels */
 }
 
 
 
 
-  /* Travel Class Selectors Styles */
+/* Travel Class Selectors Styles */
 .travel-class {
-  width:200px;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  margin-left: 100px;
+width:200px;
+height: 50px;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+margin-left: 100px;
 }
 .tab-content {
-  padding: 10px;
+padding: 10px;
 }
-.scroll{
-  padding: 10px;
-}
+
 .card-img {
-  order: 1; /* Move the image below the card body */
+order: 1; /* Move the image below the card body */
 }
 
 .card-body {
-  order: 2; /* Move the card body above the image */
+order: 2; /* Move the card body above the image */
 }
-.container-fluid {
-  height: auto;
-}
-
-.card-container {
-  width: 100%;
-  margin-top: 20px;
+.help-container {
+padding: 10px;
 }
 
+.radio-group {
+display: flex;
+flex-direction: column;
+}
 
+label {
+display: block;
+margin-bottom: 5px;
+}
 
+input,
+select,
+button {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+}
+.newsletter-container {
+text-align: center;
+}
 
- 
+.subscribe-form label,
+.subscribe-form input,
+.subscribe-form button {
+flex: 1 1 100%;
+width: 100%;
+}
 }
 
 /* Specific fixes for the mentioned issues */
 @media (max-width: 768px) {
-  /* 1. Fix overlapping labels, headers, and input boxes */
-  .nav-link, label, input, select, button {
-    display: block;
-  }
-  .carousel-container {
-    position: relative;
-    height:max-content;
-    background-color: black; 
-  
-    
-  }
-  
-  
-  .carousel-inner {
-    width: 100%;
-    height: 100%;
-  }
-     /* Minimalist Navigation Buttons */
-     .carousel-control-prev,
-     .carousel-control-next {
-         width: 3%;
-         color: #fff;
-         background: none;
-         border: none;
-         font-size: 2rem;
-     }
-  
-     .carousel-control-prev-icon,
-     .carousel-control-next-icon {
-         background-color: #000; /* Change the background color */
-         color: #fff; /* Change the arrow color */
-         border-radius: 50%;
-     }
-  
-    
-         /* Text and Button Styles */
-         .slide-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-        }
-  
-        .slide-content h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-  
-        .slide-content p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-        }
-  
-        .slide-content button {
-            width: 200px;
-            background-color: #ffcc00;
-            color: #000;
-            margin-left:35.50%;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            white-space: nowrap; /* Prevents wrapping to the next line */
-            
-        }
-        .form-group {
-          display: inline;
-          margin-bottom: 15px; /* Add space below each form group */
-        }
-      
-        .form-group label {
-          margin-bottom: 5px; /* Add space below each label */
-          font-weight: bold;
-        }
-      
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-          width: 100%; /* Make input fields full-width */
-          box-sizing: border-box;
-          margin-bottom: 10px; /* Add space below each input field */
-        }
-      
-
-  /* 2. Fix input boxes not shrinking or remaining roomy */
-  .form-control {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* 3. Fix overlapping radio buttons and labels */
-  .radio-group label {
-    margin-bottom: 5px;
-  }
-
-  /* 4. Fix overlapping checkboxes and labels */
-  .package-options label {
-    display: block;
-    margin-bottom: 5px;
-    margin-left: 5px;
-  }
-  
-  .fa-list {
-      left: 10px;
-      top: 90px;
-    }
-  
-    .search-icon {
-      right: 10px;
-      top: 90px;
-      cursor: pointer;
-    }
-            /* Travel Class Selectors Styles */
- .travel-class {
-  width:200px;
-  display: flex;
-  margin-left: 300px;
+/* 1. Fix overlapping labels, headers, and input boxes */
+.nav-link, label, input, select, button {
+display: block;
 }
-#travel-class-select { 
-width: 90px;
-height: 40px;
-border-radius: 12px;
-background-color: rgb(219, 227, 238);
-}
-.primary-sidebar, .secondary-sidebar {
-  display: none;
-}
-
-.card-container {
-  width: 100%;
-}
-}
-/* Custom Mobile-First Styles */
-@media (max-width: 768px) {
-
-.primary-sidebar, .secondary-sidebar {
-   display: none;
-}
-
-.card-container {
-   width: 100%;
-}
-.btn.btn-warning.custom-card-btn {
- background-color: #ffc107; /* Button color */
- color: #212529; /* Button text color */
- margin-top: 10px;
-}
-.btn.btn-outline-danger.btn-favorite{
- width: 180px;
- margin: 10px 0 0 20px;
-
-}
-.scroll {
- padding: 15px;
- margin-bottom: 30px; /* Extra space between scroll sections and footer on smaller screens */
-}
-
-
-}
-
-/* Specific fixes for the mentioned issues */
-@media (max-width: 676px) {
-  /* dropdown signin menu*/
-  .dropdown-menu.p-4{
-      width: 250px; 
-      margin-left: 10px;
-     
-  }  
-  /* Carousel Container Styles */
 .carousel-container {
 position: relative;
 height:max-content;
@@ -1523,61 +1219,270 @@ background-color: black;
 width: 100%;
 height: 100%;
 }
- /* Minimalist Navigation Buttons */
- .carousel-control-prev,
- .carousel-control-next {
-     width: 3%;
-     color: #fff;
-     background: none;
-     border: none;
-     font-size: 2rem;
- }
+/* Minimalist Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+   width: 3%;
+   color: #fff;
+   background: none;
+   border: none;
+   font-size: 2rem;
+}
 
- .carousel-control-prev-icon,
- .carousel-control-next-icon {
-     background-color: #000; /* Change the background color */
-     color: #fff; /* Change the arrow color */
-     border-radius: 50%;
- }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+   background-color: #000; /* Change the background color */
+   color: #fff; /* Change the arrow color */
+   border-radius: 50%;
+}
 
 
-     /* Text and Button Styles */
-     .slide-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #fff;
-    }
+   /* Text and Button Styles */
+   .slide-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+  }
 
-    .slide-content h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
+  .slide-content h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
 
-    .slide-content p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
+  .slide-content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+  }
 
-    .slide-content button {
-        width: 200px;
-        background-color: #ffcc00;
-        color: #000;
-        margin-left:35.50%;
-        padding: 10px 20px;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        white-space: nowrap; /* Prevents wrapping to the next line */
-        
-    }
+  .slide-content button {
+      width: 200px;
+      background-color: #ffcc00;
+      color: #000;
+      margin-left:35.50%;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      white-space: nowrap; /* Prevents wrapping to the next line */
+      
+  }
+  .form-group {
+    display: inline;
+    margin-bottom: 15px; /* Add space below each form group */
+  }
 
-    .slide-content button:hover {
-        background-color: #ffdb4d;
-    }
+  .form-group label {
+    margin-bottom: 5px; /* Add space below each label */
+    font-weight: bold;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; /* Make input fields full-width */
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Add space below each input field */
+  }
+
+
+/* 2. Fix input boxes not shrinking or remaining roomy */
+.form-control {
+width: 100%;
+box-sizing: border-box;
+}
+
+/* 3. Fix overlapping radio buttons and labels */
+.radio-group label {
+margin-bottom: 5px;
+}
+
+/* 4. Fix overlapping checkboxes and labels */
+.package-options label {
+display: block;
+margin-bottom: 5px;
+margin-left: 5px;
+}
+
+.fa-list {
+left: 10px;
+top: 90px;
+}
+
+.search-icon {
+right: 10px;
+top: 90px;
+cursor: pointer;
+}
+      /* Travel Class Selectors Styles */
+.travel-class {
+width:200px;
+display: flex;
+margin-left: 300px;
+}
+#travel-class-select { 
+width: 90px;
+height: 40px;
+border-radius: 12px;
+background-color: rgb(219, 227, 238);
+}
+.primary-sidebar, .secondary-sidebar {
+display: none;
+}
+
+.card-container {
+width: 100%;
+}
+}
+
+.primary-sidebar, .secondary-sidebar {
+padding: 20px;
+background-color: #ffffff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+height: 100vh;
+overflow-y: auto;
+}
+
+
+.map-container {
+height: 100vh;
+background-color: #f0f0f0;
+overflow: hidden;
+}
+
+#map {
+width: 100%;
+height: 100%;
+}
+
+
+/* Custom Mobile-First Styles */
+@media (max-width: 768px) {
+/* dropdown signin menu*/
+.dropdown-menu.p-4{
+width: 250px; 
+margin-right: 64px;
+
+}  
+.primary-sidebar, .secondary-sidebar {
+display: none;
+}
+
+.card-container {
+width: 100%;
+}
+.btn.btn-warning.custom-card-btn {
+background-color: #ffc107; /* Button color */
+color: #212529; /* Button text color */
+margin-top: 10px;
+}
+.btn.btn-outline-danger.btn-favorite{
+width: 180px;
+margin: 10px 0 0 20px;
+
+}
+/* Add this style for the infinite scroll button */
+#infinite-scroll-btn {
+display: flex;
+width: 180px;
+align-items: center;
+justify-content: center;
+background-color: #e3e3e3;
+color: #000000;
+padding: 15px;
+height: 30px;
+cursor: pointer;
+bottom: 20px;
+margin: 10px 0 10px 260px;
+animation: bounce 5s infinite;
+}
+
+}
+
+
+
+
+
+/* Specific fixes for the mentioned issues */
+@media (max-width: 676px) {
+/* dropdown signin menu*/
+.dropdown-menu.p-4{
+width: 250px; 
+margin-left: 10px;
+
+}  
+/* Carousel Container Styles */
+.carousel-container {
+position: relative;
+height:max-content;
+background-color: black; 
+
+
+}
+
+
+.carousel-inner {
+width: 100%;
+height: 100%;
+}
+/* Minimalist Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+width: 3%;
+color: #fff;
+background: none;
+border: none;
+font-size: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #000; /* Change the background color */
+color: #fff; /* Change the arrow color */
+border-radius: 50%;
+}
+
+
+/* Text and Button Styles */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.slide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.slide-content button {
+  width: 200px;
+  background-color: #ffcc00;
+  color: #000;
+  margin-left:35.50%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents wrapping to the next line */
+  
+}
+
+.slide-content button:hover {
+  background-color: #ffdb4d;
+}
 
 
 .aspect-ratio-container {
@@ -1597,286 +1502,95 @@ object-fit: cover;
 filter: brightness(70%);
 }
 
- /* Booking-container styles */
- .booking-container {
-  width: 100%;
-  max-width: 100%;
-  margin-top: 0px;
-}
-      /* Underline animation effect for booking-container nav-links */
-      .booking-container .nav-tabs {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        margin-right: 10%;
-        margin-bottom: 10px; /* Add margin between nav-tabs and form */
-        
-    }
-    
-    .booking-container .nav-item {
-        flex: 1;
-        margin-right:5px; /* Adjust spacing between nav-items */
-        
-    }
-  .form-group {
-    display: inline;
-    margin-bottom: 15px; /* Add space below each form group */
-  }
-
-  .form-group label {
-    margin-bottom: 5px; /* Add space below each label */
-    font-weight: bold;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%; /* Make input fields full-width */
-    box-sizing: border-box;
-    margin-bottom: 10px; /* Add space below each input field */
-  }
-
-  /* Adjust styling for checkboxes and radio buttons */
-  .radio-group label,
-  .package-options label {
-    display: block;
-    margin-bottom: 8px; /* Add space below radio group and package options labels */
-  }
-
-  .btn.btn-warning.btn-xs {
-    margin-top: 12px; /* Add space above the search buttons */
-  }
-
- 
-      /* Travel Class Selectors Styles */
- .travel-class {
-   width:200px;
-   height: 50px;
-   display: flex;
-   justify-content: flex-end;
-   margin-bottom: 20px;
-   margin-left: 200px;
-}
-
-.package-options label{
-margin-left: 5px;
-}
-  /* Add this style for the infinite scroll button */
-  #infinite-scroll-btn {
-    display: flex;
-    width: 180px;
-    align-items: center;
-    justify-content: center;
-    background-color: #e3e3e3;
-    color: #000000;
-    padding: 15px;
-    height: 30px;
-    cursor: pointer;
-    bottom: 20px;
-    margin: 10px 0 10px 180px;
-    animation: bounce 5s infinite;
-  }
-}
-
-/* Specific fixes for screens up to 400px */
-@media (max-width: 575px) {
-/*sign in dropdown*/
-  .dropdown-menu.p-4{
-      width: 250px; 
-      margin-left: 0px;
-     
-  }
- /* Carousel Container Styles */
-.carousel-container {
-position: relative;
-height:max-content;
-background-color: black; 
-
-
-}
-
-
-.carousel-inner {
+/* Booking-container styles */
+.booking-container {
 width: 100%;
-height: 100%;
+max-width: 100%;
+margin-top: 0px;
 }
- /* Minimalist Navigation Buttons */
- .carousel-control-prev,
- .carousel-control-next {
-     width: 3%;
-     color: #fff;
-     background: none;
-     border: none;
-     font-size: 2rem;
- }
-
- .carousel-control-prev-icon,
- .carousel-control-next-icon {
-     background-color: #000; /* Change the background color */
-     color: #fff; /* Change the arrow color */
-     border-radius: 50%;
- }
-
-
-     /* Text and Button Styles */
-     .slide-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: #fff;
-    }
-
-    .slide-content h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-
-    .slide-content p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .slide-content button {
-        width: 200px;
-        background-color: #ffcc00;
-        color: #000;
-        padding: 10px 20px;
-        margin-left:20.0%;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        white-space: nowrap; /* Prevents wrapping to the next line */
-        
-    }
-
-    .slide-content button:hover {
-        background-color: #ffdb4d;
-    }
-
-
-.aspect-ratio-container {
-position: relative;
-overflow: hidden;
-padding-top: 50.25%; /* 16:9 Aspect Ratio (h/w * 100%) */
-background-color: black;
+/* Underline animation effect for booking-container nav-links */
+.booking-container .nav-tabs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-right: 10%;
+  margin-bottom: 10px; /* Add margin between nav-tabs and form */
+  
 }
 
-.aspect-ratio-image {
-position: absolute;
-top: 0;
-left: 0;
-width: 70%;
-height: max-content;
-object-fit: cover;
-filter: brightness(70%);
+.booking-container .nav-item {
+  flex: 1;
+  margin-right:5px; /* Adjust spacing between nav-items */
+  
 }
-
- /* Booking-container styles */
- .booking-container {
-  width: 100%;
-  max-width: 100%;
-  margin-top: 0px;
-}
-
 .form-group {
-  display: inline;
-  margin-bottom: 15px; /* Add space below each form group */
+display: inline;
+margin-bottom: 15px; /* Add space below each form group */
 }
 
 .form-group label {
-  margin-bottom: 5px; /* Add space below each label */
-  font-weight: bold;
+margin-bottom: 5px; /* Add space below each label */
+font-weight: bold;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  width: 100%; /* Make input fields full-width */
-  box-sizing: border-box;
-  margin-bottom: 10px; /* Add space below each input field */
-  padding: 8px; /* Adjust padding for better touch input on mobile devices */
+width: 100%; /* Make input fields full-width */
+box-sizing: border-box;
+margin-bottom: 10px; /* Add space below each input field */
 }
 
 /* Adjust styling for checkboxes and radio buttons */
 .radio-group label,
 .package-options label {
-  display: block;
-  margin-bottom: 8px; /* Add space below radio group and package options labels */
+display: block;
+margin-bottom: 8px; /* Add space below radio group and package options labels */
 }
 
 .btn.btn-warning.btn-xs {
-  margin-top: 12px; /* Add space above the search buttons */
+margin-top: 12px; /* Add space above the search buttons */
 }
 
-#travel-class-select {
-  position: absolute;
-  width: 90px;
-  height: 50px;
-  margin-bottom: 180px;
-  margin-right: 125px;
-  height: 40px;
-  border-radius: 12px;
-  background-color: rgb(219, 227, 238);
-}
-.scroll {
-  padding: 10px;
-  margin-bottom: 40px; /* Ensure more space on very small screens */
-}
-.container-fluid {
-  padding: 10px;
+
+/* Travel Class Selectors Styles */
+.travel-class {
+width:200px;
+height: 50px;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+margin-left: 200px;
 }
 
-.card-container {
-  width: 100%;
-  margin-bottom: 15px;
+.package-options label{
+margin-left: 5px;
 }
-
-.card {
-  margin-bottom: 15px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-body {
-  padding: 8px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-md-5, .col-md-7, .col-md-15 {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-top: 90px;
-}
-
-.overlay {
-  text-align: center;
-  padding: 10px;
-}
-
-.btn-lg {
-  width: 100%;
+/* Add this style for the infinite scroll button */
+#infinite-scroll-btn {
+display: flex;
+width: 180px;
+align-items: center;
+justify-content: center;
+background-color: #e3e3e3;
+color: #000000;
+padding: 15px;
+height: 30px;
+cursor: pointer;
+bottom: 20px;
+margin: 10px 0 10px 180px;
+animation: bounce 5s infinite;
 }
 }
-
 
 /* Specific fixes for screens up to 400px */
-@media (max-width: 476px) {
- /* dropdown signin men*/
-  .dropdown-menu.p-4{
-      width: 250px; 
-      margin-left: 0px;
-     
-  }
+@media (max-width: 575px) {
+/*sign in dropdown*/
+.dropdown-menu.p-4{
+width: 250px; 
+margin-left: 0px;
+
+}
 /* Carousel Container Styles */
 .carousel-container {
 position: relative;
@@ -1894,58 +1608,58 @@ height: 100%;
 /* Minimalist Navigation Buttons */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 3%;
-    color: #fff;
-    background: none;
-    border: none;
-    font-size: 2rem;
+width: 3%;
+color: #fff;
+background: none;
+border: none;
+font-size: 2rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000; /* Change the background color */
-    color: #fff; /* Change the arrow color */
-    border-radius: 50%;
+background-color: #000; /* Change the background color */
+color: #fff; /* Change the arrow color */
+border-radius: 50%;
 }
 
 
-    /* Text and Button Styles */
-    .slide-content {
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       text-align: center;
-       color: #fff;
-   }
+/* Text and Button Styles */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
 
-   .slide-content h2 {
-       font-size: 2rem;
-       margin-bottom: 10px;
-   }
+.slide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-   .slide-content p {
-       font-size: 1rem;
-       margin-bottom: 20px;
-   }
+.slide-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
 
-   .slide-content button {
-       width: 200px;
-       background-color: #ffcc00;
-       color: #000;
-       padding: 10px 20px;
-       margin-left:20.0%;
-       font-size: 1rem;
-       border: none;
-       border-radius: 5px;
-       cursor: pointer;
-       white-space: nowrap; /* Prevents wrapping to the next line */
-       
-   }
+.slide-content button {
+  width: 200px;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  margin-left:20.0%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents wrapping to the next line */
+  
+}
 
-   .slide-content button:hover {
-       background-color: #ffdb4d;
-   }
+.slide-content button:hover {
+  background-color: #ffdb4d;
+}
 
 
 .aspect-ratio-container {
@@ -1967,52 +1681,196 @@ filter: brightness(70%);
 
 /* Booking-container styles */
 .booking-container {
- width: 100%;
- max-width: 100%;
- margin-top: 0px;
+width: 100%;
+max-width: 100%;
+margin-top: 0px;
 }
 
 .form-group {
- display: inline;
- margin-bottom: 15px; /* Add space below each form group */
+display: inline;
+margin-bottom: 15px; /* Add space below each form group */
 }
 
 .form-group label {
- margin-bottom: 5px; /* Add space below each label */
- font-weight: bold;
+margin-bottom: 5px; /* Add space below each label */
+font-weight: bold;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
- width: 100%; /* Make input fields full-width */
- box-sizing: border-box;
- margin-bottom: 10px; /* Add space below each input field */
- padding: 8px; /* Adjust padding for better touch input on mobile devices */
+width: 100%; /* Make input fields full-width */
+box-sizing: border-box;
+margin-bottom: 10px; /* Add space below each input field */
+padding: 8px; /* Adjust padding for better touch input on mobile devices */
 }
 
 /* Adjust styling for checkboxes and radio buttons */
 .radio-group label,
 .package-options label {
- display: block;
- margin-bottom: 8px; /* Add space below radio group and package options labels */
+display: block;
+margin-bottom: 8px; /* Add space below radio group and package options labels */
 }
 
 .btn.btn-warning.btn-xs {
- margin-top: 12px; /* Add space above the search buttons */
+margin-top: 12px; /* Add space above the search buttons */
 }
 
 #travel-class-select {
- position: absolute;
- width: 90px;
- height: 50px;
- margin-bottom: 180px;
- margin-right: 125px;
- height: 40px;
- border-radius: 12px;
- background-color: rgb(219, 227, 238);
+position: absolute;
+width: 90px;
+height: 50px;
+margin-bottom: 180px;
+margin-right: 125px;
+height: 40px;
+border-radius: 12px;
+background-color: rgb(219, 227, 238);
 }
-   /* Add this style for the infinite scroll button */
+}
+/* Specific fixes for screens up to 400px */
+@media (max-width: 476px) {
+/* dropdown signin men*/
+.dropdown-menu.p-4{
+width: 250px; 
+margin-left: 0px;
+
+}
+/* Carousel Container Styles */
+.carousel-container {
+position: relative;
+height:max-content;
+background-color: black; 
+
+
+}
+
+
+.carousel-inner {
+width: 100%;
+height: 100%;
+}
+/* Minimalist Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+width: 3%;
+color: #fff;
+background: none;
+border: none;
+font-size: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: #000; /* Change the background color */
+color: #fff; /* Change the arrow color */
+border-radius: 50%;
+}
+
+
+/* Text and Button Styles */
+.slide-content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ color: #fff;
+}
+
+.slide-content h2 {
+ font-size: 2rem;
+ margin-bottom: 10px;
+}
+
+.slide-content p {
+ font-size: 1rem;
+ margin-bottom: 20px;
+}
+
+.slide-content button {
+ width: 200px;
+ background-color: #ffcc00;
+ color: #000;
+ padding: 10px 20px;
+ margin-left:20.0%;
+ font-size: 1rem;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ white-space: nowrap; /* Prevents wrapping to the next line */
+ 
+}
+
+.slide-content button:hover {
+ background-color: #ffdb4d;
+}
+
+
+.aspect-ratio-container {
+position: relative;
+overflow: hidden;
+padding-top: 50.25%; /* 16:9 Aspect Ratio (h/w * 100%) */
+background-color: black;
+}
+
+.aspect-ratio-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 70%;
+height: max-content;
+object-fit: cover;
+filter: brightness(70%);
+}
+
+/* Booking-container styles */
+.booking-container {
+width: 100%;
+max-width: 100%;
+margin-top: 0px;
+}
+
+.form-group {
+display: inline;
+margin-bottom: 15px; /* Add space below each form group */
+}
+
+.form-group label {
+margin-bottom: 5px; /* Add space below each label */
+font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%; /* Make input fields full-width */
+box-sizing: border-box;
+margin-bottom: 10px; /* Add space below each input field */
+padding: 8px; /* Adjust padding for better touch input on mobile devices */
+}
+
+/* Adjust styling for checkboxes and radio buttons */
+.radio-group label,
+.package-options label {
+display: block;
+margin-bottom: 8px; /* Add space below radio group and package options labels */
+}
+
+.btn.btn-warning.btn-xs {
+margin-top: 12px; /* Add space above the search buttons */
+}
+
+#travel-class-select {
+position: absolute;
+width: 90px;
+height: 50px;
+margin-bottom: 180px;
+margin-right: 125px;
+height: 40px;
+border-radius: 12px;
+background-color: rgb(219, 227, 238);
+}
+/* Add this style for the infinite scroll button */
 #infinite-scroll-btn {
 display: flex;
 width: 180px;
@@ -2027,47 +1885,6 @@ bottom: 20px;
 margin: 10px 0 10px 130px;
 animation: bounce 5s infinite;
 }
-.container-fluid {
-  padding: 10px;
-}
-
-.card-container {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.card {
-  margin-bottom: 15px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-body {
-  padding: 8px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-md-5, .col-md-7, .col-md-15 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.overlay {
-  text-align: center;
-  padding: 10px;
-}
-
-.btn-lg {
-  width: 100%;
-}
-
 }
 /* Specific fixes for screens up to 400px */
 @media (max-width: 50) {
@@ -2088,58 +1905,58 @@ height: 100%;
 /* Minimalist Navigation Buttons */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 3%;
-    color: #fff;
-    background: none;
-    border: none;
-    font-size: 2rem;
+width: 3%;
+color: #fff;
+background: none;
+border: none;
+font-size: 2rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000; /* Change the background color */
-    color: #fff; /* Change the arrow color */
-    border-radius: 50%;
+background-color: #000; /* Change the background color */
+color: #fff; /* Change the arrow color */
+border-radius: 50%;
 }
 
 
-    /* Text and Button Styles */
-    .slide-content {
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       text-align: center;
-       color: #fff;
-   }
+/* Text and Button Styles */
+.slide-content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ color: #fff;
+}
 
-   .slide-content h2 {
-       font-size: 2rem;
-       margin-bottom: 10px;
-   }
+.slide-content h2 {
+ font-size: 2rem;
+ margin-bottom: 10px;
+}
 
-   .slide-content p {
-       font-size: 1rem;
-       margin-bottom: 20px;
-   }
+.slide-content p {
+ font-size: 1rem;
+ margin-bottom: 20px;
+}
 
-   .slide-content button {
-       width: 200px;
-       background-color: #ffcc00;
-       color: #000;
-       padding: 10px 20px;
-       margin-left:20.0%;
-       font-size: 1rem;
-       border: none;
-       border-radius: 5px;
-       cursor: pointer;
-       white-space: nowrap; /* Prevents wrapping to the next line */
-       
-   }
+.slide-content button {
+ width: 200px;
+ background-color: #ffcc00;
+ color: #000;
+ padding: 10px 20px;
+ margin-left:20.0%;
+ font-size: 1rem;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ white-space: nowrap; /* Prevents wrapping to the next line */
+ 
+}
 
-   .slide-content button:hover {
-       background-color: #ffdb4d;
-   }
+.slide-content button:hover {
+ background-color: #ffdb4d;
+}
 
 
 .aspect-ratio-container {
@@ -2161,52 +1978,52 @@ filter: brightness(70%);
 
 /* Booking-container styles */
 .booking-container {
- width: 100%;
- max-width: 100%;
- margin-top: 0px;
+width: 100%;
+max-width: 100%;
+margin-top: 0px;
 }
 
 .form-group {
- display: inline;
- margin-bottom: 15px; /* Add space below each form group */
+display: inline;
+margin-bottom: 15px; /* Add space below each form group */
 }
 
 .form-group label {
- margin-bottom: 5px; /* Add space below each label */
- font-weight: bold;
+margin-bottom: 5px; /* Add space below each label */
+font-weight: bold;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
- width: 100%; /* Make input fields full-width */
- box-sizing: border-box;
- margin-bottom: 10px; /* Add space below each input field */
- padding: 8px; /* Adjust padding for better touch input on mobile devices */
+width: 100%; /* Make input fields full-width */
+box-sizing: border-box;
+margin-bottom: 10px; /* Add space below each input field */
+padding: 8px; /* Adjust padding for better touch input on mobile devices */
 }
 
 /* Adjust styling for checkboxes and radio buttons */
 .radio-group label,
 .package-options label {
- display: block;
- margin-bottom: 8px; /* Add space below radio group and package options labels */
+display: block;
+margin-bottom: 8px; /* Add space below radio group and package options labels */
 }
 
 .btn.btn-warning.btn-xs {
- margin-top: 12px; /* Add space above the search buttons */
+margin-top: 12px; /* Add space above the search buttons */
 }
 
 #travel-class-select {
- position: absolute;
- width: 90px;
- height: 50px;
- margin-bottom: 180px;
- margin-right: 125px;
- height: 40px;
- border-radius: 12px;
- background-color: rgb(219, 227, 238);
+position: absolute;
+width: 90px;
+height: 50px;
+margin-bottom: 180px;
+margin-right: 125px;
+height: 40px;
+border-radius: 12px;
+background-color: rgb(219, 227, 238);
 }
-   /* Add this style for the infinite scroll button */
+/* Add this style for the infinite scroll button */
 #infinite-scroll-btn {
 display: flex;
 width: 180px;
@@ -2222,7 +2039,3 @@ margin: 10px 0 10px 160px;
 animation: bounce 5s infinite;
 }
 }
-
-
-
-

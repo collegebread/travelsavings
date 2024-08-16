@@ -1215,6 +1215,14 @@ margin-top: 50px;
 
 /* Styling for screen sizes up to 576px */
 @media (max-width: 576px) {
+  .navbar{
+    width: 100%;
+  }
+  .nav-brand  .logo{
+
+    float: left;
+
+  }
 .container-fluid {
 padding: 10px;
 }

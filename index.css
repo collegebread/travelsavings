@@ -1073,7 +1073,7 @@ and (orientation: portrait) {
     margin: 0;
   }
 
-  .navbar .nav-item {
+  .navbar .pages {
     display: inline-block;
     flex-grow: 1; /* Allow items to grow as needed */
     flex-basis: 0; /* Set a base size */

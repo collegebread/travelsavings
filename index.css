@@ -1229,6 +1229,15 @@ margin-top: 50px;
   .fa-map-marker-alt{
     margin-top: 20px;
   }
+  /* Travel Class Selectors Styles */
+.travel-class {
+  width:200px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  }
 .container-fluid {
 padding: 10px;
 }

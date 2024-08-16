@@ -1057,6 +1057,12 @@ and (min-device-width: 800px)
 and (max-device-width: 1280px) 
 and (orientation: portrait) {
 
+  .wrapper{
+    width: 800px;
+    height: auto;
+
+  }
+
   /* Ensure the navbar elements are inline */
   .navbar {
     width: 100%;

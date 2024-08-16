@@ -1295,6 +1295,15 @@ text-align: center;
 flex: 1 1 100%;
 width: 100%;
 }
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 15px;
+}
+
 }
 
 /* Specific fixes for the mentioned issues */

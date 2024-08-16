@@ -1061,13 +1061,12 @@ footer {
     justify-content: space-between;
   }
 
-  /* .nav-brand h1 a {
+  .nav-brand h1 a {
     margin-left: 0;
-  } */
+  }
   .logo a,
   .logo a:hover {
   color: rgb(255, 141, 226);
-  margin-left:90px;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
   }
@@ -1144,7 +1143,9 @@ margin-bottom: 15px;
 margin-bottom: 8px; /* Add space below form group labels */
 }
 
-
+.fa-map-marker-alt{
+  margin-top: 20px;
+}
 
 
 /* Travel Class Selectors Styles */
@@ -1225,7 +1226,7 @@ margin-top: 50px;
   }
 
   .fa-map-marker-alt{
-    margin-top: 33px;
+    margin-top: 20px;
   }
 .container-fluid {
 padding: 10px;

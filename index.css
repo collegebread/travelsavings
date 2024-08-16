@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Permanent+Marker&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@media screen and (max-width: 768px) 
+  
+{
 body{
  /* General Styles */
    width: 100%;
@@ -1049,6 +1052,7 @@ footer {
 
 .claim-btn:hover {
   background-color: #0056b3;
+}
 }
 @media screen and (max-width: 768px) {
   

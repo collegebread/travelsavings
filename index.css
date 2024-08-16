@@ -611,10 +611,10 @@ margin-left: 20px; /* Increased margin for better spacing */
     
   }
    /* Additional styles for the zoom effect */
-   .card-container:hover .card img {
+   /* .card-container:hover .card img {
     transform: scale(1.1);
     cursor: pointer;
-}
+} */
 
   
   .help-center {

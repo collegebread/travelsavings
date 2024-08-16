@@ -1056,10 +1056,15 @@ footer {
 and (min-device-width: 800px) 
 and (max-device-width: 1280px) 
 and (orientation: portrait) {
-
+.wrapper{
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
   /* Ensure the navbar elements are inline */
   .navbar {
-    width: max-content;
+    width: 100%;
     display: flex;
     justify-content: space-between; /* Adjust alignment if necessary */
     flex-wrap: nowrap; /* Prevent wrapping to a new line */

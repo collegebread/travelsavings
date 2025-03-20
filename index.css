@@ -30,7 +30,7 @@ header {
 /* Navbar styles */
 .navbar {
   position: relative;
-  background-color: white;
+  background-color: #030523;
   display: flex;
   justify-content: space-between;
   align-items: center;

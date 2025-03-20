@@ -21,7 +21,7 @@ a {
 
 
 header {
-  background-color: white;
+  background-color: skyblue;
   color: #000000;
   padding: 10px;
   text-align: center; 
@@ -52,7 +52,7 @@ header {
 
 .logo a,
 .logo a:hover {
-color: skyblue;
+color: #32CD80;
 margin-left:90px;
 font-family: 'Permanent Marker', cursive;
 text-decoration: none;

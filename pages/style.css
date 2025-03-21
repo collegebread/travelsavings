@@ -23,7 +23,6 @@ a * {
     font-size: 24px;
     
 }
-
 header {
   background-color: #030523;
   color: #000000;
@@ -34,7 +33,7 @@ header {
 /* Navbar styles */
 .navbar {
   position: relative;
-  background-color: #030523;
+  background-color:whitesmoke;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,16 +46,13 @@ header {
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  color:#fff;
-}
-
- .nav-brand {
+  color:black;
   margin: auto;
 }
 
 .logo a,
 .logo a:hover {
-color: rgb(255, 141, 226);
+color: black;
 margin-left:90px;
 font-family: 'Permanent Marker', cursive;
 text-decoration: none;

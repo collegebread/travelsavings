@@ -43,10 +43,7 @@ header {
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  color:#fff;
-}
-
- .nav-brand {
+  color:black;
   margin: auto;
 }
 

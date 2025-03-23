@@ -866,6 +866,13 @@ margin-left: 20px; /* Increased margin for better spacing */
 }
   
  
+ .newsletter-container h4,.newsletter-container p {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+  }
+  
+ 
   .subscribe-form {
     display: flex;
     flex-wrap: wrap;
@@ -885,8 +892,9 @@ margin-left: 20px; /* Increased margin for better spacing */
     box-sizing: border-box;
   }
   
-  .subscribe-form button {
+  .btn.btn-warning.subscribe-form.button {
     padding: 10px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     cursor: pointer;

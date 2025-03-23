@@ -837,12 +837,13 @@ margin-left: 20px; /* Increased margin for better spacing */
   
   .faq-container,
   .newsletter-container {
-    flex: 1;
+      flex: 1;
     margin: 0 20px;
-    background-color: #fff;
-    border: 1px solid #030523;
+    /* background-color: #fff; */
+    /* border: 1px solid #030523; */
     border-radius: 5px;
     padding: 20px;
+    background-color: #ffffff;
   }
   
 

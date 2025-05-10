@@ -1208,6 +1208,33 @@ padding: 10px;
 .scroll{
 padding: 10px;
 }
+/* Horizontally scrollable rows for mobile/tablet */
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbars for WebKit */
+}
+
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;
+}
+
+.scrollable-row .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 .card-img {
 order: 1; /* Move the image below the card body */
 }
@@ -1291,6 +1318,60 @@ padding: 10px;
 .card-container {
 width: 100%;
 margin-bottom: 15px;
+}
+
+/* Horizontally scrollable rows for mobile/tablet */
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbars for WebKit */
+}
+
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;
+}
+
+.scrollable-row .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}/* Horizontally scrollable rows for mobile/tablet */
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbars for WebKit */
+}
+
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;
+}
+
+.scrollable-row .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .card {

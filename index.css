@@ -504,35 +504,38 @@ margin-left: 20px; /* Increased margin for better spacing */
 .package-options {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px; /* Controls space between checkboxes */
   margin-bottom: 20px;
 }
 
-/* Individual checkbox labels */
+/* Checkbox group */
+.package-options .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Small space between each checkbox+label */
+  flex-wrap: nowrap;
+}
+
 .package-options label {
   display: flex;
   align-items: center;
   gap: 5px; /* Space between checkbox and label text */
   margin: 0;
+  white-space: nowrap; /* Prevent line breaks in label */
 }
 
-/* Ensure checkbox inputs aren't spaced too far */
-.package-options input[type="checkbox"] {
-  margin: 0;
-}
-
-/* Travel Class Selectors Styles */
+/* Travel Class Section */
 .travel-class {
   display: flex;
   align-items: center;
-  margin-left: auto; /* Pushes travel class to the right */
-  gap: 10px; /* Space between label and select */
+  gap: 10px; /* Spacing between label and dropdown */
+  margin-left: auto; /* Push to right end */
 }
 
 .travel-class label {
-  margin: 0;
   font-weight: bold;
+  margin: 0;
 }
 
 #travel-class-select {
@@ -540,8 +543,7 @@ margin-left: 20px; /* Increased margin for better spacing */
   height: 40px;
   border-radius: 12px;
   background-color: rgb(219, 227, 238);
-  border: 1px solid #ccc;
-}
+  border: 1px solid #ccc;}
 
 /* Main Card Container */
 

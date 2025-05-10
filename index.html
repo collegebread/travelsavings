@@ -874,6 +874,7 @@
   modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
 }
 
+// Update counts
 function increment(type) {
   const input = document.getElementById(type);
   input.value = parseInt(input.value) + 1;
@@ -887,6 +888,7 @@ function decrement(type) {
   }
 }
 
+// Apply selected values to the main input
 function applyTravelerSelection() {
   const adults = document.getElementById('adults').value;
   const children = document.getElementById('children').value;
@@ -899,6 +901,20 @@ function applyTravelerSelection() {
   document.getElementById('travelerInput').value = summary;
   document.getElementById('travelerModal').style.display = 'none';
 }
+
+// Close modal on outside click
+document.addEventListener('click', function (e) {
+  const modal = document.getElementById('travelerModal');
+  const input = document.getElementById('travelerInput');
+
+  if (
+    modal.style.display === 'block' &&
+    !modal.contains(e.target) &&
+    e.target !== input
+  ) {
+    modal.style.display = 'none';
+  }
+});
   
   
   // Function to open the popup card

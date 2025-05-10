@@ -54,7 +54,20 @@ margin-left:90px;
 font-family: 'Permanent Marker', cursive;
 text-decoration: none;
 }
-
+.verified-badge {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75em;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  line-height: 1.2em;
+  margin-right: 6px;
+  vertical-align: middle;
+  font-weight: bold;
+}
 .pages {
   display: flex;
   flex: 2;

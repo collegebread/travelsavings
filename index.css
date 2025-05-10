@@ -389,67 +389,55 @@ input, button {
 }
 
 
-.travelers-table {
-  display: none;
-  width: 100%;
-  margin-top: 10px;
-  border-collapse: collapse;
-  
+.traveler-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
 }
 
+.traveler-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  font-size: 14px;
+}
 
-.travelers-table th,
-.travelers-table td {
-  border: 12px solid white;
-  padding: 8px;
-  margin-top: 10px;
+.counter {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.counter input {
+  width: 36px;
   text-align: center;
-  background-color: #f5f5f5;
+  border: 1px solid navy;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin: 0 5px;
+  padding: 3px;
 }
 
 .increment-btn,
 .decrement-btn {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 5px;
   width: 24px;
   height: 24px;
-  border-color: navy;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 70px;
-
-  
-}
-.decrement-btn{
-  border-color: silver;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 70px;
-
-}
-
-
-.age-dropdown {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.age-dropdown a {
-  display: block;
-  padding: 8px;
-  text-decoration: none;
-  color: #000;
   text-align: center;
+  line-height: 22px;
+  border: 1px solid navy;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.age-dropdown a:hover {
-  background-color: #f1f1f1;
+.age-display {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #333;
 }
-
 
 .form-group label {
     display: block;

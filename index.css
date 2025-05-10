@@ -1064,7 +1064,7 @@ footer {
   }
   .logo a,
   .logo a:hover {
-  color: rgb(255, 141, 226);
+  color: black;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
   }

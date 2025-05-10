@@ -1153,7 +1153,7 @@ height: 50px;
 display: flex;
 justify-content: flex-end;
 margin-bottom: 20px;
-margin-left: 10px;
+margin-right: 100px;
 }
 /* Travel Class Selectors Styles */
 #travel-class-select {

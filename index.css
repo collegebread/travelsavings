@@ -55,29 +55,37 @@ font-family: 'Permanent Marker', cursive;
 text-decoration: none;
 }
 .logo {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
-  gap: 8px;
+  margin: 0;
 }
 
 .logo .href {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   color: #000;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 .verification-badge {
   display: inline-block;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
 }
 
 .badge-shape {
   width: 100%;
   height: 100%;
+  vertical-align: middle;
+}
+
+.vines-text {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
 }
 .pages {
   display: flex;

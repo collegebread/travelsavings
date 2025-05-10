@@ -1244,6 +1244,35 @@ display: flex;
 flex-wrap: wrap;
 }
 
+
+  /* Container holding images */
+  .row,
+  .scroll,
+  .image-row,
+  .card-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Cards or image containers inside those rows */
+  .card,
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 75%; /* Adjust for visible area */
+    scroll-snap-align: start;
+  }
+
+  .card img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+
 .col-md-3 {
 flex: 0 0 100%;
 max-width: 100%;

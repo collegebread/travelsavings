@@ -355,40 +355,38 @@
                 <label for="return-date">Return Date</label>
                 <input type="date" class="form-control" id="return-date" name="return-date">
               </div>
-              <div class="form-group">
-  <label for="travelerSummary">Travelers</label>
-  <div class="traveler-controls">
-    <!-- Adults -->
-    <div class="traveler-group">
+             <div class="form-group">
+  <label for="travelerInput">Travelers</label>
+  <input type="text" id="travelerInput" class="form-control-scale" value="1 Adult" readonly onclick="toggleTravelerModal()" />
+
+  <div id="travelerModal" class="traveler-modal">
+    <div class="traveler-row">
       <span>Adults</span>
       <div class="counter">
-        <span class="decrement-btn" onclick="decrement('adults')">-</span>
+        <span onclick="decrement('adults')">-</span>
         <input type="text" id="adults" value="1" readonly>
-        <span class="increment-btn" onclick="increment('adults')">+</span>
+        <span onclick="increment('adults')">+</span>
       </div>
     </div>
-
-    <!-- Children -->
-    <div class="traveler-group">
+    <div class="traveler-row">
       <span>Children (2–15)</span>
       <div class="counter">
-        <span class="decrement-btn" onclick="decrement('children')">-</span>
+        <span onclick="decrement('children')">-</span>
         <input type="text" id="children" value="0" readonly>
-        <span class="increment-btn" onclick="increment('children')">+</span>
+        <span onclick="increment('children')">+</span>
       </div>
-      <div class="age-display" id="childrenAges"></div>
     </div>
-
-    <!-- Infants -->
-    <div class="traveler-group">
+    <div class="traveler-row">
       <span>Infants (0–1)</span>
       <div class="counter">
-        <span class="decrement-btn" onclick="decrement('infants')">-</span>
+        <span onclick="decrement('infants')">-</span>
         <input type="text" id="infants" value="0" readonly>
-        <span class="increment-btn" onclick="increment('infants')">+</span>
+        <span onclick="increment('infants')">+</span>
       </div>
     </div>
+    <button onclick="applyTravelerSelection()">Done</button>
   </div>
+</div>
 </div><!-- Search Button -->
               <button type="submit" class="btn btn-warning btn-xs">Search Packages</button>
             </form>
@@ -871,6 +869,36 @@
       }
       
   });
+  function toggleTravelerModal() {
+  const modal = document.getElementById('travelerModal');
+  modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
+}
+
+function increment(type) {
+  const input = document.getElementById(type);
+  input.value = parseInt(input.value) + 1;
+}
+
+function decrement(type) {
+  const input = document.getElementById(type);
+  let value = parseInt(input.value);
+  if (value > 0 && !(type === 'adults' && value === 1)) {
+    input.value = value - 1;
+  }
+}
+
+function applyTravelerSelection() {
+  const adults = document.getElementById('adults').value;
+  const children = document.getElementById('children').value;
+  const infants = document.getElementById('infants').value;
+
+  let summary = `${adults} Adult${adults > 1 ? 's' : ''}`;
+  if (children > 0) summary += `, ${children} Child${children > 1 ? 'ren' : ''}`;
+  if (infants > 0) summary += `, ${infants} Infant${infants > 1 ? 's' : ''}`;
+
+  document.getElementById('travelerInput').value = summary;
+  document.getElementById('travelerModal').style.display = 'none';
+}
   
   
   // Function to open the popup card

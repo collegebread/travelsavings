@@ -1080,8 +1080,9 @@ footer {
 .claim-btn:hover {
   background-color: #0056b3;
 }
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 768px) {
+  
   .nav-items > *:not(.nav-brand):not(.dropdown) {
     display: none;
   }
@@ -1094,300 +1095,329 @@ footer {
   .nav-brand h1 a {
     margin-left: 0;
   }
-
   .logo a,
   .logo a:hover {
-    color: black;
-    font-family: 'Permanent Marker', cursive;
-    text-decoration: none;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
   }
 
-  .btn.btn-warning.dropdown-toggle {
-    width: max-content;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-  }
-
-  .slide-content {
-    width: 90%;
-  }
-
-  .aspect-ratio-container {
-    padding-top: 75%;
-  }
-
-  .booking-container {
-    max-width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .booking-container .nav-tabs {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-right: 10%;
-    margin-bottom: 10px;
-  }
-
-  .booking-container .nav-item {
-    flex: 1;
-    margin-right: 0;
-  }
-
-  .booking-container input,
-  .booking-container select,
-  .booking-container textarea {
-    width: 100%;
-  }
-
-  .booking-container input[type="checkbox"] {
-    margin-left: 5px;
-  }
-
-  .form-container {
-    margin-top: 10px;
-    max-height: calc(100% - 70px);
-    overflow-y: auto;
-  }
-
-  .form-group {
-    margin-bottom: 15px;
-  }
-
-  .form-group label {
-    display: block;
-    margin-left: 5px;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  .fa-map-marker-alt {
-    margin-top: 12px;
-  }
-
-  .travel-class {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    margin-left: -200px;
-  }
-
-  #travel-class-select {
-    width: 100%;
-    padding: 8px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .tab-content,
-  .scroll {
-    padding: 10px;
-  }
-
-  .card-img {
-    order: 1;
-  }
-
-  .card-body {
-    order: 2;
-    padding: 10px;
-  }
-
-  .container-fluid {
-    height: auto;
-    padding: 15px;
-  }
-
-  .card-container {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .card {
-    margin-top: 60px;
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .col-md-3,
-  .col-md-5,
-  .col-md-7,
-  .col-md-15 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 50px;
-  }
-
-  /* Horizontally scrollable rows */
-  .scrollable-row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding-bottom: 10px;
-  }
-
-  .scrollable-row::-webkit-scrollbar {
-    display: none;
-  }
-
-  .scrollable-row .card-container {
-    flex: 0 0 auto;
-    width: 70%;
-    scroll-snap-align: start;
-  }
-
-  .scrollable-row .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+.btn.btn-warning.dropdown-toggle{
+width: max-content;
 }
 
 
+.mobile-menu-toggle {
+display: block;
+}
+.slide-content {
+width: 90%; /* Adjust the width for smaller screens */
+}
+.aspect-ratio-container {
+padding-top: 75%; /* Adjusted aspect ratio for smaller screens */
+}
+
+
+/* Underline animation effect for booking-container nav-links */
+.booking-container .nav-tabs {
+list-style: none;
+padding: 0;
+display: flex;
+margin-right: 10%;
+margin-bottom: 10px; /* Add margin between nav-tabs and form */
+
+}
+
+.booking-container .nav-item {
+flex: 1;
+margin-right:0px; /* Adjust spacing between nav-items */
+
+}
+
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+width: 100%; /* Make input fields full-width on small screens */
+
+}
+
+
+/* Adjust styling for checkboxes */
+.booking-container input[type="checkbox"] {
+margin-left: 5px; /* Add some spacing to checkboxes */
+
+}
+.booking-container {
+max-width: 100%;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.form-container {
+
+margin-top: 10px;
+max-height: calc(100% - 70px); /* Adjusted max-height */
+overflow-y: auto; 
+}
+.form-group label {
+display: block;
+margin-left: 5px;
+font-weight: bold;
+
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+.form-group label {
+margin-bottom: 8px; /* Add space below form group labels */
+}
+
+.fa-map-marker-alt{
+  margin-top: 12px;
+}
+
+
+/* Travel Class Selectors Styles */
+.travel-class {
+width:200px;
+height: 50px;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+margin-left: -200px;
+}
+/* Travel Class Selectors Styles */
+#travel-class-select {
+  width: 100%;
+  padding: 8px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+.tab-content {
+padding: 10px;
+}
+.scroll{
+padding: 10px;
+}
+
+.card-img {
+order: 1; /* Move the image below the card body */
+}
+
+.card-body {
+order: 2; /* Move the card body above the image */
+}
+.container-fluid {
+height: auto;
+padding: 15px;
+}
+
+.card-container {
+width: 100%;
+margin-top: 20px;
+}
+
+.card {
+margin-top: 60px;
+}
+
+.card img {
+width: 100%;
+height: auto;
+
+}
+
+.card-body {
+padding: 10px;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+
+.col-md-3 {
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.col-md-5, .col-md-7, .col-md-15 {
+flex: 0 0 100%;
+max-width: 100%;
+margin-top: 50px;
+}
+
+
+
+}
+
+/* Styling for screen sizes up to 576px */
 @media (max-width: 576px) {
-
-  .navbar {
+  .navbar{
     width: 100%;
   }
+  .nav-brand  .logo{
 
-  .nav-brand .logo {
     float: left;
+
   }
 
-  .fa-map-marker-alt {
+  .fa-map-marker-alt{
     margin-top: 12px;
   }
-
-  .travel-class {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    margin-left: 50px;
+  /* Travel Class Selectors Styles */
+.travel-class {
+  width:200px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-left: 50px;
   }
-
-  .container-fluid {
-    padding: 10px;
-  }
-
-  .card-container {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .card {
-    margin-bottom: 15px;
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .card-body {
-    padding: 8px;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .col-md-3,
-  .col-md-5,
-  .col-md-7,
-  .col-md-15 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .help-container {
-    padding: 10px;
-  }
-
-  .radio-group {
-    display: flex;
-    flex-direction: column;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  input,
-  select,
-  button {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-
-  .newsletter-container {
-    text-align: center;
-  }
-
-  .subscribe-form label,
-  .subscribe-form input,
-  .subscribe-form button {
-    flex: 1 1 100%;
-    width: 100%;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-section {
-    margin-bottom: 15px;
-  }
-
-  /* Horizontally scrollable rows for extra small screens */
-  .scrollable-row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding-bottom: 10px;
-  }
-
-  .scrollable-row::-webkit-scrollbar {
-    display: none;
-  }
-
-  .scrollable-row .card-container {
-    flex: 0 0 auto;
-    width: 80%;
-    scroll-snap-align: start;
-  }
-
-  .scrollable-row .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+.container-fluid {
+padding: 10px;
 }
+
+.card-container {
+width: 100%;
+margin-bottom: 15px;
+}
+
+/* Horizontally scrollable rows for mobile/tablet */
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbars for WebKit */
+}
+
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;
+}
+
+.scrollable-row .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}/* Horizontally scrollable rows for mobile/tablet */
+.scrollable-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Optional: hide scrollbars for WebKit */
+}
+
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;
+}
+
+.scrollable-row .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card {
+margin-bottom: 15px;
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.card-body {
+padding: 8px;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.col-md-3 {
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.col-md-5, .col-md-7, .col-md-15 {
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+.help-container {
+padding: 10px;
+}
+
+.radio-group {
+display: flex;
+flex-direction: column;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+}
+.newsletter-container {
+text-align: center;
+}
+
+.subscribe-form label,
+.subscribe-form input,
+.subscribe-form button {
+flex: 1 1 100%;
+width: 100%;
+}
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-section {
+  margin-bottom: 15px;
+}
+
+}
+
 /* Specific fixes for the mentioned issues */
 @media (max-width: 768px) {
 /* 1. Fix overlapping labels, headers, and input boxes */

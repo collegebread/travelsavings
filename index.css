@@ -54,16 +54,19 @@ margin-left:90px;
 font-family: 'Permanent Marker', cursive;
 text-decoration: none;
 }
-.verified-ribbon {
+.verification-badge {
   display: inline-block;
-  position: relative;
-  background-color: black;
+  width: 18px;
+  height: 18px;
+  background-color: #000; /* Black background */
   color: white;
-  font-size: 0.75em;
-  padding: 4px 8px;
-  margin-right: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 6px;
   font-weight: bold;
-  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+  vertical-align: middle;
 }
 .pages {
   display: flex;

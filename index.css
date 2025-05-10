@@ -74,6 +74,7 @@ text-decoration: none;
   width: 32px;
   height: 32px;
   flex-shrink: 0;
+  margin-bottom:24px;
 }
 
 .badge-shape {

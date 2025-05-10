@@ -1155,6 +1155,20 @@ justify-content: flex-end;
 margin-bottom: 20px;
 margin-left: 100px;
 }
+/* Travel Class Selectors Styles */
+#travel-class-select {
+  width: 100%;
+  padding: 8px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
 .tab-content {
 padding: 10px;
 }

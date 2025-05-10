@@ -355,46 +355,40 @@
                 <label for="return-date">Return Date</label>
                 <input type="date" class="form-control" id="return-date" name="return-date">
               </div>
-             <div class="form-group">
-  <label for="travelerType">Travelers</label>
-  <div class="traveler-controls">
-    <div class="traveler-group">
-      <label for="adultCount">Adults</label>
-      <div class="counter">
-        <span class="decrement-btn" onclick="decrement('adults')">-</span>
-        <input type="text" id="adults" name="adults" value="1" readonly>
-        <span class="increment-btn" onclick="increment('adults')">+</span>
-      </div>
-    </div>
-
-    <div class="traveler-group">
-      <label for="childrenCount">Children (2–15)</label>
-      <div class="counter">
-        <span class="decrement-btn" onclick="decrement('children')">-</span>
-        <input type="text" id="children" name="children" value="0" readonly>
-        <select id="childrenAge" class="age-dropdown" onchange="selectAge('children', this.value)">
-          <option value="">Age</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <!-- Add more as needed -->
-        </select>
-        <span class="increment-btn" onclick="increment('children')">+</span>
-      </div>
-    </div>
-
-    <div class="traveler-group">
-      <label for="infantsCount">Infants (0–1)</label>
-      <div class="counter">
-        <span class="decrement-btn" onclick="decrement('infants')">-</span>
-        <input type="text" id="infants" name="infants" value="0" readonly>
-        <span class="increment-btn" onclick="increment('infants')">+</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Search Button -->
+              <div class="form-group">
+                <label for="adults">Travelers</label>
+                 <input type="number" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+                <table id="adultsTable" class="travelers-table">
+                  <tr>
+                    <td>Adults</td>
+                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
+                  </tr>
+                  <tr>
+                    <td>Children <br> (2 - 15)</td>
+                    <td>
+                      <span class="decrement-btn" onclick="decrement('children')">-</span>
+                      <span class="age-dropdown">
+                        <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
+                        <div class="age-dropdown-content" id="childrenAgeDropdown">
+                          <a href="#" onclick="selectAge('children', 2)">2</a>
+                          <a href="#" onclick="selectAge('children', 3)">3</a>
+                          <!-- Add more age options as needed -->
+                        </div>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="increment-btn" onclick="increment('children')">+</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Infants <br> (0 - 1)</td>
+                    <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
+                    <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Search Button -->
               <button type="submit" class="btn btn-warning btn-xs">Search Packages</button>
             </form>
           </div>

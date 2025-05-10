@@ -298,25 +298,31 @@
           </div>
           <!-- Packages Tab -->
           <div id="packages-tab" class="tab-content">
-            <form action="#" method="get" class="package-form">
-              <!-- Package Options - Checkboxes -->
-              <div class="package-options">
-                <label>
-                  <input type="checkbox" name="package-option" value="flight" checked disabled> Flight </label>
-                <label>
-                  <input type="checkbox" name="package-option" value="hotel" checked disabled> Hotel </label>
-                <label>
-                  <input type="checkbox" name="package-option" value="car"> Car Rental </label>
-              </div>
-              <!-- Travel Class - Selectors -->
-              <div class="travel-class">
-                <select id="travel-class-select" name="travel-class-select">
-                  <option value="economy">Economy</option>
-                  <option value="economy-plus">Economy Plus</option>
-                  <option value="business-class">Business Class</option>
-                  <option value="first-class">First Class</option>
-                </select>
-              </div>
+  <form action="#" method="get" class="package-form">
+    
+    <!-- Package Options - Checkboxes -->
+    <div class="package-options">
+      <label>
+        <input type="checkbox" name="package-option" value="flight" checked disabled> Flight
+      </label>
+      <label>
+        <input type="checkbox" name="package-option" value="hotel" checked disabled> Hotel
+      </label>
+      <label>
+        <input type="checkbox" name="package-option" value="car"> Car Rental
+      </label>
+
+      <!-- Travel Class Dropdown moved here -->
+      <label for="travel-class-select" style="display: block; margin-top: 10px;">Travel Class</label>
+      <select id="travel-class-select" name="travel-class-select" class="form-control">
+        <option value="economy">Economy</option>
+        <option value="economy-plus">Economy Plus</option>
+        <option value="business-class">Business Class</option>
+        <option value="first-class">First Class</option>
+      </select>
+    </div>
+
+    <!-- The rest of your form continues here -->
               <!-- User Information -->
               <div class="form-group">
                 <label for="from-location">Leaving From</label>

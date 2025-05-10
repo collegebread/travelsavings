@@ -233,149 +233,58 @@
               <!-- <button type="submit" class="btn btn-warning btn-xs" onclick="updateInputText()">Search Flights</button>
             </form>
           </div> -->
-          <div id="hotels-tab" class="tab-content active">
-            <form action="#" method="get">
-              <div class="form-group">
-                <label for="hotel-destination">Going to</label>
-                <input type="text" class="form-control" id="hotel-destination" name="hotel-destination" placeholder="Enter hotel destination">
-                <i class="fas fa-map-marker-alt" onclick="cycleDestination()"></i>
-                <div class="dropdown setLocation" id="dropdown-stay-location">
-                  <div onclick="selectDestination('Chicago', 'stay-location')">Chicago</div>
-                  <div onclick="selectDestination('Orlando', 'stay-location')">Orlando</div>
-                  <div onclick="selectDestination('Miami', 'stay-location')">Miami</div>
-                  <div onclick="selectDestination('New York', 'stay-location')">New York</div>
-                </div>
-            </div>
-            
-              <div class="form-group">
-                <label for="check-in">Check-in Date</label>
-                <input type="date" class="form-control" id="check-in" name="check-in">
-              </div>
-              <div class="form-group">
-                <label for="check-out">Check-out Date</label>
-                <input type="date" class="form-control" id="check-out" name="check-out">
-              </div>
-              <div class="form-group">
-                <label for="adults">Travelers</label>
-                <input type="number" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
-<!--                 <table id="adultsTable" class="travelers-table">
-                  <tr> -->
-<!--                     <td>Adults</td>
-                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
-                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
-                  </tr>
-                  <tr>
-                    <td>Children <br> (2 - 15)</td>
-                    <td>
-                      <span class="decrement-btn" onclick="decrement('children')">-</span>
-                      <span class="age-dropdown">
-                        <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
-                        <div class="age-dropdown-content" id="childrenAgeDropdown">
-                          <a href="#" onclick="selectAge('children', 2)">2</a>
-                          <a href="#" onclick="selectAge('children', 3)">3</a>
-                          <!-- Add more age options as needed -->
-<!--                         </div>
-                      </span>
-                    </td>
-                    <td>
-                      <span class="increment-btn" onclick="increment('children')">+</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Infants <br> (0 - 1)</td>
-                    <td><span class="decrement-btn" onclick="decrement('infants')">-</span></td>
-                    <td><span class="increment-btn" onclick="increment('infants')">+</span></td>
-                  </tr>
-                </table>  -->
-              </div>
-              <div class="form-group">
-                <label for="rooms">Rooms</label>
-                <input type="number" class="form-control" id="rooms" name="rooms" min="1">
-              </div>
-              <!-- Add more hotel-related fields as needed -->
-              <button type="submit" class="btn btn-warning btn-xs">Search Stays</button>
-            </form>
-          </div>
           <!-- Packages Tab -->
-          <div id="packages-tab" class="tab-content">
+<div id="packages-tab" class="tab-content">
   <form action="#" method="get" class="package-form">
     
-    <!-- Package Options - Checkboxes -->
+    <!-- Package Options - Checkboxes and Travel Class -->
     <div class="package-options">
-  <label>
-    <input type="checkbox" name="package-option" value="flight" checked disabled> Flight
-  </label>
-  <label>
-    <input type="checkbox" name="package-option" value="hotel" checked disabled> Hotel
-  </label>
-  <label>
-    <input type="checkbox" name="package-option" value="car"> Car Rental
-  </label>
+      <label><input type="checkbox" name="package-option" value="flight" checked disabled> Flight</label>
+      <label style="margin-left: 10px;"><input type="checkbox" name="package-option" value="hotel" checked disabled> Hotel</label>
+      <label style="margin-left: 10px;"><input type="checkbox" name="package-option" value="car"> Car Rental</label>
 
-  <div class="travel-class-wrapper">
-    <label for="travel-class-select">Travel Class:</label>
-    <select id="travel-class-select" name="travel-class-select">
-      <option value="economy">Economy</option>
-      <option value="economy-plus">Economy Plus</option>
-      <option value="business-class">Business Class</option>
-      <option value="first-class">First Class</option>
-    </select>
-  </div>
-</div>
+      <div class="travel-class-wrapper" style="margin-left: auto; display: flex; align-items: center; gap: 10px;">
+        <label for="travel-class-select">Travel Class:</label>
+        <select id="travel-class-select" name="travel-class-select">
+          <option value="economy">Economy</option>
+          <option value="economy-plus">Economy Plus</option>
+          <option value="business-class">Business Class</option>
+          <option value="first-class">First Class</option>
+        </select>
+      </div>
+    </div>
 
-    <!-- The rest of your form continues here -->
-              <!-- User Information -->
-              <div class="form-group">
-                <label for="from-location">Leaving From</label>
-                <input type="text" class="form-control" id="from-location" name="from-location" placeholder="Enter departure location">
-                <i class="fas fa-map-marker-alt" onclick="cycleDestination('from-location')"></i>
-                <div class="dropdown setLocation" id="dropdown-from-location">
-                    <div onclick="selectDestination('Chicago', 'from-location')">Chicago</div>
-                    <div onclick="selectDestination('Orlando', 'from-location')">Orlando</div>
-                    <div onclick="selectDestination('Miami', 'from-location')">Miami</div>
-                    <div onclick="selectDestination('New York', 'from-location')">New York</div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="to-location">Going To</label>
-                <input type="text" class="form-control" id="to-location" name="to-location" placeholder="Enter destination location">
-                <i class="fas fa-map-marker-alt" onclick="cycleDestination('to-location')"></i>
-                <div class="dropdown setLocation" id="dropdown-to-location">
-                    <div onclick="selectDestination('Chicago', 'to-location')">Chicago</div>
-                    <div onclick="selectDestination('Orlando', 'to-location')">Orlando</div>
-                    <div onclick="selectDestination('Miami', 'to-location')">Miami</div>
-                    <div onclick="selectDestination('New York', 'to-location')">New York</div>
-                </div>
-            </div>
-              <div class="form-group">
-                <label for="departure-date">Departure Date</label>
-                <input type="date" class="form-control" id="departure-date" name="departure-date">
-              </div>
-              <div class="form-group">
-                <label for="return-date">Return Date</label>
-                <input type="date" class="form-control" id="return-date" name="return-date">
-              </div>
-              <div class="form-group">
-                <label for="adults">Travelers</label>
-                 <input type="number" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
-                <table id="adultsTable" class="travelers-table">
-                  <tr>
-                    <td>Adults</td>
-                    <td><span class="decrement-btn" onclick="decrement('adults')">-</span></td>
-                    <td><span class="increment-btn" onclick="increment('adults')">+</span></td>
-                  </tr>
-                  <tr>
-                    <td>Children <br> (2 - 15)</td>
-                    <td>
-                      <span class="decrement-btn" onclick="decrement('children')">-</span>
-                      <span class="age-dropdown">
-                        <a href="#" onclick="toggleAgeDropdown('children')">▼</a>
-                        <div class="age-dropdown-content" id="childrenAgeDropdown">
-                          <a href="#" onclick="selectAge('children', 2)">2</a>
-                          <a href="#" onclick="selectAge('children', 3)">3</a>
-                          <!-- Add more age options as needed -->
-                        </div>
-                      </span>
+    <!-- Aligned Input Rows -->
+    <div class="form-row" style="display: flex; gap: 15px; flex-wrap: wrap;">
+      <div class="form-group">
+        <label for="from-location">Leaving From</label>
+        <input type="text" class="form-control" id="from-location" name="from-location" placeholder="Enter departure location">
+      </div>
+
+      <div class="form-group">
+        <label for="to-location">Going To</label>
+        <input type="text" class="form-control" id="to-location" name="to-location" placeholder="Enter destination location">
+      </div>
+
+      <div class="form-group">
+        <label for="departure-date">Departure Date</label>
+        <input type="date" class="form-control" id="departure-date" name="departure-date">
+      </div>
+
+      <div class="form-group">
+        <label for="return-date">Return Date</label>
+        <input type="date" class="form-control" id="return-date" name="return-date">
+      </div>
+
+      <div class="form-group">
+        <label for="adults">Travelers</label>
+        <input type="number" class="form-control-scale" id="adults" name="adults" value="1" readonly onclick="showTravelersTable('adults')">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-warning btn-xs">Search Packages</button>
+  </form>
+</div>            </span>
                     </td>
                     <td>
                       <span class="increment-btn" onclick="increment('children')">+</span>

@@ -1250,15 +1250,17 @@ footer {
   }
 
   /* Horizontally scrollable rows */
-  .scrollable-row {
+  .row.scrollable-row {
     display: flex;
-  flex-wrap: wrap;
-  -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 16px;
     padding-bottom: 10px;
   }
 
-  .scrollable-row::-webkit-scrollbar {
+  .row.scrollable-row::-webkit-scrollbar {
     display: none;
   }
 

@@ -1250,7 +1250,7 @@ footer {
   }
 
   /* Horizontally scrollable rows */
-  .row.scrollable-row {
+  .scrollable-row {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -1260,7 +1260,7 @@ footer {
     padding-bottom: 10px;
   }
 
-  .row.scrollable-row::-webkit-scrollbar {
+  .scrollable-row::-webkit-scrollbar {
     display: none;
   }
 

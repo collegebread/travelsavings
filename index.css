@@ -77,11 +77,6 @@ text-decoration: none;
   margin-bottom:18px;
 }
 
-.badge-shape {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
 
 .vines-text {
   display: inline-block;
@@ -584,10 +579,30 @@ margin-left: 20px; /* Increased margin for better spacing */
   .col-md-3 .card{
     border:transparent;
   }
+.horizontal-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
+.horizontal-scroll .row {
+  flex-wrap: nowrap;
+}
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;/* Each card fits within the horizontal scroll layout */
+}
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;
+}
  .card img {
      max-width: 100%;
      height: auto;
+     display: block;
+     border-radius: 8px;
      object-fit: cover;
      filter: brightness(.7);
         

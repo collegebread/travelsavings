@@ -579,6 +579,14 @@ margin-left: 20px; /* Increased margin for better spacing */
   .col-md-3 .card{
     border:transparent;
   }
+.horizontal-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll .row {
+  flex-wrap: nowrap;
+}
 /* Each card fits within the horizontal scroll layout */
 .scrollable-row .card-container {
   flex: 0 0 auto;
@@ -620,6 +628,15 @@ margin-left: 20px; /* Increased margin for better spacing */
    
   }
   
+
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Set your preferred height */
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
   .col-md-3 .card h4{
    justify-content: center;
 
@@ -1081,7 +1098,6 @@ footer {
 
 @media screen and (max-width: 768px) {
   
-
   .nav-items > *:not(.nav-brand):not(.dropdown) {
     display: none;
   }
@@ -1094,351 +1110,176 @@ footer {
   .nav-brand h1 a {
     margin-left: 0;
   }
-
   .logo a,
   .logo a:hover {
-    color: black;
-    font-family: 'Permanent Marker', cursive;
-    text-decoration: none;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
   }
 
-  .btn.btn-warning.dropdown-toggle {
-    width: max-content;
-  }
+.btn.btn-warning.dropdown-toggle{
+width: max-content;
+}
 
-  .mobile-menu-toggle {
-    display: block;
-  }
 
-  .slide-content {
-    width: 90%;
-  }
+.mobile-menu-toggle {
+display: block;
+}
+.slide-content {
+width: 90%; /* Adjust the width for smaller screens */
+}
+.aspect-ratio-container {
+padding-top: 75%; /* Adjusted aspect ratio for smaller screens */
+}
 
-  .aspect-ratio-container {
-    padding-top: 75%;
-  }
 
-  .booking-container {
-    max-width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+/* Underline animation effect for booking-container nav-links */
+.booking-container .nav-tabs {
+list-style: none;
+padding: 0;
+display: flex;
+margin-right: 10%;
+margin-bottom: 10px; /* Add margin between nav-tabs and form */
 
-  .booking-container .nav-tabs {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-right: 10%;
-    margin-bottom: 10px;
-  }
+}
 
-  .booking-container .nav-item {
-    flex: 1;
-    margin-right: 0;
-  }
+.booking-container .nav-item {
+flex: 1;
+margin-right:0px; /* Adjust spacing between nav-items */
 
-  .booking-container input,
-  .booking-container select,
-  .booking-container textarea {
-    width: 100%;
-  }
+}
 
-  .booking-container input[type="checkbox"] {
-    margin-left: 5px;
-  }
 
-  .form-container {
-    margin-top: 10px;
-    max-height: calc(100% - 70px);
-    overflow-y: auto;
-  }
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+width: 100%; /* Make input fields full-width on small screens */
 
-  .form-group {
-    margin-bottom: 15px;
-  }
+}
 
-  .form-group label {
-    display: block;
-    margin-left: 5px;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
 
-  .fa-map-marker-alt {
-    margin-top: 12px;
-  }
+/* Adjust styling for checkboxes */
+.booking-container input[type="checkbox"] {
+margin-left: 5px; /* Add some spacing to checkboxes */
 
-  .travel-class {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    margin-left: -200px;
-  }
+}
+.booking-container {
+max-width: 100%;
+padding: 20px;
+box-sizing: border-box;
+}
 
-  #travel-class-select {
-    width: 100%;
-    padding: 8px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+.form-container {
 
-  .tab-content,
-  .scroll {
-    padding: 10px;
-  }
+margin-top: 10px;
+max-height: calc(100% - 70px); /* Adjusted max-height */
+overflow-y: auto; 
+}
+.form-group label {
+display: block;
+margin-left: 5px;
+font-weight: bold;
 
-  .card-img {
-    order: 1;
-  }
+}
 
-  .card-body {
-    order: 2;
-    padding: 10px;
-  }
+.form-group {
+margin-bottom: 15px;
+}
+.form-group label {
+margin-bottom: 8px; /* Add space below form group labels */
+}
 
-  .container-fluid {
-    height: auto;
-    padding: 15px;
-  }
+.fa-map-marker-alt{
+  margin-top: 12px;
+}
 
-  .card-container {
-    width: 100%;
-    margin-top: 20px;
-  }
 
-  .card {
-    margin-top: 60px;
-  }
+/* Travel Class Selectors Styles */
+.travel-class {
+width:200px;
+height: 50px;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 20px;
+margin-left: -200px;
+}
+/* Travel Class Selectors Styles */
+#travel-class-select {
+  width: 100%;
+  padding: 8px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  .card img {
-    width: 100%;
-    height: auto;
-  }
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+.tab-content {
+padding: 10px;
+}
+.scroll{
+padding: 10px;
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.card-img {
+order: 1; /* Move the image below the card body */
+}
 
-  .col-md-3,
-  .col-md-5,
-  .col-md-7,
-  .col-md-15 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 50px;
-  }
+.card-body {
+order: 2; /* Move the card body above the image */
+}
+.container-fluid {
+height: auto;
+padding: 15px;
+}
 
-  /* Horizontally scrollable rows */
-  .scrollable-row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding-bottom: 10px;
-  }
+.card-container {
+width: 100%;
+margin-top: 20px;
+}
 
-  .scrollable-row::-webkit-scrollbar {
-    display: none;
-  }
+.card {
+margin-top: 60px;
+}
 
-  .scrollable-row .card-container {
-    flex: 0 0 auto;
-    width: 70%;
-    scroll-snap-align: start;
-  }
+.card img {
+width: 100%;
+height: auto;
 
-  .scrollable-row .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+}
 
-  .nav-items > *:not(.nav-brand):not(.dropdown) {
-    display: none;
-  }
+.card-body {
+padding: 10px;
+}
 
-  .nav-brand, .dropdown {
-    flex: 1;
-    justify-content: space-between;
-  }
+.row {
+display: flex;
+flex-wrap: wrap;
+}
 
-  .nav-brand h1 a {
-    margin-left: 0;
-  }
 
-  .logo a,
-  .logo a:hover {
-    color: black;
-    font-family: 'Permanent Marker', cursive;
-    text-decoration: none;
-  }
 
-  .btn.btn-warning.dropdown-toggle {
-    width: max-content;
-  }
+.col-md-3 {
+flex: 0 0 100%;
+max-width: 100%;
+}
 
-  .mobile-menu-toggle {
-    display: block;
-  }
+.col-md-5, .col-md-7, .col-md-15 {
+flex: 0 0 100%;
+max-width: 100%;
+margin-top: 50px;
+}
 
-  .slide-content {
-    width: 90%;
-  }
 
-  .aspect-ratio-container {
-    padding-top: 75%;
-  }
 
-  .booking-container {
-    max-width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+}
 
-  .booking-container .nav-tabs {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-right: 10%;
-    margin-bottom: 10px;
-  }
-
-  .booking-container .nav-item {
-    flex: 1;
-    margin-right: 0;
-  }
-
-  .booking-container input,
-  .booking-container select,
-  .booking-container textarea {
-    width: 100%;
-  }
-
-  .booking-container input[type="checkbox"] {
-    margin-left: 5px;
-  }
-
-  .form-container {
-    margin-top: 10px;
-    max-height: calc(100% - 70px);
-    overflow-y: auto;
-  }
-
-  .form-group {
-    margin-bottom: 15px;
-  }
-
-  .form-group label {
-    display: block;
-    margin-left: 5px;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  .fa-map-marker-alt {
-    margin-top: 12px;
-  }
-
-  .travel-class {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    margin-left: -200px;
-  }
-
-  #travel-class-select {
-    width: 100%;
-    padding: 8px;
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .tab-content,
-  .scroll {
-    padding: 10px;
-  }
-
-  .card-img {
-    order: 1;
-  }
-
-  .card-body {
-    order: 2;
-    padding: 10px;
-  }
-
-  .container-fluid {
-    height: auto;
-    padding: 15px;
-  }
-
-  .card-container {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .card {
-    margin-top: 60px;
-  }
-
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .col-md-3,
-  .col-md-5,
-  .col-md-7,
-  .col-md-15 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 50px;
-  }
-
-  /* Horizontally scrollable rows */
-  .scrollable-row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding-bottom: 10px;
-  }
-
-  .scrollable-row::-webkit-scrollbar {
-    display: none;
-  }
-
-  .scrollable-row .card-container {
-    flex: 0 0 auto;
-    width: 70%;
-    scroll-snap-align: start;
-  }
-
-  .scrollable-row .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  
 /* Styling for screen sizes up to 576px */
 @media (max-width: 576px) {
- 
+ @media (max-width: 576px) {
 
   .navbar {
     width: 100%;
@@ -1727,7 +1568,7 @@ height: 100%;
 }
 
 
-  }
+
 
 
 

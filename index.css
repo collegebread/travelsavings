@@ -579,14 +579,7 @@ margin-left: 20px; /* Increased margin for better spacing */
   .col-md-3 .card{
     border:transparent;
   }
-.horizontal-scroll {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
 
-.horizontal-scroll .row {
-  flex-wrap: nowrap;
-}
 /* Each card fits within the horizontal scroll layout */
 .scrollable-row .card-container {
   flex: 0 0 auto;

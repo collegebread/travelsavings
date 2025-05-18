@@ -580,36 +580,26 @@ margin-left: 20px; /* Increased margin for better spacing */
     border:transparent;
   }
 
-/* Horizontal scrollable container */
-.scrollable-row {
-  display: flex;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  gap: 16px;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-}
-
-.scrollable-row::-webkit-scrollbar {
-  display: none; /* Hide scrollbar on WebKit browsers */
-}
-
-.card-container {
+/* Each card fits within the horizontal scroll layout */
+.scrollable-row .card-container {
   flex: 0 0 auto;
-  width: 250px; /* Control card width here */
+  width: 70%; /* Card width; adjust to show more/less of each card */
+  scroll-snap-align: start;/* Each card fits within the horizontal scroll layout */
+}
+.scrollable-row .card-container {
+  flex: 0 0 auto;
+  width: 70%; /* Card width; adjust to show more/less of each card */
   scroll-snap-align: start;
 }
-
-.card {
-  margin-top: 0;
-  height: 100%;
-}
-
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
+ .card img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     border-radius: 8px;
+     object-fit: cover;
+     filter: brightness(.7);
+        
+    }
   
   .card .card-title{
     font-size: 12px;
@@ -1102,6 +1092,36 @@ footer {
   .row {
     flex-wrap: nowrap !important;
   }
+  /* Horizontal scrollable container */
+.scrollable-row {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  gap: 16px;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.scrollable-row::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on WebKit browsers */
+}
+
+.card-container {
+  flex: 0 0 auto;
+  width: 250px; /* Control card width here */
+  scroll-snap-align: start;
+}
+
+.card {
+  margin-top: 0;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
 }
 @media screen and (max-width: 768px) {
 

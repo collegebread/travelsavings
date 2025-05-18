@@ -1092,36 +1092,6 @@ footer {
   .row {
     flex-wrap: nowrap !important;
   }
-  /* Horizontal scrollable container */
-.scrollable-row {
-  display: flex;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  gap: 16px;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-}
-
-.scrollable-row::-webkit-scrollbar {
-  display: none; /* Hide scrollbar on WebKit browsers */
-}
-
-.card-container {
-  flex: 0 0 auto;
-  width: 250px; /* Control card width here */
-  scroll-snap-align: start;
-}
-
-.card {
-  margin-top: 0;
-  height: 100%;
-}
-
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
 }
 @media screen and (max-width: 768px) {
 

@@ -1095,6 +1095,11 @@ footer {
 .claim-btn:hover {
   background-color: #0056b3;
 }
+@media (max-width: 1024px) {
+  .row {
+    flex-wrap: nowrap !important;
+  }
+}
 @media screen and (max-width: 768px) {
 
   .nav-items > *:not(.nav-brand):not(.dropdown) {
